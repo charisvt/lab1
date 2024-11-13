@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="matmul" solutionName="lab1sol1" date="2024-11-13T12:41:22.173+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9/m_axi_gmem_BREADY' to 0." projectName="matmul" solutionName="lab1sol1" date="2024-11-13T12:41:22.048+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9/m_axi_gmem_AWUSER' to 0." projectName="matmul" solutionName="lab1sol1" date="2024-11-13T12:41:22.032+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9/m_axi_gmem_AWREGION' to 0." projectName="matmul" solutionName="lab1sol1" date="2024-11-13T12:41:22.032+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9/m_axi_gmem_AWQOS' to 0." projectName="matmul" solutionName="lab1sol1" date="2024-11-13T12:41:22.017+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9/m_axi_gmem_AWPROT' to 0." projectName="matmul" solutionName="lab1sol1" date="2024-11-13T12:41:22.001+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9/m_axi_gmem_AWCACHE' to 0." projectName="matmul" solutionName="lab1sol1" date="2024-11-13T12:41:21.985+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9/m_axi_gmem_AWLOCK' to 0." projectName="matmul" solutionName="lab1sol1" date="2024-11-13T12:41:21.970+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9/m_axi_gmem_AWBURST' to 0." projectName="matmul" solutionName="lab1sol1" date="2024-11-13T12:41:21.970+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9/m_axi_gmem_AWSIZE' to 0." projectName="matmul" solutionName="lab1sol1" date="2024-11-13T12:41:21.954+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9/m_axi_gmem_AWLEN' to 0." projectName="matmul" solutionName="lab1sol1" date="2024-11-13T12:41:21.954+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9/m_axi_gmem_AWID' to 0." projectName="matmul" solutionName="lab1sol1" date="2024-11-13T12:41:21.954+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9/m_axi_gmem_AWADDR' to 0." projectName="matmul" solutionName="lab1sol1" date="2024-11-13T12:41:21.923+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9/m_axi_gmem_AWVALID' to 0." projectName="matmul" solutionName="lab1sol1" date="2024-11-13T12:41:21.923+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
