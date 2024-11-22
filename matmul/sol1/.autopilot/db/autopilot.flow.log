@@ -827,3 +827,143 @@ Command   csynth_design done; 16.079 sec.
 INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 16.079 seconds; current allocated memory: 155.602 MB.
 Command ap_source done; 26.741 sec.
 Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1 opened at Fri Nov 22 21:50:33 +0200 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xcu200-fsgd2104-2-e 
+Execute       create_platform xcu200-fsgd2104-2-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2022.2\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2022.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xcu200-fsgd2104-2-e'
+Command       create_platform done; 0.323 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.405 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vivado' config_interface -m_axi_max_widen_bitwidth=0 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_max_widen_bitwidth=0
+Execute     config_interface -m_axi_max_widen_bitwidth=0 
+Execute     send_msg_by_id INFO @200-1464@%s config_interface -m_axi_max_widen_bitwidth=512 
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+Execute     config_interface -m_axi_max_widen_bitwidth=512 
+Command   open_solution done; 0.488 sec.
+Execute   set_part xcu200-fsgd2104-2-e 
+INFO: [HLS 200-1510] Running: set_part xcu200-fsgd2104-2-e 
+Execute     create_platform xcu200-fsgd2104-2-e -board  
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xcu200-fsgd2104-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_interface -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_max_widen_bitwidth 512 
+Execute   source ./matmul/sol1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./matmul/sol1/directives.tcl
+Execute     set_directive_top -name mult_hw mult_hw 
+INFO: [HLS 200-1510] Running: set_directive_top -name mult_hw mult_hw 
+Execute   cosim_design -trace_level port 
+INFO: [HLS 200-1510] Running: cosim_design -trace_level port 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute     ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xcu200-fsgd2104-2-e -data info 
+INFO-FLOW: TB processing: C:/Users/charisvt/Desktop/hls/lab1/tb_matmul.cpp C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/./sim/autowrap/testbench/tb_matmul.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/./sim/autowrap/testbench/tb_matmul.cpp_pre.cpp.tb.cpp std=c++14 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/./sim/autowrap/testbench/tb_matmul.cpp_pre.cpp.tb.cpp -- -std=c++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 0.74 sec.
+Execute     ap_part_info -name xcu200-fsgd2104-2-e -data info 
+INFO-FLOW: TB processing: C:/Users/charisvt/Desktop/hls/lab1/matmul.cpp C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/./sim/autowrap/testbench/matmul.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/./sim/autowrap/testbench/matmul.cpp_pre.cpp.tb.cpp std=c++14 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/./sim/autowrap/testbench/matmul.cpp_pre.cpp.tb.cpp -- -std=c++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 0.707 sec.
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     ap_part_info -name xcu200-fsgd2104-2-e -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.145 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+Execute     source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/mult_hw.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 

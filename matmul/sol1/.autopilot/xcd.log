@@ -17,3 +17,16 @@
 11/22/24 21:50:21: SERVER: destructor for server bound to port 63231
 11/22/24 21:50:21: Server exiting with status 0.
 11/22/24 21:50:21: Closing log file.
+11/22/24 21:50:34: Running xcd server. This server was NOT built by gradle, but presumably rdi.
+11/22/24 21:50:34: Server was asked to start on port: '63234'
+11/22/24 21:50:34: Server is using token UUID: '8711ce59-f3a8-4e21-9c67-d758f805f674'
+11/22/24 21:50:34: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+11/22/24 21:50:34: Attempting to start server on port '63234'
+11/22/24 21:50:34: Running Dispatch Server
+11/22/24 21:50:34: Version 2.2.0
+11/22/24 21:50:43: Dispatch Server: Accepted socket connection from client
+11/22/24 21:50:43: Starting Socket connection
+11/22/24 21:50:43: EXCHANGE_TOKEN received, server token: 8711ce59-f3a8-4e21-9c67-d758f805f674, passed token: 8711ce59-f3a8-4e21-9c67-d758f805f674
+11/22/24 21:50:43: SESSION_MGR: creating session with session uuid: 'a546f8d5-113f-455d-bf42-c4eef59e13d9' and name 'vitis_hls'
+11/22/24 21:50:43: KERNEL_SVC: creating session with uuid: 'a546f8d5-113f-455d-bf42-c4eef59e13d9' and name 'vitis_hls'
+11/22/24 21:50:43: GUIDANCE_SMGR: creating guidance session with uuid: 'a546f8d5-113f-455d-bf42-c4eef59e13d9' and name 'vitis_hls'
