@@ -967,3 +967,13 @@ Execute     source .run_sim.tcl
 Execute       source check_sim.tcl 
 Execute       source dataflow_monitor_API.tcl 
 Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 11.718 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+Command   cosim_design done; 18.874 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 18.874 seconds; current allocated memory: 11.477 MB.
+Command ap_source done; 29.485 sec.
+Execute cleanup_all 

@@ -1,41 +1,18 @@
-INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'charisvt' on host 'desktop-4nijah2' (Windows NT_amd64 version 6.2) on Fri Nov 22 21:50:33 +0200 2024
-INFO: [HLS 200-10] In directory 'C:/Users/charisvt/Desktop/hls/lab1'
-Sourcing Tcl script 'C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/cosim.tcl'
-INFO: [HLS 200-1510] Running: source C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/cosim.tcl
-INFO: [HLS 200-1510] Running: open_project matmul 
-INFO: [HLS 200-10] Opening project 'C:/Users/charisvt/Desktop/hls/lab1/matmul'.
-INFO: [HLS 200-1510] Running: set_top mult_hw 
-INFO: [HLS 200-1510] Running: add_files matmul.cpp 
-INFO: [HLS 200-10] Adding design file 'matmul.cpp' to the project
-INFO: [HLS 200-1510] Running: add_files matmul.h 
-INFO: [HLS 200-10] Adding design file 'matmul.h' to the project
-INFO: [HLS 200-1510] Running: add_files -tb tb_matmul.cpp -cflags -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
-INFO: [HLS 200-10] Adding test bench file 'tb_matmul.cpp' to the project
-INFO: [HLS 200-1510] Running: open_solution sol1 -flow_target vivado 
-INFO: [HLS 200-10] Opening solution 'C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1'.
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-1611] Setting target device to 'xcu200-fsgd2104-2-e'
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
-INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_max_widen_bitwidth=0
-INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
-INFO: [HLS 200-1510] Running: set_part xcu200-fsgd2104-2-e 
-INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
-INFO: [HLS 200-1510] Running: config_interface -m_axi_max_widen_bitwidth 512 
-INFO: [HLS 200-1510] Running: source ./matmul/sol1/directives.tcl
-INFO: [HLS 200-1510] Running: set_directive_top -name mult_hw mult_hw 
-INFO: [HLS 200-1510] Running: cosim_design -trace_level port 
-Running Dispatch Server on port: 63234
-INFO: [COSIM 212-47] Using XSIM for RTL simulation.
-INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
    Build using "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/bin/g++"
    Compiling tb_matmul.cpp_pre.cpp.tb.cpp
    Compiling apatb_mult_hw.cpp
    Compiling matmul.cpp_pre.cpp.tb.cpp
    Compiling apatb_mult_hw_ir.ll
    Generating cosim.tv.exe
-INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
 --------------- SW_RESULT ---------------
 982702 1116949 1036658 1046755 923268 1092899 1203947 1101608 879091 1043500 1001774 1008908 1019806 996661 1034071 942114 958287 1050024 1020135 846906 981589 897931 964277 974691 1154941 912220 949191 977515 1015415 973292 1036801 1079705 974272 1210661 1033593 1070390 1040771 965470 1084834 1171817 1032456 1144475 899742 991688 956151 994476 1055640 1034419 986561 1020906 914281 1133626 766914 1076060 1097287 884922 983285 941658 813366 844792 1125292 880229 906146 1046037 1022346 976040 1026009 969581 958079 818860 904362 1065089 948891 1024103 1032077 982599 811993 907239 948736 858832 1081352 1050003 1036300 1184178 1099607 971244 960454 1044450 935153 1155277 979449 944817 977952 1059708 1067186 890747 1009054 1076725 1037077 1132621 1019447 990912 1110296 1015940 1053372 1070153 1031841 980321 978663 1033942 944521 881064 931764 917458 872145 1167691 1095871 1002915 992129 1062058 1036676 986950 1095735 1070942 1043124 965556 1003314 1243673 
 972149 1139010 1105249 1085808 1019205 1137428 1312219 1001683 1095240 1028861 1121917 1049048 1055469 1104092 1010053 1004417 1075859 959900 1067144 914472 1064749 912189 967554 989316 1130547 1039594 1016118 984123 1054633 1079762 1105575 1285075 1095786 1115992 1034371 1120386 1105137 996029 1074036 1058665 1071190 1143094 1033995 1023640 986056 1086727 1088253 1178232 1040008 1032163 1073238 1147071 854082 1028965 1088072 951189 999364 1007648 987586 952830 1127660 920196 1029976 1037994 1090342 943078 1035491 1028746 943382 1042240 1055885 1028556 945169 975197 1066263 1009916 805904 969743 1118055 989827 1162534 1059547 1111478 1096082 1094888 1117279 1041394 1167138 1252674 1143423 1093455 982614 999911 1006657 1147121 1012036 1108250 1222366 1105372 1049120 1036994 921005 1228485 1063176 1226257 1047375 1063858 1078881 984903 1204102 1023437 1092068 1080878 969772 952781 1227979 1130749 1049472 991020 1124642 1097352 1112643 1121654 1197284 1015670 965054 1035471 1174036 
@@ -231,11 +208,6 @@ Mismatch on Row:61 Column:0 | CPU Output:964153	 HW output:0
 Mismatch on Row:62 Column:0 | CPU Output:1018779	 HW output:0
 Mismatch on Row:63 Column:0 | CPU Output:928543	 HW output:0
 TEST FAILED
-INFO: [COSIM 212-333] Generating C post check test bench ...
-INFO: [COSIM 212-12] Generating RTL test bench ...
-INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
-INFO: [COSIM 212-323] Starting verilog simulation. 
-INFO: [COSIM 212-15] Starting XSIM ...
 
 C:\Users\charisvt\Desktop\hls\lab1\matmul\sol1\sim\verilog>set PATH= 
 
@@ -551,7 +523,6 @@ source mult_hw.tcl
 $finish called at time : 158325 ns : File "C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/sim/verilog/mult_hw.autotb.v" Line 641
 ## quit
 INFO: [Common 17-206] Exiting xsim at Fri Nov 22 21:51:02 2024...
-INFO: [COSIM 212-316] Starting C post checking ...
 --------------- SW_RESULT ---------------
 982702 1116949 1036658 1046755 923268 1092899 1203947 1101608 879091 1043500 1001774 1008908 1019806 996661 1034071 942114 958287 1050024 1020135 846906 981589 897931 964277 974691 1154941 912220 949191 977515 1015415 973292 1036801 1079705 974272 1210661 1033593 1070390 1040771 965470 1084834 1171817 1032456 1144475 899742 991688 956151 994476 1055640 1034419 986561 1020906 914281 1133626 766914 1076060 1097287 884922 983285 941658 813366 844792 1125292 880229 906146 1046037 1022346 976040 1026009 969581 958079 818860 904362 1065089 948891 1024103 1032077 982599 811993 907239 948736 858832 1081352 1050003 1036300 1184178 1099607 971244 960454 1044450 935153 1155277 979449 944817 977952 1059708 1067186 890747 1009054 1076725 1037077 1132621 1019447 990912 1110296 1015940 1053372 1070153 1031841 980321 978663 1033942 944521 881064 931764 917458 872145 1167691 1095871 1002915 992129 1062058 1036676 986950 1095735 1070942 1043124 965556 1003314 1243673 
 972149 1139010 1105249 1085808 1019205 1137428 1312219 1001683 1095240 1028861 1121917 1049048 1055469 1104092 1010053 1004417 1075859 959900 1067144 914472 1064749 912189 967554 989316 1130547 1039594 1016118 984123 1054633 1079762 1105575 1285075 1095786 1115992 1034371 1120386 1105137 996029 1074036 1058665 1071190 1143094 1033995 1023640 986056 1086727 1088253 1178232 1040008 1032163 1073238 1147071 854082 1028965 1088072 951189 999364 1007648 987586 952830 1127660 920196 1029976 1037994 1090342 943078 1035491 1028746 943382 1042240 1055885 1028556 945169 975197 1066263 1009916 805904 969743 1118055 989827 1162534 1059547 1111478 1096082 1094888 1117279 1041394 1167138 1252674 1143423 1093455 982614 999911 1006657 1147121 1012036 1108250 1222366 1105372 1049120 1036994 921005 1228485 1063176 1226257 1047375 1063858 1078881 984903 1204102 1023437 1092068 1080878 969772 952781 1227979 1130749 1049472 991020 1124642 1097352 1112643 1121654 1197284 1015670 965054 1035471 1174036 
@@ -747,7 +718,5 @@ Mismatch on Row:61 Column:0 | CPU Output:964153	 HW output:0
 Mismatch on Row:62 Column:0 | CPU Output:1018779	 HW output:0
 Mismatch on Row:63 Column:0 | CPU Output:928543	 HW output:0
 TEST FAILED
-INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
-INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
-INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 18.874 seconds; current allocated memory: 11.477 MB.
-INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 29.806 seconds; peak allocated memory: 105.387 MB.
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
