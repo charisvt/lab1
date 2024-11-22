@@ -1,6 +1,6 @@
-#define lm 2
-#define ln 3
-#define lp 4
+#define lm 6
+#define ln 6
+#define lp 6
 
 #define m (1 << lm)
 #define n (1 << ln)

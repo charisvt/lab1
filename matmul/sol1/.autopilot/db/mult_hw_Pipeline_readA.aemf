@@ -1,0 +1,1561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1732294737544">
+  <ports id="1" name="gmem0" type="PortType" coreId="1702129263" bitwidth="32" iftype="IfTypeFifo">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="A_V" type="PortType" coreName="RAM_1WnR" coreId="3110747664" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="3" name="A_V_1" type="PortType" coreName="RAM_1WnR" coreId="4294967295" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="4" name="A_V_2" type="PortType" coreName="RAM_1WnR" coreId="1702129263" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="5" name="A_V_3" type="PortType" coreName="RAM_1WnR" coreId="1702129263" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="6" name="A_V_4" type="PortType" coreName="RAM_1WnR" coreId="1702129263" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="7" name="A_V_5" type="PortType" coreName="RAM_1WnR" coreId="539575877" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="8" name="A_V_6" type="PortType" coreName="RAM_1WnR" coreId="174525033" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="9" name="A_V_7" type="PortType" coreName="RAM_1WnR" coreId="2" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="10" name="A_V_8" type="PortType" coreName="RAM_1WnR" coreId="0" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="11" name="A_V_9" type="PortType" coreName="RAM_1WnR" coreId="2099274784" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="12" name="A_V_10" type="PortType" coreName="RAM_1WnR" coreId="975446130" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="13" name="A_V_11" type="PortType" coreName="RAM_1WnR" coreId="1936029041" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="14" name="A_V_12" type="PortType" coreName="RAM_1WnR" coreId="1864397932" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="15" name="A_V_13" type="PortType" coreName="RAM_1WnR" coreId="1852399472" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="16" name="A_V_14" type="PortType" coreName="RAM_1WnR" coreId="577075201" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="17" name="A_V_15" type="PortType" coreName="RAM_1WnR" coreId="0" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="18" name="in1" type="PortType" coreId="0" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="19" name="trunc_ln" type="PortType" coreId="1936291941" bitwidth="2">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="146" source_obj="//@ports.18" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="149" source_obj="//@ports.17" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="152" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="155" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="157" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="158" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="159" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="160" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="163" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="166" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="167" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="168" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="169" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.0"/>
+  <edges id="171" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.1"/>
+  <edges id="172" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.1"/>
+  <edges id="173" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.2"/>
+  <edges id="174" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.2"/>
+  <edges id="175" source_obj="//@regions.0/@basic_blocks.18/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.3"/>
+  <edges id="176" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.3"/>
+  <edges id="177" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.4"/>
+  <edges id="178" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.16/@node_objs.0"/>
+  <edges id="179" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.16/@node_objs.0"/>
+  <edges id="180" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.16/@node_objs.1"/>
+  <edges id="181" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="182" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="183" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="184" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="187" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="189" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="191" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="192" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="193" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="194" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="195" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="196" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="199" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="202" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="203" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="204" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="207" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="212" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="213" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@ports.1"/>
+  <edges id="216" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="217" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@ports.2"/>
+  <edges id="219" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="220" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@ports.3"/>
+  <edges id="222" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="223" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.4"/>
+  <edges id="225" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="226" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@ports.5"/>
+  <edges id="228" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="229" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@ports.6"/>
+  <edges id="231" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="232" source_obj="//@regions.0/@basic_blocks.1/@node_objs.20" sink_obj="//@ports.7"/>
+  <edges id="234" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="235" source_obj="//@regions.0/@basic_blocks.1/@node_objs.21" sink_obj="//@ports.8"/>
+  <edges id="237" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="238" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@ports.9"/>
+  <edges id="240" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="241" source_obj="//@regions.0/@basic_blocks.1/@node_objs.23" sink_obj="//@ports.10"/>
+  <edges id="243" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="244" source_obj="//@regions.0/@basic_blocks.1/@node_objs.24" sink_obj="//@ports.11"/>
+  <edges id="246" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="247" source_obj="//@regions.0/@basic_blocks.1/@node_objs.25" sink_obj="//@ports.12"/>
+  <edges id="249" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
+  <edges id="250" source_obj="//@regions.0/@basic_blocks.1/@node_objs.26" sink_obj="//@ports.13"/>
+  <edges id="252" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="253" source_obj="//@regions.0/@basic_blocks.1/@node_objs.27" sink_obj="//@ports.14"/>
+  <edges id="255" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="256" source_obj="//@regions.0/@basic_blocks.1/@node_objs.28" sink_obj="//@ports.15"/>
+  <edges id="258" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.28"/>
+  <edges id="259" source_obj="//@regions.0/@basic_blocks.1/@node_objs.29" sink_obj="//@ports.16"/>
+  <edges id="261" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.29"/>
+  <edges id="262" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.30"/>
+  <edges id="263" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.31"/>
+  <edges id="264" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.31"/>
+  <edges id="267" source_obj="//@regions.0/@basic_blocks.1/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.32"/>
+  <edges id="272" source_obj="//@regions.0/@basic_blocks.1/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.33"/>
+  <edges id="273" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.34"/>
+  <edges id="274" source_obj="//@regions.0/@basic_blocks.1/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.34"/>
+  <edges id="277" source_obj="//@regions.0/@basic_blocks.1/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="281" source_obj="//@regions.0/@basic_blocks.1/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="282" source_obj="//@regions.0/@basic_blocks.1/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.37"/>
+  <edges id="283" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.37"/>
+  <edges id="286" source_obj="//@regions.0/@basic_blocks.1/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.38"/>
+  <edges id="289" source_obj="//@regions.0/@basic_blocks.1/@node_objs.38" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.39"/>
+  <edges id="290" source_obj="//@regions.0/@basic_blocks.1/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.40"/>
+  <edges id="291" source_obj="//@regions.0/@basic_blocks.1/@node_objs.39" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.40"/>
+  <edges id="292" source_obj="//@regions.0/@basic_blocks.1/@node_objs.40" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.41"/>
+  <edges id="293" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="294" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="297" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="300" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="303" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="306" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="309" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="312" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="315" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="318" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="321" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="324" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="327" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="330" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="333" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="336" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="339" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="340" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.0"/>
+  <edges id="341" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.0"/>
+  <edges id="342" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.15/@node_objs.1"/>
+  <edges id="343" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.14/@node_objs.0"/>
+  <edges id="344" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.14/@node_objs.0"/>
+  <edges id="345" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.14/@node_objs.1"/>
+  <edges id="346" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.13/@node_objs.0"/>
+  <edges id="347" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.13/@node_objs.0"/>
+  <edges id="348" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.13/@node_objs.1"/>
+  <edges id="349" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.12/@node_objs.0"/>
+  <edges id="350" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.12/@node_objs.0"/>
+  <edges id="351" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.12/@node_objs.1"/>
+  <edges id="352" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.11/@node_objs.0"/>
+  <edges id="353" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.11/@node_objs.0"/>
+  <edges id="354" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.11/@node_objs.1"/>
+  <edges id="355" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.0"/>
+  <edges id="356" source_obj="//@regions.0/@basic_blocks.1/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.0"/>
+  <edges id="357" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.10/@node_objs.1"/>
+  <edges id="358" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.0"/>
+  <edges id="359" source_obj="//@regions.0/@basic_blocks.1/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.0"/>
+  <edges id="360" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.1"/>
+  <edges id="361" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="362" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="363" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.1"/>
+  <edges id="364" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.0"/>
+  <edges id="365" source_obj="//@regions.0/@basic_blocks.1/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.0"/>
+  <edges id="366" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.1"/>
+  <edges id="367" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.0"/>
+  <edges id="368" source_obj="//@regions.0/@basic_blocks.1/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.0"/>
+  <edges id="369" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.1"/>
+  <edges id="370" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="371" source_obj="//@regions.0/@basic_blocks.1/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="372" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.1"/>
+  <edges id="373" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="374" source_obj="//@regions.0/@basic_blocks.1/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="375" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.1"/>
+  <edges id="376" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="377" source_obj="//@regions.0/@basic_blocks.1/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="378" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="379" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="380" source_obj="//@regions.0/@basic_blocks.1/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="381" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="382" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.17/@node_objs.0"/>
+  <edges id="383" source_obj="//@regions.0/@basic_blocks.1/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.17/@node_objs.0"/>
+  <edges id="384" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.17/@node_objs.1"/>
+  <edges id="433" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="434" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="435" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="436" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.17"/>
+  <edges id="437" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.16"/>
+  <edges id="438" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.15"/>
+  <edges id="439" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.14"/>
+  <edges id="440" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.13"/>
+  <edges id="441" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.12"/>
+  <edges id="442" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.11"/>
+  <edges id="443" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.10"/>
+  <edges id="444" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.9"/>
+  <edges id="445" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="446" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.7"/>
+  <edges id="447" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.6"/>
+  <edges id="448" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="449" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="450" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="451" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="452" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="453" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="454" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="455" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="456" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="457" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="458" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="459" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.9" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="460" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.10" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="461" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.11" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="462" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.12" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="463" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.13" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="464" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.14" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="465" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.15" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="466" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.16" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="467" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.17" sink_obj="//@regions.0/@basic_blocks.18"/>
+  <edges id="468" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.18" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="469" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="470" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="471" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="472" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="473" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.1"/>
+  <edges id="474" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.2"/>
+  <edges id="475" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.3"/>
+  <edges id="476" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.1"/>
+  <edges id="477" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.3"/>
+  <edges id="478" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.18/@node_objs.2"/>
+  <blocks id="30" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>for.body</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="j" originalName="j" coreId="0" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="i" originalName="i" coreId="75" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="itr" originalName="itr" coreId="3116228488" bitwidth="13" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="trunc_ln_read" coreId="3129593520" bitwidth="2" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>trunc_ln</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="in1_read" coreId="3115777528" bitwidth="64" opcode="read" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>in1</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="itr_write_ln0" coreId="3129593520" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="i_write_ln0" coreId="3115779768" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="j_write_ln0" coreId="3129606960" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="br_ln0" coreId="75" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <controlInputObjs>for.body</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="139" name="readB.exitStub" type="BlockType">
+    <controlInputObjs>for.body</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="138" name="_ln0" coreId="1634956133" opcode="ret" nodeLabel="8.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="540" pipe_depth="10" RegionName="readA">
+    <basic_blocks id="37" name="for.body" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>readB.exitStub</controlOutputObjs>
+      <controlOutputObjs>for.body.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="itr_1" lineNumber="31" originalName="itr" fileName="matmul.cpp" fileDirectory=".." coreId="3115781448" contextFuncName="mult_hw" bitwidth="13" opcode="load" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="icmp_ln25" lineNumber="25" fileName="matmul.cpp" fileDirectory=".." rtlName="icmp_ln25_fu_402_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="mult_hw" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.64" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="25" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="add_ln25" lineNumber="25" fileName="matmul.cpp" fileDirectory=".." rtlName="add_ln25_fu_408_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="mult_hw" bitwidth="13" opcode="add" m_display="0" m_delay="0.75" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="25" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln25" lineNumber="25" fileName="matmul.cpp" fileDirectory=".." coreId="75" contextFuncName="mult_hw" opcode="br" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="25" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.body.split</controlInputObjs>
+        <controlInputObjs>readB.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+        <validLinenumbers>25</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="83" name="for.body.split" type="BlockType">
+      <controlInputObjs>for.body</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.case.15</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.case.0</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.case.1</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.case.2</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.case.3</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.case.4</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.case.5</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.case.6</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.case.7</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.case.8</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.case.9</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.case.10</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.case.11</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.case.12</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.case.13</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.case.14</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="j_load" lineNumber="27" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" bitwidth="32" opcode="load" nodeLabel="9.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="27" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="i_load" lineNumber="29" fileName="matmul.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="mult_hw" bitwidth="32" opcode="load" nodeLabel="9.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="29" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="itr_cast" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="itr_cast_fu_414_p1" coreId="3153511888" contextFuncName="mult_hw" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="icmp_ln27" lineNumber="27" fileName="matmul.cpp" fileDirectory=".." rtlName="icmp_ln27_fu_465_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="mult_hw" bitwidth="1" opcode="icmp" nodeLabel="9.0" m_display="0" m_delay="0.85" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="27" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="add_ln29" lineNumber="29" fileName="matmul.cpp" fileDirectory=".." rtlName="add_ln29_fu_471_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="mult_hw" bitwidth="32" opcode="add" nodeLabel="9.0" m_display="0" m_delay="0.88" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="29" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="j_1" lineNumber="27" originalName="j" fileName="matmul.cpp" fileDirectory=".." rtlName="j_1_fu_477_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="mult_hw" bitwidth="32" opcode="select" nodeLabel="9.0" m_display="0" m_delay="0.22" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="27" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="trunc_ln27" lineNumber="27" fileName="matmul.cpp" fileDirectory=".." rtlName="trunc_ln27_fu_485_p1" coreId="4294967295" contextFuncName="mult_hw" bitwidth="12" opcode="trunc" nodeLabel="9.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="27" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="i_2" lineNumber="27" originalName="i" fileName="matmul.cpp" fileDirectory=".." rtlName="i_2_fu_489_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="mult_hw" bitwidth="32" opcode="select" nodeLabel="9.0" m_display="0" m_delay="0.22" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="27" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="trunc_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="trunc_ln31_fu_497_p1" coreId="0" contextFuncName="mult_hw" bitwidth="6" opcode="trunc" nodeLabel="9.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="shl_ln" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="shl_ln_fu_501_p3" coreId="3153511888" contextFuncName="mult_hw" bitwidth="12" opcode="bitconcatenate" nodeLabel="9.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="trunc_ln31_1" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="trunc_ln31_1_fu_509_p1" coreId="4294967295" contextFuncName="mult_hw" bitwidth="4" opcode="trunc" nodeLabel="9.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>switch</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="add_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="add_ln31_fu_513_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="mult_hw" bitwidth="12" opcode="add" nodeLabel="9.0" m_display="0" m_delay="0.74" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="lshr_ln" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="lshr_ln_fu_519_p4" coreId="4294967295" contextFuncName="mult_hw" bitwidth="8" opcode="partselect" nodeLabel="9.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="zext_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="zext_ln31_fu_529_p1" coreId="4294967295" contextFuncName="mult_hw" bitwidth="64" opcode="zext" nodeLabel="9.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="A_V_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>A_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="A_V_1_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>A_V_1</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="A_V_2_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="3153511888" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>A_V_2</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="A_V_3_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="3153511888" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>A_V_3</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="A_V_4_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>A_V_4</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="A_V_5_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="3153523968" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>A_V_5</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="A_V_6_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>A_V_6</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="A_V_7_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>A_V_7</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="A_V_8_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="3153511888" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>A_V_8</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="A_V_9_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>A_V_9</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="A_V_10_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>A_V_10</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="A_V_11_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>A_V_11</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="A_V_12_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>A_V_12</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="A_V_13_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>A_V_13</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="A_V_14_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>A_V_14</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="A_V_15_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1601200424" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>A_V_15</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="trunc_ln31_2" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="trunc_ln31_2_fu_418_p1" coreId="1952917093" contextFuncName="mult_hw" bitwidth="2" opcode="trunc" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="add_ln31_1" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="add_ln31_1_fu_422_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="mult_hw" bitwidth="64" opcode="add" m_display="0" m_delay="1.14" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="trunc_ln31_4" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="trunc_ln31_4_fu_428_p4" coreId="1763719200" contextFuncName="mult_hw" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="sext_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="sext_ln31_fu_438_p1" coreId="1819243365" contextFuncName="mult_hw" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="gmem0_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1814459502" contextFuncName="mult_hw" bitwidth="32" opcode="getelementptr" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>gmem0</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>readreq</dataOutputObjs>
+        <dataOutputObjs>read</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="gmem0_load_req" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="mult_hw" bitwidth="1" opcode="readreq" nodeLabel="1.0" nodeLatency="6" m_display="0" m_delay="7.3" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="gmem0_addr_read" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="mult_hw" bitwidth="32" opcode="read" nodeLabel="8.0" m_display="0" m_delay="7.3" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>lshr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="add_ln31_2" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="add_ln31_2_fu_448_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="mult_hw" bitwidth="2" opcode="add" m_display="0" m_delay="0.43" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="shl_ln31_1" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="shl_ln31_1_fu_549_p3" coreId="1346576442" contextFuncName="mult_hw" bitwidth="5" opcode="bitconcatenate" nodeLabel="9.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="zext_ln31_1" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="zext_ln31_1_fu_556_p1" coreId="574453865" contextFuncName="mult_hw" bitwidth="32" opcode="zext" nodeLabel="9.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>lshr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="lshr_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="lshr_ln31_fu_560_p2" coreName="Shifter" implIndex="auto_pipe" control="no" opType="lshr" coreId="75" contextFuncName="mult_hw" bitwidth="32" opcode="lshr" nodeLabel="9.0" m_display="0" m_delay="1.05" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="trunc_ln31_3" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="trunc_ln31_3_fu_565_p1" coreId="573471084" contextFuncName="mult_hw" bitwidth="8" opcode="trunc" nodeLabel="9.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>lshr</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1852142702" contextFuncName="mult_hw" opcode="switch" nodeLabel="9.0" m_display="0" m_delay="0.34" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <controlInputObjs>arrayidx19.case.15</controlInputObjs>
+        <controlInputObjs>arrayidx19.case.0</controlInputObjs>
+        <controlInputObjs>arrayidx19.case.1</controlInputObjs>
+        <controlInputObjs>arrayidx19.case.2</controlInputObjs>
+        <controlInputObjs>arrayidx19.case.3</controlInputObjs>
+        <controlInputObjs>arrayidx19.case.4</controlInputObjs>
+        <controlInputObjs>arrayidx19.case.5</controlInputObjs>
+        <controlInputObjs>arrayidx19.case.6</controlInputObjs>
+        <controlInputObjs>arrayidx19.case.7</controlInputObjs>
+        <controlInputObjs>arrayidx19.case.8</controlInputObjs>
+        <controlInputObjs>arrayidx19.case.9</controlInputObjs>
+        <controlInputObjs>arrayidx19.case.10</controlInputObjs>
+        <controlInputObjs>arrayidx19.case.11</controlInputObjs>
+        <controlInputObjs>arrayidx19.case.12</controlInputObjs>
+        <controlInputObjs>arrayidx19.case.13</controlInputObjs>
+        <controlInputObjs>arrayidx19.case.14</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>27</validLinenumbers>
+        <validLinenumbers>29</validLinenumbers>
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="86" name="arrayidx19.case.14" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="A_V_14_addr_write_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.62" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1852796269" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="89" name="arrayidx19.case.13" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="A_V_13_addr_write_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.62" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1852402793" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="92" name="arrayidx19.case.12" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="A_V_12_addr_write_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.62" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="875716435" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="95" name="arrayidx19.case.11" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="A_V_11_addr_write_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.62" m_topoIndex="65" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1902473760" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="98" name="arrayidx19.case.10" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="A_V_10_addr_write_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.62" m_topoIndex="67" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="997420912" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="101" name="arrayidx19.case.9" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="A_V_9_addr_write_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.62" m_topoIndex="69" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1528970616" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="104" name="arrayidx19.case.8" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="A_V_8_addr_write_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.62" m_topoIndex="71" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="943482227" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="107" name="arrayidx19.case.7" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="A_V_7_addr_write_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.62" m_topoIndex="73" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="757935405" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="110" name="arrayidx19.case.6" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="A_V_6_addr_write_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.62" m_topoIndex="75" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1701998624" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="113" name="arrayidx19.case.5" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="A_V_5_addr_write_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.62" m_topoIndex="77" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1885414944" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="116" name="arrayidx19.case.4" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="A_V_4_addr_write_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.62" m_topoIndex="79" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1702060386" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="119" name="arrayidx19.case.3" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="A_V_3_addr_write_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.62" m_topoIndex="81" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="543515506" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="122" name="arrayidx19.case.2" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="A_V_2_addr_write_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.62" m_topoIndex="83" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1663986805" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="125" name="arrayidx19.case.1" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="A_V_1_addr_write_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.62" m_topoIndex="85" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1629500985" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="128" name="arrayidx19.case.0" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="126" name="A_V_addr_write_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.62" m_topoIndex="87" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="127" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="131" name="arrayidx19.case.15" type="BlockType">
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>arrayidx19.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="129" name="A_V_15_addr_write_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.62" m_topoIndex="89" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="130" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>arrayidx19.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="137" name="arrayidx19.exit" type="BlockType">
+      <controlInputObjs>arrayidx19.case.14</controlInputObjs>
+      <controlInputObjs>arrayidx19.case.13</controlInputObjs>
+      <controlInputObjs>arrayidx19.case.12</controlInputObjs>
+      <controlInputObjs>arrayidx19.case.11</controlInputObjs>
+      <controlInputObjs>arrayidx19.case.10</controlInputObjs>
+      <controlInputObjs>arrayidx19.case.9</controlInputObjs>
+      <controlInputObjs>arrayidx19.case.8</controlInputObjs>
+      <controlInputObjs>arrayidx19.case.7</controlInputObjs>
+      <controlInputObjs>arrayidx19.case.6</controlInputObjs>
+      <controlInputObjs>arrayidx19.case.5</controlInputObjs>
+      <controlInputObjs>arrayidx19.case.4</controlInputObjs>
+      <controlInputObjs>arrayidx19.case.3</controlInputObjs>
+      <controlInputObjs>arrayidx19.case.2</controlInputObjs>
+      <controlInputObjs>arrayidx19.case.1</controlInputObjs>
+      <controlInputObjs>arrayidx19.case.0</controlInputObjs>
+      <controlInputObjs>arrayidx19.case.15</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.body</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="132" name="j_2" lineNumber="25" originalName="j" fileName="matmul.cpp" fileDirectory=".." rtlName="j_2_fu_585_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="mult_hw" bitwidth="32" opcode="add" nodeLabel="9.0" m_display="0" m_delay="0.88" m_topoIndex="91" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="25" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="133" name="itr_write_ln25" lineNumber="25" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="25" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="134" name="i_write_ln25" lineNumber="25" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.38" m_topoIndex="92" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="25" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="135" name="j_write_ln25" lineNumber="25" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.38" m_topoIndex="93" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="25" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="136" name="br_ln25" lineNumber="25" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matmul.cpp" linenumber="25" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
+        <controlInputObjs>for.body</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="matmul.cpp">
+        <validLinenumbers>25</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <regnodes realName="itr_reg_615">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_608">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem0_addr_reg_626">
+    <nodeIds>74</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln31_2_reg_632">
+    <nodeIds>77</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln25_reg_622">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="j_reg_601">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem0_addr_read_reg_637">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <expressionNodes realName="A_V_6_addr_gep_fu_218">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln25_fu_402">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln31_3_fu_565">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln31_fu_529">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_V_13_addr_gep_fu_267">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln31_2_fu_448">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln27_fu_465">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_V_9_addr_gep_fu_239">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_2_fu_585">
+    <nodeIds>132</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln31_fu_513">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lshr_ln31_fu_560">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln31_1_fu_549">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln31_fu_438">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_V_7_addr_gep_fu_225">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_V_3_addr_gep_fu_197">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_V_14_addr_gep_fu_274">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_2_fu_489">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_V_2_addr_gep_fu_190">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln31_2_fu_418">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_V_10_addr_gep_fu_246">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem0_addr_fu_442">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_V_11_addr_gep_fu_253">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln27_fu_485">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln31_1_fu_422">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="itr_fu_148">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_V_1_addr_gep_fu_183">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_144">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_V_15_addr_gep_fu_281">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln31_1_fu_556">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_V_12_addr_gep_fu_260">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_V_addr_gep_fu_176">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_1_fu_477">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_fu_140">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln_fu_501">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_V_5_addr_gep_fu_211">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="itr_cast_fu_414">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_V_8_addr_gep_fu_232">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln25_fu_408">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_V_4_addr_gep_fu_204">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln29_fu_471">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln31_fu_497">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lshr_ln_fu_519">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln31_4_fu_428">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln31_1_fu_509">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="j_load_load_fu_459">
+    <nodeIds>38</nodeIds>
+  </ioNodes>
+  <ioNodes realName="gmem0_addr_read_read_fu_171">
+    <nodeIds>76</nodeIds>
+  </ioNodes>
+  <ioNodes realName="itr_1_load_fu_399">
+    <nodeIds>31</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_389">
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln25_store_fu_454">
+    <nodeIds>133</nodeIds>
+  </ioNodes>
+  <ioNodes realName="in1_read_read_fu_158">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_384">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln25_store_fu_596">
+    <nodeIds>135</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_164">
+    <nodeIds>75</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_load_load_fu_462">
+    <nodeIds>39</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_394">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="trunc_ln_read_read_fu_152">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln25_store_fu_591">
+    <nodeIds>134</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="A_V">
+    <nodeIds>126</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="A_V_1">
+    <nodeIds>123</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="A_V_10">
+    <nodeIds>96</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="A_V_11">
+    <nodeIds>93</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="A_V_12">
+    <nodeIds>90</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="A_V_13">
+    <nodeIds>87</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="A_V_14">
+    <nodeIds>84</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="A_V_15">
+    <nodeIds>129</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="A_V_2">
+    <nodeIds>120</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="A_V_3">
+    <nodeIds>117</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="A_V_4">
+    <nodeIds>114</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="A_V_5">
+    <nodeIds>111</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="A_V_6">
+    <nodeIds>108</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="A_V_7">
+    <nodeIds>105</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="A_V_8">
+    <nodeIds>102</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="A_V_9">
+    <nodeIds>99</nodeIds>
+  </memoryPorts>
+  <ioPorts name="A_V(p0)">
+    <contents name="store">
+      <nodeIds>126</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="A_V_1(p0)">
+    <contents name="store">
+      <nodeIds>123</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="A_V_10(p0)">
+    <contents name="store">
+      <nodeIds>96</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="A_V_11(p0)">
+    <contents name="store">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="A_V_12(p0)">
+    <contents name="store">
+      <nodeIds>90</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="A_V_13(p0)">
+    <contents name="store">
+      <nodeIds>87</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="A_V_14(p0)">
+    <contents name="store">
+      <nodeIds>84</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="A_V_15(p0)">
+    <contents name="store">
+      <nodeIds>129</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="A_V_2(p0)">
+    <contents name="store">
+      <nodeIds>120</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="A_V_3(p0)">
+    <contents name="store">
+      <nodeIds>117</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="A_V_4(p0)">
+    <contents name="store">
+      <nodeIds>114</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="A_V_5(p0)">
+    <contents name="store">
+      <nodeIds>111</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="A_V_6(p0)">
+    <contents name="store">
+      <nodeIds>108</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="A_V_7(p0)">
+    <contents name="store">
+      <nodeIds>105</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="A_V_8(p0)">
+    <contents name="store">
+      <nodeIds>102</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="A_V_9(p0)">
+    <contents name="store">
+      <nodeIds>99</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem0">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+    <contents name="readreq">
+      <nodeIds>75</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in1">
+    <contents name="read">
+      <nodeIds>25</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="trunc_ln">
+    <contents name="read">
+      <nodeIds>24</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="133" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="75" stage="7" latency="7"/>
+    </states>
+    <states id="3">
+      <operations id="75" stage="6" latency="7"/>
+    </states>
+    <states id="4">
+      <operations id="75" stage="5" latency="7"/>
+    </states>
+    <states id="5">
+      <operations id="75" stage="4" latency="7"/>
+    </states>
+    <states id="6">
+      <operations id="75" stage="3" latency="7"/>
+    </states>
+    <states id="7">
+      <operations id="75" stage="2" latency="7"/>
+    </states>
+    <states id="8">
+      <operations id="75" stage="1" latency="7"/>
+    </states>
+    <states id="9">
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="138" stage="1" latency="1"/>
+    </states>
+    <states id="10">
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="1"/>
+      <operations id="117" stage="1" latency="1"/>
+      <operations id="118" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="124" stage="1" latency="1"/>
+      <operations id="126" stage="1" latency="1"/>
+      <operations id="127" stage="1" latency="1"/>
+      <operations id="129" stage="1" latency="1"/>
+      <operations id="130" stage="1" latency="1"/>
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="134" stage="1" latency="1"/>
+      <operations id="135" stage="1" latency="1"/>
+      <operations id="136" stage="1" latency="1"/>
+    </states>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="mult_hw_Pipeline_readA" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="4106" mMaxLatency="4106">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>30</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="readA" mII="1" mDepth="10" mMinTripCount="4096" mMaxTripCount="4096" mMinLatency="4104" mMaxLatency="4104" mType="1">
+      <basicBlocks>37</basicBlocks>
+      <basicBlocks>83</basicBlocks>
+      <basicBlocks>86</basicBlocks>
+      <basicBlocks>89</basicBlocks>
+      <basicBlocks>92</basicBlocks>
+      <basicBlocks>95</basicBlocks>
+      <basicBlocks>98</basicBlocks>
+      <basicBlocks>101</basicBlocks>
+      <basicBlocks>104</basicBlocks>
+      <basicBlocks>107</basicBlocks>
+      <basicBlocks>110</basicBlocks>
+      <basicBlocks>113</basicBlocks>
+      <basicBlocks>116</basicBlocks>
+      <basicBlocks>119</basicBlocks>
+      <basicBlocks>122</basicBlocks>
+      <basicBlocks>125</basicBlocks>
+      <basicBlocks>128</basicBlocks>
+      <basicBlocks>131</basicBlocks>
+      <basicBlocks>137</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>139</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

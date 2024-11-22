@@ -44,7 +44,7 @@ set SCTraceOption all
 set TargetInfo xcu200:-fsgd2104:-2-e
 set SourceFiles {sc {} c ../../matmul.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile C:/Users/charisvt/Desktop/hls/lab1/matmul/lab1sol1/lab1sol1.directive
+set DirectiveFile C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/sol1.directive
 set TBFiles {verilog ../../tb_matmul.cpp bc ../../tb_matmul.cpp vhdl ../../tb_matmul.cpp sc ../../tb_matmul.cpp cas ../../tb_matmul.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
@@ -55,7 +55,7 @@ set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}
 set AppFile ../hls.app
-set ApsFile lab1sol1.aps
+set ApsFile sol1.aps
 set AvePath ../..
 set DefaultPlatform DefaultPlatform
 set multiClockList {}

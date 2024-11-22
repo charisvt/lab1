@@ -1,12 +1,12 @@
 ---
-MainSourceFile:  'C:/Users/charisvt/Desktop/hls/lab1/matmul/lab1sol1/.autopilot/db/matmul.pp.0.cpp'
+MainSourceFile:  'C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/.autopilot/db/matmul.pp.0.cpp'
 Diagnostics:     
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_1211_1:  '
     FileOffset:      1211
     FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_base.h'
     Replacements:    
-      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp'
+      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\sol1\.autopilot\db\matmul.pp.0.cpp'
         Offset:          51678
         Length:          0
         ReplacementText: 'VITIS_LOOP_1211_1: '
@@ -15,7 +15,7 @@ Diagnostics:
     FileOffset:      676
     FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
     Replacements:    
-      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp'
+      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\sol1\.autopilot\db\matmul.pp.0.cpp'
         Offset:          258694
         Length:          0
         ReplacementText: 'VITIS_LOOP_676_1: '
@@ -24,7 +24,7 @@ Diagnostics:
     FileOffset:      690
     FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
     Replacements:    
-      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp'
+      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\sol1\.autopilot\db\matmul.pp.0.cpp'
         Offset:          259133
         Length:          0
         ReplacementText: 'VITIS_LOOP_690_1: '
@@ -33,7 +33,7 @@ Diagnostics:
     FileOffset:      704
     FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
     Replacements:    
-      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp'
+      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\sol1\.autopilot\db\matmul.pp.0.cpp'
         Offset:          259573
         Length:          0
         ReplacementText: 'VITIS_LOOP_704_1: '
@@ -42,89 +42,8 @@ Diagnostics:
     FileOffset:      1245
     FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_fixed_base.h'
     Replacements:    
-      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp'
+      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\sol1\.autopilot\db\matmul.pp.0.cpp'
         Offset:          521298
         Length:          0
         ReplacementText: 'VITIS_LOOP_1245_1: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_17_1:  '
-    FileOffset:      17
-    FilePath:        matmul.cpp
-    Replacements:    
-      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp'
-        Offset:          865210
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_17_1: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_18_2:  '
-    FileOffset:      18
-    FilePath:        matmul.cpp
-    Replacements:    
-      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp'
-        Offset:          865246
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_18_2: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_24_3:  '
-    FileOffset:      24
-    FilePath:        matmul.cpp
-    Replacements:    
-      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp'
-        Offset:          865346
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_24_3: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25_4:  '
-    FileOffset:      25
-    FilePath:        matmul.cpp
-    Replacements:    
-      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp'
-        Offset:          865382
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25_4: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_31_5:  '
-    FileOffset:      31
-    FilePath:        matmul.cpp
-    Replacements:    
-      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp'
-        Offset:          865482
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_31_5: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_32_6:  '
-    FileOffset:      32
-    FilePath:        matmul.cpp
-    Replacements:    
-      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp'
-        Offset:          865518
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_32_6: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_34_7:  '
-    FileOffset:      34
-    FilePath:        matmul.cpp
-    Replacements:    
-      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp'
-        Offset:          865582
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_34_7: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_42_8:  '
-    FileOffset:      42
-    FilePath:        matmul.cpp
-    Replacements:    
-      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp'
-        Offset:          865721
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_42_8: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_43_9:  '
-    FileOffset:      43
-    FilePath:        matmul.cpp
-    Replacements:    
-      - FilePath:        'C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp'
-        Offset:          865756
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_43_9: '
 ...

@@ -39,69 +39,69 @@
          <obj_property name="Render_Data">/apatb_mult_hw_top/AESL_inst_mult_hw//AESL_inst_mult_hw_activity.dataflowTxWaveData.Cycles</obj_property>
          <obj_property name="Value_Data">/apatb_mult_hw_top/AESL_inst_mult_hw//AESL_inst_mult_hw_activity.dataflowTxWaveData.OutStanding</obj_property>
          <obj_property name="Detail_Data">/apatb_mult_hw_top/AESL_inst_mult_hw//AESL_inst_mult_hw_activity.dataflowTxTooltipData</obj_property>
-         <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108/grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108_activity" type="group">
-            <obj_property name="label">grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108_activity</obj_property>
+         <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readA_fu_239/grp_mult_hw_Pipeline_readA_fu_239_activity" type="group">
+            <obj_property name="label">grp_mult_hw_Pipeline_readA_fu_239_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108_activity</obj_property>
+            <obj_property name="ElementShortName">grp_mult_hw_Pipeline_readA_fu_239_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_mult_hw_Pipeline_readA_fu_239_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108/grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108/grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108/grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readA_fu_239/grp_mult_hw_Pipeline_readA_fu_239_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readA_fu_239/grp_mult_hw_Pipeline_readA_fu_239_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readA_fu_239/grp_mult_hw_Pipeline_readA_fu_239_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119/grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119_activity" type="group">
-            <obj_property name="label">grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119_activity</obj_property>
+         <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readB_fu_263/grp_mult_hw_Pipeline_readB_fu_263_activity" type="group">
+            <obj_property name="label">grp_mult_hw_Pipeline_readB_fu_263_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119_activity</obj_property>
+            <obj_property name="ElementShortName">grp_mult_hw_Pipeline_readB_fu_263_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_mult_hw_Pipeline_readB_fu_263_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119/grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119/grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119/grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readB_fu_263/grp_mult_hw_Pipeline_readB_fu_263_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readB_fu_263/grp_mult_hw_Pipeline_readB_fu_263_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readB_fu_263/grp_mult_hw_Pipeline_readB_fu_263_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128/grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128_activity" type="group">
-            <obj_property name="label">grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128_activity</obj_property>
+         <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286_activity" type="group">
+            <obj_property name="label">grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128_activity</obj_property>
+            <obj_property name="ElementShortName">grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128/grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128/grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128/grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135/grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135_activity" type="group">
-            <obj_property name="label">grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135_activity</obj_property>
+         <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_writeC_fu_323/grp_mult_hw_Pipeline_writeC_fu_323_activity" type="group">
+            <obj_property name="label">grp_mult_hw_Pipeline_writeC_fu_323_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135_activity</obj_property>
+            <obj_property name="ElementShortName">grp_mult_hw_Pipeline_writeC_fu_323_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_mult_hw_Pipeline_writeC_fu_323_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135/grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135/grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135/grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_writeC_fu_323/grp_mult_hw_Pipeline_writeC_fu_323_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_writeC_fu_323/grp_mult_hw_Pipeline_writeC_fu_323_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_writeC_fu_323/grp_mult_hw_Pipeline_writeC_fu_323_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
       </wvobject>
    </wvobject>
@@ -112,21 +112,21 @@
    <wvobject fp_name="AESL_inst_mult_hw_group" type="group">
       <obj_property name="label">AESL_inst_mult_hw</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108/grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108_activity" type="protoinst">
-         <obj_property name="ElementShortName">grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108_activity</obj_property>
+      <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readA_fu_239/grp_mult_hw_Pipeline_readA_fu_239_activity" type="protoinst">
+         <obj_property name="ElementShortName">grp_mult_hw_Pipeline_readA_fu_239_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_mult_hw_Pipeline_readA_fu_239_activity</obj_property>
       </wvobject>
-      <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119/grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119_activity" type="protoinst">
-         <obj_property name="ElementShortName">grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119_activity</obj_property>
+      <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readB_fu_263/grp_mult_hw_Pipeline_readB_fu_263_activity" type="protoinst">
+         <obj_property name="ElementShortName">grp_mult_hw_Pipeline_readB_fu_263_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_mult_hw_Pipeline_readB_fu_263_activity</obj_property>
       </wvobject>
-      <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128/grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128_activity" type="protoinst">
-         <obj_property name="ElementShortName">grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128_activity</obj_property>
+      <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286_activity" type="protoinst">
+         <obj_property name="ElementShortName">grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286_activity</obj_property>
       </wvobject>
-      <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135/grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135_activity" type="protoinst">
-         <obj_property name="ElementShortName">grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135_activity</obj_property>
+      <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_writeC_fu_323/grp_mult_hw_Pipeline_writeC_fu_323_activity" type="protoinst">
+         <obj_property name="ElementShortName">grp_mult_hw_Pipeline_writeC_fu_323_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_mult_hw_Pipeline_writeC_fu_323_activity</obj_property>
       </wvobject>
       <wvobject fp_name="AESL_inst_mult_hw_Handshake_group" type="group">
          <obj_property name="label">Block-level handshake</obj_property>
@@ -144,81 +144,81 @@
             <obj_property name="ObjectShortName">ap_done</obj_property>
          </wvobject>
       </wvobject>
-      <wvobject fp_name="grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108_group" type="group">
-         <obj_property name="label">grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108</obj_property>
+      <wvobject fp_name="grp_mult_hw_Pipeline_readA_fu_239_group" type="group">
+         <obj_property name="label">grp_mult_hw_Pipeline_readA_fu_239</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject fp_name="grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108_Handshake_group" type="group">
+         <wvobject fp_name="grp_mult_hw_Pipeline_readA_fu_239_Handshake_group" type="group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108/ap_start" type="logic">
+            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readA_fu_239/ap_start" type="logic">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108/ap_ready" type="logic">
+            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readA_fu_239/ap_ready" type="logic">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_108/ap_done" type="logic">
+            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readA_fu_239/ap_done" type="logic">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject fp_name="grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119_group" type="group">
-         <obj_property name="label">grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119</obj_property>
+      <wvobject fp_name="grp_mult_hw_Pipeline_readB_fu_263_group" type="group">
+         <obj_property name="label">grp_mult_hw_Pipeline_readB_fu_263</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject fp_name="grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119_Handshake_group" type="group">
+         <wvobject fp_name="grp_mult_hw_Pipeline_readB_fu_263_Handshake_group" type="group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119/ap_start" type="logic">
+            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readB_fu_263/ap_start" type="logic">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119/ap_ready" type="logic">
+            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readB_fu_263/ap_ready" type="logic">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_25_4_fu_119/ap_done" type="logic">
+            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readB_fu_263/ap_done" type="logic">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject fp_name="grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128_group" type="group">
-         <obj_property name="label">grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128</obj_property>
+      <wvobject fp_name="grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286_group" type="group">
+         <obj_property name="label">grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject fp_name="grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128_Handshake_group" type="group">
+         <wvobject fp_name="grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286_Handshake_group" type="group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128/ap_start" type="logic">
+            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286/ap_start" type="logic">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128/ap_ready" type="logic">
+            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286/ap_ready" type="logic">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_31_5_VITIS_LOOP_32_6_fu_128/ap_done" type="logic">
+            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286/ap_done" type="logic">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject fp_name="grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135_group" type="group">
-         <obj_property name="label">grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135</obj_property>
+      <wvobject fp_name="grp_mult_hw_Pipeline_writeC_fu_323_group" type="group">
+         <obj_property name="label">grp_mult_hw_Pipeline_writeC_fu_323</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject fp_name="grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135_Handshake_group" type="group">
+         <wvobject fp_name="grp_mult_hw_Pipeline_writeC_fu_323_Handshake_group" type="group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135/ap_start" type="logic">
+            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_writeC_fu_323/ap_start" type="logic">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135/ap_ready" type="logic">
+            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_writeC_fu_323/ap_ready" type="logic">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_VITIS_LOOP_42_8_VITIS_LOOP_43_9_fu_135/ap_done" type="logic">
+            <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_writeC_fu_323/ap_done" type="logic">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
@@ -232,9 +232,266 @@
          <obj_property name="label">C InOuts</obj_property>
          <obj_property name="DisplayName">label</obj_property>
          <wvobject fp_name="group79" type="group">
-            <obj_property name="label">in1__in2__out_r(axi_master)</obj_property>
+            <obj_property name="label">in1__out_r(axi_master)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <wvobject fp_name="group80" type="group">
+               <obj_property name="label">Read Channel</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_RRESP" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_RRESP[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_RRESP[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_RUSER" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_RUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_RUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_RID" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_RID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_RID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_RDATA" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_RDATA[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_RDATA[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_ARUSER" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_ARUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_ARUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_ARREGION" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_ARREGION[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_ARREGION[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_ARQOS" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_ARQOS[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_ARQOS[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_ARPROT" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_ARPROT[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_ARPROT[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_ARCACHE" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_ARCACHE[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_ARCACHE[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_ARLOCK" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_ARLOCK[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_ARLOCK[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_ARBURST" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_ARBURST[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_ARBURST[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_ARSIZE" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_ARSIZE[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_ARSIZE[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_ARLEN" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_ARLEN[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_ARLEN[7:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_ARID" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_ARID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_ARID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_ARADDR" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_ARADDR[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_ARADDR[63:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="group81" type="group">
+               <obj_property name="label">Write Channel</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_BUSER" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_BUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_BUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_BID" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_BID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_BID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_BRESP" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_BRESP[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_BRESP[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_WUSER" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_WUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_WUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_WID" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_WID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_WID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_WSTRB" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_WSTRB[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_WSTRB[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_WDATA" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_WDATA[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_WDATA[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_AWUSER" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_AWUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_AWUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_AWREGION" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_AWREGION[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_AWREGION[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_AWQOS" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_AWQOS[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_AWQOS[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_AWPROT" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_AWPROT[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_AWPROT[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_AWCACHE" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_AWCACHE[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_AWCACHE[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_AWLOCK" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_AWLOCK[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_AWLOCK[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_AWBURST" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_AWBURST[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_AWBURST[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_AWSIZE" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_AWSIZE[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_AWSIZE[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_AWLEN" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_AWLEN[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_AWLEN[7:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_AWID" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_AWID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_AWID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_AWADDR" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem0_AWADDR[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_AWADDR[63:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="group82" type="group">
+               <obj_property name="label">Handshakes</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_BREADY" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem0_BREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_BREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_BVALID" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem0_BVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_BVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_RLAST" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem0_RLAST</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_RLAST</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_RREADY" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem0_RREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_RREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_RVALID" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem0_RVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_RVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_ARREADY" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem0_ARREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_ARREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_ARVALID" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem0_ARVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_ARVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_WLAST" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem0_WLAST</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_WLAST</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_WREADY" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem0_WREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_WREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_WVALID" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem0_WVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_WVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_AWREADY" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem0_AWREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_AWREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem0_AWVALID" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem0_AWVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem0_AWVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group128" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group129" type="group">
+            <obj_property name="label">in2(axi_master)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="group130" type="group">
                <obj_property name="label">Read Channel</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem_RRESP" type="array">
@@ -313,7 +570,7 @@
                   <obj_property name="Radix">HEXRADIX</obj_property>
                </wvobject>
             </wvobject>
-            <wvobject fp_name="group81" type="group">
+            <wvobject fp_name="group131" type="group">
                <obj_property name="label">Write Channel</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem_BUSER" type="array">
@@ -407,7 +664,7 @@
                   <obj_property name="Radix">HEXRADIX</obj_property>
                </wvobject>
             </wvobject>
-            <wvobject fp_name="group82" type="group">
+            <wvobject fp_name="group132" type="group">
                <obj_property name="label">Handshakes</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/m_axi_gmem_BREADY" type="logic">
@@ -484,11 +741,7 @@
                </wvobject>
             </wvobject>
          </wvobject>
-      </wvobject>
-      <wvobject fp_name="group128" type="group">
-         <obj_property name="label">C Inputs</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <wvobject fp_name="group129" type="group">
+         <wvobject fp_name="group178" type="group">
             <obj_property name="label">in1__in2__out_r(axi_slave)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/s_axi_control_BRESP" type="array">
@@ -588,7 +841,7 @@
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject fp_name="group147" type="group">
+      <wvobject fp_name="group196" type="group">
          <obj_property name="label">Block-level IO Handshake</obj_property>
          <obj_property name="DisplayName">label</obj_property>
          <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/ap_start" type="logic">
@@ -608,7 +861,7 @@
             <obj_property name="ObjectShortName">ap_ready</obj_property>
          </wvobject>
       </wvobject>
-      <wvobject fp_name="group152" type="group">
+      <wvobject fp_name="group201" type="group">
          <obj_property name="label">Reset</obj_property>
          <obj_property name="DisplayName">label</obj_property>
          <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/ap_rst_n" type="logic">
@@ -616,7 +869,7 @@
             <obj_property name="ObjectShortName">ap_rst_n</obj_property>
          </wvobject>
       </wvobject>
-      <wvobject fp_name="group154" type="group">
+      <wvobject fp_name="group203" type="group">
          <obj_property name="label">Clock</obj_property>
          <obj_property name="DisplayName">label</obj_property>
          <wvobject fp_name="/apatb_mult_hw_top/AESL_inst_mult_hw/ap_clk" type="logic">

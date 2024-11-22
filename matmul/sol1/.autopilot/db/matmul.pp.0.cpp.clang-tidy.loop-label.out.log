@@ -1,70 +1,25 @@
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:1320:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+C:\Users\charisvt\Desktop\hls\lab1\matmul\sol1\.autopilot\db\matmul.pp.0.cpp:1320:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
       for (i = 0; i < __N - 1; ++i) {
       ^~~
       VITIS_LOOP_1211_1: 
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:1320:7: note: FIX-IT applied suggested code changes
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:2294:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+C:\Users\charisvt\Desktop\hls\lab1\matmul\sol1\.autopilot\db\matmul.pp.0.cpp:1320:7: note: FIX-IT applied suggested code changes
+C:\Users\charisvt\Desktop\hls\lab1\matmul\sol1\.autopilot\db\matmul.pp.0.cpp:2294:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
     for (unsigned i = low; i != high; ++i) {
     ^~~
     VITIS_LOOP_676_1: 
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:2294:5: note: FIX-IT applied suggested code changes
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:2308:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+C:\Users\charisvt\Desktop\hls\lab1\matmul\sol1\.autopilot\db\matmul.pp.0.cpp:2294:5: note: FIX-IT applied suggested code changes
+C:\Users\charisvt\Desktop\hls\lab1\matmul\sol1\.autopilot\db\matmul.pp.0.cpp:2308:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
     for (unsigned i = low; i != high; ++i) {
     ^~~
     VITIS_LOOP_690_1: 
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:2308:5: note: FIX-IT applied suggested code changes
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:2322:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+C:\Users\charisvt\Desktop\hls\lab1\matmul\sol1\.autopilot\db\matmul.pp.0.cpp:2308:5: note: FIX-IT applied suggested code changes
+C:\Users\charisvt\Desktop\hls\lab1\matmul\sol1\.autopilot\db\matmul.pp.0.cpp:2322:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
     for (unsigned i = low; i != high; ++i) {
     ^~~
     VITIS_LOOP_704_1: 
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:2322:5: note: FIX-IT applied suggested code changes
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:3933:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+C:\Users\charisvt\Desktop\hls\lab1\matmul\sol1\.autopilot\db\matmul.pp.0.cpp:2322:5: note: FIX-IT applied suggested code changes
+C:\Users\charisvt\Desktop\hls\lab1\matmul\sol1\.autopilot\db\matmul.pp.0.cpp:3933:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
       for (i = 0; i < __N - 1; ++i) {
       ^~~
       VITIS_LOOP_1245_1: 
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:3933:7: note: FIX-IT applied suggested code changes
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5732:5: warning: Added loop label VITIS_LOOP_17_1:   [xilinx-label-all-loops]
-    for(int i=0; i<(1 << 3); i++){
-    ^~~
-    VITIS_LOOP_17_1: 
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5732:5: note: FIX-IT applied suggested code changes
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5733:6: warning: Added loop label VITIS_LOOP_18_2:   [xilinx-label-all-loops]
-     for(int j=0;j<(1 << 2); j++){
-     ^~~
-     VITIS_LOOP_18_2: 
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5733:6: note: FIX-IT applied suggested code changes
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5739:5: warning: Added loop label VITIS_LOOP_24_3:   [xilinx-label-all-loops]
-    for(int i=0; i<(1 << 2); i++){
-    ^~~
-    VITIS_LOOP_24_3: 
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5739:5: note: FIX-IT applied suggested code changes
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5740:6: warning: Added loop label VITIS_LOOP_25_4:   [xilinx-label-all-loops]
-     for(int j=0; j<(1 << 4); j++){
-     ^~~
-     VITIS_LOOP_25_4: 
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5740:6: note: FIX-IT applied suggested code changes
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5746:5: warning: Added loop label VITIS_LOOP_31_5:   [xilinx-label-all-loops]
-    for(int i=0; i<(1 << 3); i++){
-    ^~~
-    VITIS_LOOP_31_5: 
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5746:5: note: FIX-IT applied suggested code changes
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5747:6: warning: Added loop label VITIS_LOOP_32_6:   [xilinx-label-all-loops]
-     for(int j=0; j<(1 << 4); j++){
-     ^~~
-     VITIS_LOOP_32_6: 
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5747:6: note: FIX-IT applied suggested code changes
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5749:4: warning: Added loop label VITIS_LOOP_34_7:   [xilinx-label-all-loops]
-   for(int k=0; k<(1 << 2); k++){
-   ^~~
-   VITIS_LOOP_34_7: 
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5749:4: note: FIX-IT applied suggested code changes
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5757:5: warning: Added loop label VITIS_LOOP_42_8:   [xilinx-label-all-loops]
-    for(int i=0; i<(1 << 3);i++){
-    ^~~
-    VITIS_LOOP_42_8: 
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5757:5: note: FIX-IT applied suggested code changes
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5758:6: warning: Added loop label VITIS_LOOP_43_9:   [xilinx-label-all-loops]
-     for(int j=0; j<(1 << 4); j++){
-     ^~~
-     VITIS_LOOP_43_9: 
-C:\Users\charisvt\Desktop\hls\lab1\matmul\lab1sol1\.autopilot\db\matmul.pp.0.cpp:5758:6: note: FIX-IT applied suggested code changes
+C:\Users\charisvt\Desktop\hls\lab1\matmul\sol1\.autopilot\db\matmul.pp.0.cpp:3933:7: note: FIX-IT applied suggested code changes

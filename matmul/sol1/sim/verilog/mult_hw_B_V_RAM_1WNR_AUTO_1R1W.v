@@ -21,12 +21,16 @@ module mult_hw_B_V_RAM_1WNR_AUTO_1R1W (
     address3, ce3,
     
     q3, 
+     
+    address4, ce4,
+    
+    q4, 
     
     reset, clk);
 
 parameter DataWidth = 8;
-parameter AddressWidth = 6;
-parameter AddressRange = 64;
+parameter AddressWidth = 8;
+parameter AddressRange = 256;
 
 input[AddressWidth-1:0] address0;
 input ce0;
@@ -49,6 +53,11 @@ input ce3;
 
 output reg[DataWidth-1:0] q3; 
 
+input[AddressWidth-1:0] address4;
+input ce4;
+
+output reg[DataWidth-1:0] q4; 
+
 input reset;
 input clk;
 
@@ -58,6 +67,8 @@ input clk;
 (* ram_style = "auto"  *)reg [DataWidth-1:0] ram1[0:AddressRange-1];
 
 (* ram_style = "auto"  *)reg [DataWidth-1:0] ram2[0:AddressRange-1];
+
+(* ram_style = "auto"  *)reg [DataWidth-1:0] ram3[0:AddressRange-1];
 
 
  
@@ -89,6 +100,14 @@ begin
 
     end
 end
+always @(posedge clk)  
+begin 
+    if (ce0) begin
+        if (we0) 
+            ram3[address0] <= d0; 
+
+    end
+end
 
 always @(posedge clk)  
 begin 
@@ -106,6 +125,12 @@ always @(posedge clk)
 begin 
     if (ce3) begin
         q3 <= ram2[address3];
+    end
+end
+always @(posedge clk)  
+begin 
+    if (ce4) begin
+        q4 <= ram3[address4];
     end
 end
 

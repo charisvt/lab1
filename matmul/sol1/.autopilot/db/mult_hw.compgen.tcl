@@ -16,6 +16,11 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler mult_hw_gmem0_m_axi BINDTYPE {interface} TYPE {adapter} IMPL {m_axi}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler mult_hw_gmem_m_axi BINDTYPE {interface} TYPE {adapter} IMPL {m_axi}
 }
 
@@ -61,7 +66,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 24 \
+			id 153 \
 			corename mult_hw_control_axilite \
 			name mult_hw_control_s_axi \
 			ports {$port_control} \

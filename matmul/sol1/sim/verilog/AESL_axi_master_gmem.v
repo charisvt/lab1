@@ -71,8 +71,8 @@ module AESL_axi_master_gmem (
  parameter   FIFO_DEPTH            =   1 + 1;
  parameter   mem_page_num            =   32'd 3;
  parameter   FIFO_DEPTH_ADDR_WIDTH   =    32'd 32;
-parameter gmem_C_DATA_BITWIDTH = 32'd 32;
-parameter gmem_mem_depth = 32'd 152;
+parameter gmem_C_DATA_BITWIDTH = 32'd 8;
+parameter gmem_mem_depth = 32'd 4096;
 parameter ReadReqLatency = 32'd 1;
 parameter WriteReqLatency = 32'd 1;
 // Input and Output
@@ -500,7 +500,7 @@ initial begin : AW_request_proc
             end
             
             if (FIFO_AW_req_ADDR_tmp/data_byte_size > gmem_mem_depth) begin
-                $display ("C:/Users/charisvt/Desktop/hls/lab1/matmul/lab1sol1/sim/verilog/AESL_axi_master_gmem.v: Write request address %d exceed AXI master gmem array depth: %d",FIFO_AW_req_ADDR_tmp/data_byte_size, gmem_mem_depth); 
+                $display ("C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/sim/verilog/AESL_axi_master_gmem.v: Write request address %d exceed AXI master gmem array depth: %d",FIFO_AW_req_ADDR_tmp/data_byte_size, gmem_mem_depth); 
                 $finish;
             end
             
@@ -683,7 +683,7 @@ initial begin : AR_request_proc
             end
 
             if (FIFO_AR_req_ADDR_tmp/data_byte_size > gmem_mem_depth) begin
-                $display ("C:/Users/charisvt/Desktop/hls/lab1/matmul/lab1sol1/sim/verilog/AESL_axi_master_gmem.v: Read request address %d exceed AXI master gmem array depth: %d",FIFO_AR_req_ADDR_tmp/data_byte_size, gmem_mem_depth); 
+                $display ("C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/sim/verilog/AESL_axi_master_gmem.v: Read request address %d exceed AXI master gmem array depth: %d",FIFO_AR_req_ADDR_tmp/data_byte_size, gmem_mem_depth); 
                 $finish;
             end
 
@@ -874,7 +874,7 @@ initial begin : read_file_process
   integer transaction_num; 
   integer mem_page; 
   integer gmem_bitwidth; 
-  reg [32 - 1 : 0] token_tmp; 
+  reg [8 - 1 : 0] token_tmp; 
   reg [gmem_DATA_BITWIDTH - 1 : 0] mem_tmp; 
   integer i; 
   transaction_num = 0;
@@ -970,129 +970,4 @@ initial begin : read_file_process
   $fclose(fp); 
 end 
  
-//------------------------Write file----------------------- 
- 
-// Write data to file 
- 
-initial begin : write_file_proc 
-  integer fp; 
-  reg [ 100*8 : 1] str;
-  integer transaction_num; 
-  integer i; 
-  integer factor; 
-  integer mem_page; 
-  integer gmem_bitwidth; 
-  reg [gmem_C_DATA_BITWIDTH - 1 : 0] mem_tmp; 
-  reg [gmem_DATA_BITWIDTH - 1 : 0] tmp_data;
-  reg [63:0] bin_data;
-  transaction_num = 0; 
-  gmem_bitwidth = gmem_C_DATA_BITWIDTH; 
-  count_seperate_factor_by_bitwidth (gmem_bitwidth , factor);
-  while(1) begin 
-      @(posedge clk);
-      while(done !== 1) begin
-          @(posedge clk);
-      end
-      mem_page = transaction_num % mem_page_num ;
-      # 0.1;
-      fp = $fopen(`TV_OUT_gmem, "ab"); 
-      if(fp == 0) begin       // Failed to open file 
-          $display("Failed to open file \"%s\"!", `TV_OUT_gmem); 
-          $finish; 
-      end 
-      bin_data = gmem_mem_depth;
-      write_binary(fp,bin_data,64);
-      for(i = 0; i < (gmem_mem_depth - gmem_mem_depth % factor); i = i + 1) begin 
-          if (factor == 4) begin
-              case(mem_page)
-                  0 : tmp_data = gmem_mem_0[i/factor];
-                  1 : tmp_data = gmem_mem_1[i/factor];
-                  2 : tmp_data = gmem_mem_2[i/factor];
-                  default: $display("The page_num of write file is not valid!");
-              endcase
-              if (i%factor == 0) begin
-                  mem_tmp = tmp_data[7:0];
-              end
-              if (i%factor == 1) begin
-                  mem_tmp = tmp_data[15:8];
-              end
-              if (i%factor == 2) begin
-                  mem_tmp = tmp_data[23:16];
-              end
-              if (i%factor == 3) begin
-                  mem_tmp = tmp_data[31:24];
-              end
-          bin_data = mem_tmp;
-          write_binary(fp,bin_data,8);
-          end
-          if (factor == 2) begin
-              case(mem_page)
-                  0 : tmp_data = gmem_mem_0[i/factor];
-                  1 : tmp_data = gmem_mem_1[i/factor];
-                  2 : tmp_data = gmem_mem_2[i/factor];
-                  default: $display("The page_num of write file is not valid!");
-              endcase
-              if (i%factor == 0) begin
-                  mem_tmp = tmp_data[15:0];
-              end
-              if (i%factor == 1) begin
-                  mem_tmp = tmp_data[31:16];
-              end
-          bin_data = mem_tmp;
-          write_binary(fp,bin_data,16);
-          end
-          if (factor == 1) begin
-              case(mem_page)
-                  0 : mem_tmp = gmem_mem_0[i];
-                  1 : mem_tmp = gmem_mem_1[i];
-                  2 : mem_tmp = gmem_mem_2[i];
-                  default: $display("The page_num of write file is not valid!");
-              endcase
-          bin_data = mem_tmp;
-          write_binary(fp,bin_data,32);
-          end
-      end 
-      if (factor == 4) begin
-          case(mem_page)
-              0 : tmp_data = gmem_mem_0[gmem_mem_depth/factor];
-              1 : tmp_data = gmem_mem_1[gmem_mem_depth/factor];
-              2 : tmp_data = gmem_mem_2[gmem_mem_depth/factor];
-              default: $display("The page_num of write file is not valid!");
-          endcase
-          if ((gmem_mem_depth - 1) % factor == 2) begin
-              bin_data = tmp_data[7:0];
-              write_binary(fp,bin_data,8);
-              bin_data = tmp_data[15:8];
-              write_binary(fp,bin_data,8);
-              bin_data = tmp_data[23:16];
-              write_binary(fp,bin_data,8);
-          end
-          if ((gmem_mem_depth - 1) % factor == 1) begin
-              bin_data = tmp_data[7:0];
-              write_binary(fp,bin_data,8);
-              bin_data = tmp_data[15:8];
-              write_binary(fp,bin_data,8);
-          end
-          if ((gmem_mem_depth - 1) % factor == 0) begin
-              bin_data = tmp_data;
-              write_binary(fp,bin_data,8);
-          end
-      end
-      if (factor == 2) begin
-          if ((gmem_mem_depth - 1) % factor == 0) begin
-              case(mem_page)
-                  0 : tmp_data = gmem_mem_0[gmem_mem_depth/factor][15:0];
-                  1 : tmp_data = gmem_mem_1[gmem_mem_depth/factor][15:0];
-                  2 : tmp_data = gmem_mem_2[gmem_mem_depth/factor][15:0];
-                  default: $display("The page_num of write file is not valid!");
-              endcase
-              bin_data = tmp_data;
-              write_binary(fp,bin_data,16);
-          end
-      end
-      
-      transaction_num = transaction_num + 1;
-      $fclose(fp); 
-  end 
-end 
 endmodule

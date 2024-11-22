@@ -116,7 +116,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: matmul.cpp, Line: 35, Column: 12 }
+DebugLoc:        { File: matmul.cpp, Line: 52, Column: 17 }
 Function:        _Z7mult_hwP7ap_uintILi8EES1_PS_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -131,7 +131,7 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: matmul.cpp, Line: 35, Column: 35 }
+DebugLoc:        { File: matmul.cpp, Line: 52, Column: 40 }
 Function:        _Z7mult_hwP7ap_uintILi8EES1_PS_ILi32EE
 Args:            
   - String:          'Inlining function '''
@@ -144,29 +144,69 @@ Args:
   - String:          ''''
 ...
 --- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matmul.cpp, Line: 13, Column: 13 }
+Function:        _Z7mult_hwP7ap_uintILi8EES1_PS_ILi32EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          A
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matmul.cpp, Line: 14, Column: 16 }
+Function:        _Z7mult_hwP7ap_uintILi8EES1_PS_ILi32EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          B
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Block
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: matmul.cpp, Line: 17, Column: 22 }
+DebugLoc:        { File: matmul.cpp, Line: 25, Column: 6 }
 Function:        _Z7mult_hwP7ap_uintILi8EES1_PS_ILi32EE
 Args:            
   - String:          'Sequential '
   - Direction:       read
   - String:          ' of length '
-  - Length:          '32'
+  - Length:          '4096'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ OldID='
-  - String:          for.inc.load.7
+  - String:          for.body.load.34
   - String:          ', '
   - String:          ' _XLX_SEP_ '
   - AccessID:        in1seq
   - String:          ' '
   - ArrayName:       in1
   - String:          ' '
-  - BundleName:      gmem
+  - BundleName:      gmem0
   - String:          ' '
-  - LoopName:        VITIS_LOOP_17_1
+  - LoopName:        readA
   - String:          ' '
-  - LoopLoc:         'matmul.cpp:17:22'
+  - LoopLoc:         'matmul.cpp:25:6'
   - String:          ' '
   - Function:        'mult_hw(ap_uint<8>*, ap_uint<8>*, ap_uint<32>*)'
     DebugLoc:        { File: matmul.cpp, Line: 7, Column: 0 }
@@ -175,16 +215,16 @@ Args:
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: matmul.cpp, Line: 24, Column: 22 }
+DebugLoc:        { File: matmul.cpp, Line: 36, Column: 3 }
 Function:        _Z7mult_hwP7ap_uintILi8EES1_PS_ILi32EE
 Args:            
   - String:          'Sequential '
   - Direction:       read
   - String:          ' of length '
-  - Length:          '64'
+  - Length:          '4096'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ OldID='
-  - String:          for.inc46.load.7
+  - String:          for.inc31.load.22
   - String:          ', '
   - String:          ' _XLX_SEP_ '
   - AccessID:        in2seq
@@ -193,9 +233,9 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_24_3
+  - LoopName:        readB
   - String:          ' '
-  - LoopLoc:         'matmul.cpp:24:22'
+  - LoopLoc:         'matmul.cpp:36:3'
   - String:          ' '
   - Function:        'mult_hw(ap_uint<8>*, ap_uint<8>*, ap_uint<32>*)'
     DebugLoc:        { File: matmul.cpp, Line: 7, Column: 0 }
@@ -204,27 +244,27 @@ Args:
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: matmul.cpp, Line: 42, Column: 22 }
+DebugLoc:        { File: matmul.cpp, Line: 60, Column: 6 }
 Function:        _Z7mult_hwP7ap_uintILi8EES1_PS_ILi32EE
 Args:            
   - String:          'Sequential '
   - Direction:       write
   - String:          ' of length '
-  - Length:          '128'
+  - Length:          '4096'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ OldID='
-  - String:          for.inc105.store.8
+  - String:          for.inc78.store.6
   - String:          ', '
   - String:          ' _XLX_SEP_ '
   - AccessID:        out_rseq
   - String:          ' '
   - ArrayName:       out_r
   - String:          ' '
-  - BundleName:      gmem
+  - BundleName:      gmem0
   - String:          ' '
-  - LoopName:        VITIS_LOOP_42_8
+  - LoopName:        writeC
   - String:          ' '
-  - LoopLoc:         'matmul.cpp:42:22'
+  - LoopLoc:         'matmul.cpp:60:6'
   - String:          ' '
   - Function:        'mult_hw(ap_uint<8>*, ap_uint<8>*, ap_uint<32>*)'
     DebugLoc:        { File: matmul.cpp, Line: 7, Column: 0 }
@@ -232,24 +272,25 @@ Args:
 ...
 --- !Missed
 Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: matmul.cpp, Line: 42, Column: 22 }
+Name:            GreaterOrEqualAlignment
+DebugLoc:        { File: matmul.cpp, Line: 60, Column: 6 }
 Function:        _Z7mult_hwP7ap_uintILi8EES1_PS_ILi32EE
 Args:            
   - String:          'Could not widen since type '
   - Type:            i32
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
+  - String:          ' size is greater than or equal to alignment '
+  - Alignment:       '1'
+  - String:          '(bytes)'
   - String:          ' _XLX_SEP_ '
   - AccessID:        out_rseq
   - String:          ' '
   - ArrayName:       out_r
   - String:          ' '
-  - BundleName:      gmem
+  - BundleName:      gmem0
   - String:          ' '
-  - LoopName:        VITIS_LOOP_43_9
+  - LoopName:        writeC
   - String:          ' '
-  - LoopLoc:         'matmul.cpp:43:23'
+  - LoopLoc:         'matmul.cpp:60:6'
   - String:          ' '
   - Function:        'mult_hw(ap_uint<8>*, ap_uint<8>*, ap_uint<32>*)'
     DebugLoc:        { File: matmul.cpp, Line: 7, Column: 0 }
@@ -257,14 +298,15 @@ Args:
 ...
 --- !Missed
 Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: matmul.cpp, Line: 24, Column: 22 }
+Name:            GreaterOrEqualAlignment
+DebugLoc:        { File: matmul.cpp, Line: 36, Column: 3 }
 Function:        _Z7mult_hwP7ap_uintILi8EES1_PS_ILi32EE
 Args:            
   - String:          'Could not widen since type '
   - Type:            i8
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
+  - String:          ' size is greater than or equal to alignment '
+  - Alignment:       '1'
+  - String:          '(bytes)'
   - String:          ' _XLX_SEP_ '
   - AccessID:        in2seq
   - String:          ' '
@@ -272,9 +314,9 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_25_4
+  - LoopName:        readB
   - String:          ' '
-  - LoopLoc:         'matmul.cpp:25:23'
+  - LoopLoc:         'matmul.cpp:36:3'
   - String:          ' '
   - Function:        'mult_hw(ap_uint<8>*, ap_uint<8>*, ap_uint<32>*)'
     DebugLoc:        { File: matmul.cpp, Line: 7, Column: 0 }
@@ -282,24 +324,25 @@ Args:
 ...
 --- !Missed
 Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: matmul.cpp, Line: 17, Column: 22 }
+Name:            GreaterOrEqualAlignment
+DebugLoc:        { File: matmul.cpp, Line: 25, Column: 6 }
 Function:        _Z7mult_hwP7ap_uintILi8EES1_PS_ILi32EE
 Args:            
   - String:          'Could not widen since type '
   - Type:            i8
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
+  - String:          ' size is greater than or equal to alignment '
+  - Alignment:       '1'
+  - String:          '(bytes)'
   - String:          ' _XLX_SEP_ '
   - AccessID:        in1seq
   - String:          ' '
   - ArrayName:       in1
   - String:          ' '
-  - BundleName:      gmem
+  - BundleName:      gmem0
   - String:          ' '
-  - LoopName:        VITIS_LOOP_18_2
+  - LoopName:        readA
   - String:          ' '
-  - LoopLoc:         'matmul.cpp:18:23'
+  - LoopLoc:         'matmul.cpp:25:6'
   - String:          ' '
   - Function:        'mult_hw(ap_uint<8>*, ap_uint<8>*, ap_uint<32>*)'
     DebugLoc:        { File: matmul.cpp, Line: 7, Column: 0 }
@@ -308,7 +351,7 @@ Args:
 --- !Missed
 Pass:            reflow-supported-subset
 Name:            MismatchPortAndBurstAccessWidth
-DebugLoc:        { File: matmul.cpp, Line: 17, Column: 22 }
+DebugLoc:        { File: matmul.cpp, Line: 25, Column: 6 }
 Function:        _Z7mult_hwP7ap_uintILi8EES1_PS_ILi32EE
 Args:            
   - String:          Inferred burst reverted due to burst accesses data width is different from m_axi port width
@@ -323,36 +366,18 @@ Args:
     DebugLoc:        { File: matmul.cpp, Line: 7, Column: 0 }
   - String:          ' '
 ...
---- !Missed
-Pass:            reflow-supported-subset
-Name:            MismatchPortAndBurstAccessWidth
-DebugLoc:        { File: matmul.cpp, Line: 24, Column: 22 }
-Function:        _Z7mult_hwP7ap_uintILi8EES1_PS_ILi32EE
-Args:            
-  - String:          Inferred burst reverted due to burst accesses data width is different from m_axi port width
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        in2seq
-  - String:          ' '
-  - ArrayName:       ''
-  - String:          ' '
-  - BundleName:      in2
-  - String:          ' '
-  - Function:        'mult_hw(ap_uint<8>*, ap_uint<8>*, ap_uint<32>*)'
-    DebugLoc:        { File: matmul.cpp, Line: 7, Column: 0 }
-  - String:          ' '
-...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: matmul.cpp, Line: 42, Column: 22 }
+DebugLoc:        { File: matmul.cpp, Line: 36, Column: 3 }
 Function:        _Z7mult_hwP7ap_uintILi8EES1_PS_ILi32EE
 Args:            
   - String:          'Multiple burst '
-  - Direction:       writes
+  - Direction:       reads
   - String:          ' of length '
-  - Length:          '128'
+  - Length:          '4096'
   - String:          ' and bit width '
-  - Width:           '32'
+  - Width:           '8'
   - String:          ' has been inferred.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
   - String:          ' _XLX_SEP_ '
@@ -362,9 +387,9 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_42_8
+  - LoopName:        readB
   - String:          ' '
-  - LoopLoc:         'matmul.cpp:42:22'
+  - LoopLoc:         'matmul.cpp:36:3'
   - String:          ' '
   - Function:        'mult_hw(ap_uint<8>*, ap_uint<8>*, ap_uint<32>*)'
     DebugLoc:        { File: matmul.cpp, Line: 7, Column: 0 }
@@ -373,22 +398,73 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: matmul.cpp, Line: 42, Column: 22 }
+DebugLoc:        { File: matmul.cpp, Line: 36, Column: 3 }
+Function:        _Z7mult_hwP7ap_uintILi8EES1_PS_ILi32EE
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' in loop '''
+  - LoopName:        readB
+  - String:          '''('
+  - LoopLoc:         'matmul.cpp:36:3'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: matmul.cpp, Line: 60, Column: 6 }
 Function:        _Z7mult_hwP7ap_uintILi8EES1_PS_ILi32EE
 Args:            
   - String:          'Multiple burst '
   - Direction:       writes
   - String:          ' of length '
-  - Length:          '128'
+  - Length:          '4096'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        writeC
+  - String:          ' '
+  - LoopLoc:         'matmul.cpp:60:6'
+  - String:          ' '
+  - Function:        'mult_hw(ap_uint<8>*, ap_uint<8>*, ap_uint<32>*)'
+    DebugLoc:        { File: matmul.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: matmul.cpp, Line: 60, Column: 6 }
+Function:        _Z7mult_hwP7ap_uintILi8EES1_PS_ILi32EE
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '4096'
   - String:          ' and bit width '
   - Width:           '32'
   - String:          ' in loop '''
-  - LoopName:        VITIS_LOOP_42_8
+  - LoopName:        writeC
   - String:          '''('
-  - LoopLoc:         'matmul.cpp:42:22'
+  - LoopLoc:         'matmul.cpp:60:6'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
-  - BundleName:      gmem
+  - BundleName:      gmem0
   - String:          '''.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
 ...

@@ -8,20 +8,41 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:706:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/charisvt/Desktop/hls/lab1/matmul/lab1sol1/csynth.tcl:15:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/csynth.tcl:16:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=mult_hw" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/charisvt/Desktop/hls/lab1/matmul/lab1sol1/directives.tcl:6:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/directives.tcl:6:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=mult_hw" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:8:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = in1 depth = ((1 &lt;&lt; 3) * (1 &lt;&lt; 2))" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi bundle=gmem0 port = in1 depth = ((1 &lt;&lt; 6) * (1 &lt;&lt; 6))" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:9:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = in2 depth = ((1 &lt;&lt; 2) * (1 &lt;&lt; 4))" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi bundle=gmem port = in2 depth = ((1 &lt;&lt; 6) * (1 &lt;&lt; 6))" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:10:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = out_r depth = ((1 &lt;&lt; 3) * (1 &lt;&lt; 4))" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi bundle=gmem0 port = out_r depth = ((1 &lt;&lt; 6) * (1 &lt;&lt; 6))" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = A dim = 1 cyclic factor = 16" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = B dim = 1 block factor = 16" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = (1 &lt;&lt; 6) * (1 &lt;&lt; 6) max = (1 &lt;&lt; 6) * (1 &lt;&lt; 6)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = (1 &lt;&lt; 6) * (1 &lt;&lt; 6) max = (1 &lt;&lt; 6) * (1 &lt;&lt; 6)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:45:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = (1 &lt;&lt; 6) max = (1 &lt;&lt; 6)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = (1 &lt;&lt; 6) max = (1 &lt;&lt; 6)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:61:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = (1 &lt;&lt; 6) * (1 &lt;&lt; 6) max = (1 &lt;&lt; 6) * (1 &lt;&lt; 6)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67" msg_body="Inlining function 'ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)' into 'ap_int_base&lt;32, false&gt;::ap_int_base(int)'">
         <args Callee="ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)" Caller="ap_int_base&lt;32, false&gt;::ap_int_base(int)"/>
@@ -41,11 +62,17 @@
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427" msg_body="Inlining function 'ap_int_base&lt;16, false&gt;::ap_int_base&lt;8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;)' into 'ap_int_base&lt;8, false&gt;::RType&lt;8, false&gt;::mult operator*&lt;8, false, 8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;, ap_int_base&lt;8, false&gt; const&amp;)'">
         <args Callee="ap_int_base&lt;16, false&gt;::ap_int_base&lt;8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;)" Caller="ap_int_base&lt;8, false&gt;::RType&lt;8, false&gt;::mult operator*&lt;8, false, 8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;, ap_int_base&lt;8, false&gt; const&amp;)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="matmul.cpp:35:12" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;&amp; ap_int_base&lt;32, false&gt;::operator+=&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;)' into 'mult_hw(ap_uint&lt;8&gt;*, ap_uint&lt;8&gt;*, ap_uint&lt;32&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="matmul.cpp:52:17" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;&amp; ap_int_base&lt;32, false&gt;::operator+=&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;)' into 'mult_hw(ap_uint&lt;8&gt;*, ap_uint&lt;8&gt;*, ap_uint&lt;32&gt;*)'">
         <args Callee="ap_int_base&lt;32, false&gt;&amp; ap_int_base&lt;32, false&gt;::operator+=&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;)" Caller="mult_hw(ap_uint&lt;8&gt;*, ap_uint&lt;8&gt;*, ap_uint&lt;32&gt;*)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="matmul.cpp:35:35" msg_body="Inlining function 'ap_int_base&lt;8, false&gt;::RType&lt;8, false&gt;::mult operator*&lt;8, false, 8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;, ap_int_base&lt;8, false&gt; const&amp;)' into 'mult_hw(ap_uint&lt;8&gt;*, ap_uint&lt;8&gt;*, ap_uint&lt;32&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="matmul.cpp:52:40" msg_body="Inlining function 'ap_int_base&lt;8, false&gt;::RType&lt;8, false&gt;::mult operator*&lt;8, false, 8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;, ap_int_base&lt;8, false&gt; const&amp;)' into 'mult_hw(ap_uint&lt;8&gt;*, ap_uint&lt;8&gt;*, ap_uint&lt;32&gt;*)'">
         <args Callee="ap_int_base&lt;8, false&gt;::RType&lt;8, false&gt;::mult operator*&lt;8, false, 8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;, ap_int_base&lt;8, false&gt; const&amp;)" Caller="mult_hw(ap_uint&lt;8&gt;*, ap_uint&lt;8&gt;*, ap_uint&lt;32&gt;*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matmul.cpp:13:13" msg_body="Applying array_partition to 'A': Cyclic partitioning with factor 16 on dimension 1.">
+        <args Dim="1" Factor="16" Mode="Cyclic" UOName="A"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matmul.cpp:14:16" msg_body="Applying array_partition to 'B': Block partitioning with factor 16 on dimension 1.">
+        <args Dim="1" Factor="16" Mode="Block" UOName="B"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

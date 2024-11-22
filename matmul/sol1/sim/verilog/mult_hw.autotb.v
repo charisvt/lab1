@@ -15,26 +15,30 @@
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
 `define AUTOTB_CLOCK_PERIOD_DIV2 5.00
 
+`define AESL_DEPTH_gmem0 1
 `define AESL_DEPTH_gmem 1
 `define AESL_DEPTH_in1 1
 `define AESL_DEPTH_in2 1
 `define AESL_DEPTH_out_r 1
+`define AUTOTB_TVIN_gmem0  "../tv/cdatafile/c.mult_hw.autotvin_gmem0.dat"
 `define AUTOTB_TVIN_gmem  "../tv/cdatafile/c.mult_hw.autotvin_gmem.dat"
 `define AUTOTB_TVIN_in1  "../tv/cdatafile/c.mult_hw.autotvin_in1.dat"
 `define AUTOTB_TVIN_in2  "../tv/cdatafile/c.mult_hw.autotvin_in2.dat"
 `define AUTOTB_TVIN_out_r  "../tv/cdatafile/c.mult_hw.autotvin_out_r.dat"
+`define AUTOTB_TVIN_gmem0_out_wrapc  "../tv/rtldatafile/rtl.mult_hw.autotvin_gmem0.dat"
 `define AUTOTB_TVIN_gmem_out_wrapc  "../tv/rtldatafile/rtl.mult_hw.autotvin_gmem.dat"
 `define AUTOTB_TVIN_in1_out_wrapc  "../tv/rtldatafile/rtl.mult_hw.autotvin_in1.dat"
 `define AUTOTB_TVIN_in2_out_wrapc  "../tv/rtldatafile/rtl.mult_hw.autotvin_in2.dat"
 `define AUTOTB_TVIN_out_r_out_wrapc  "../tv/rtldatafile/rtl.mult_hw.autotvin_out_r.dat"
-`define AUTOTB_TVOUT_gmem  "../tv/cdatafile/c.mult_hw.autotvout_gmem.dat"
-`define AUTOTB_TVOUT_gmem_out_wrapc  "../tv/rtldatafile/rtl.mult_hw.autotvout_gmem.dat"
+`define AUTOTB_TVOUT_gmem0  "../tv/cdatafile/c.mult_hw.autotvout_gmem0.dat"
+`define AUTOTB_TVOUT_gmem0_out_wrapc  "../tv/rtldatafile/rtl.mult_hw.autotvout_gmem0.dat"
 module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 392;
-parameter LENGTH_gmem = 152;
+parameter LATENCY_ESTIMATION = 12324;
+parameter LENGTH_gmem = 4096;
+parameter LENGTH_gmem0 = 5120;
 parameter LENGTH_in1 = 1;
 parameter LENGTH_in2 = 1;
 parameter LENGTH_out_r = 1;
@@ -89,6 +93,51 @@ wire ap_start;
 wire ap_done;
 wire ap_idle;
 wire ap_ready;
+wire  gmem0_AWVALID;
+wire  gmem0_AWREADY;
+wire [63 : 0] gmem0_AWADDR;
+wire [0 : 0] gmem0_AWID;
+wire [7 : 0] gmem0_AWLEN;
+wire [2 : 0] gmem0_AWSIZE;
+wire [1 : 0] gmem0_AWBURST;
+wire [1 : 0] gmem0_AWLOCK;
+wire [3 : 0] gmem0_AWCACHE;
+wire [2 : 0] gmem0_AWPROT;
+wire [3 : 0] gmem0_AWQOS;
+wire [3 : 0] gmem0_AWREGION;
+wire [0 : 0] gmem0_AWUSER;
+wire  gmem0_WVALID;
+wire  gmem0_WREADY;
+wire [31 : 0] gmem0_WDATA;
+wire [3 : 0] gmem0_WSTRB;
+wire  gmem0_WLAST;
+wire [0 : 0] gmem0_WID;
+wire [0 : 0] gmem0_WUSER;
+wire  gmem0_ARVALID;
+wire  gmem0_ARREADY;
+wire [63 : 0] gmem0_ARADDR;
+wire [0 : 0] gmem0_ARID;
+wire [7 : 0] gmem0_ARLEN;
+wire [2 : 0] gmem0_ARSIZE;
+wire [1 : 0] gmem0_ARBURST;
+wire [1 : 0] gmem0_ARLOCK;
+wire [3 : 0] gmem0_ARCACHE;
+wire [2 : 0] gmem0_ARPROT;
+wire [3 : 0] gmem0_ARQOS;
+wire [3 : 0] gmem0_ARREGION;
+wire [0 : 0] gmem0_ARUSER;
+wire  gmem0_RVALID;
+wire  gmem0_RREADY;
+wire [31 : 0] gmem0_RDATA;
+wire  gmem0_RLAST;
+wire [0 : 0] gmem0_RID;
+wire [0 : 0] gmem0_RUSER;
+wire [1 : 0] gmem0_RRESP;
+wire  gmem0_BVALID;
+wire  gmem0_BREADY;
+wire [1 : 0] gmem0_BRESP;
+wire [0 : 0] gmem0_BID;
+wire [0 : 0] gmem0_BUSER;
 wire  gmem_AWVALID;
 wire  gmem_AWREADY;
 wire [63 : 0] gmem_AWADDR;
@@ -186,6 +235,51 @@ wire ap_rst_n_n;
     .ap_done(ap_done),
     .ap_idle(ap_idle),
     .ap_ready(ap_ready),
+    .m_axi_gmem0_AWVALID(gmem0_AWVALID),
+    .m_axi_gmem0_AWREADY(gmem0_AWREADY),
+    .m_axi_gmem0_AWADDR(gmem0_AWADDR),
+    .m_axi_gmem0_AWID(gmem0_AWID),
+    .m_axi_gmem0_AWLEN(gmem0_AWLEN),
+    .m_axi_gmem0_AWSIZE(gmem0_AWSIZE),
+    .m_axi_gmem0_AWBURST(gmem0_AWBURST),
+    .m_axi_gmem0_AWLOCK(gmem0_AWLOCK),
+    .m_axi_gmem0_AWCACHE(gmem0_AWCACHE),
+    .m_axi_gmem0_AWPROT(gmem0_AWPROT),
+    .m_axi_gmem0_AWQOS(gmem0_AWQOS),
+    .m_axi_gmem0_AWREGION(gmem0_AWREGION),
+    .m_axi_gmem0_AWUSER(gmem0_AWUSER),
+    .m_axi_gmem0_WVALID(gmem0_WVALID),
+    .m_axi_gmem0_WREADY(gmem0_WREADY),
+    .m_axi_gmem0_WDATA(gmem0_WDATA),
+    .m_axi_gmem0_WSTRB(gmem0_WSTRB),
+    .m_axi_gmem0_WLAST(gmem0_WLAST),
+    .m_axi_gmem0_WID(gmem0_WID),
+    .m_axi_gmem0_WUSER(gmem0_WUSER),
+    .m_axi_gmem0_ARVALID(gmem0_ARVALID),
+    .m_axi_gmem0_ARREADY(gmem0_ARREADY),
+    .m_axi_gmem0_ARADDR(gmem0_ARADDR),
+    .m_axi_gmem0_ARID(gmem0_ARID),
+    .m_axi_gmem0_ARLEN(gmem0_ARLEN),
+    .m_axi_gmem0_ARSIZE(gmem0_ARSIZE),
+    .m_axi_gmem0_ARBURST(gmem0_ARBURST),
+    .m_axi_gmem0_ARLOCK(gmem0_ARLOCK),
+    .m_axi_gmem0_ARCACHE(gmem0_ARCACHE),
+    .m_axi_gmem0_ARPROT(gmem0_ARPROT),
+    .m_axi_gmem0_ARQOS(gmem0_ARQOS),
+    .m_axi_gmem0_ARREGION(gmem0_ARREGION),
+    .m_axi_gmem0_ARUSER(gmem0_ARUSER),
+    .m_axi_gmem0_RVALID(gmem0_RVALID),
+    .m_axi_gmem0_RREADY(gmem0_RREADY),
+    .m_axi_gmem0_RDATA(gmem0_RDATA),
+    .m_axi_gmem0_RLAST(gmem0_RLAST),
+    .m_axi_gmem0_RID(gmem0_RID),
+    .m_axi_gmem0_RUSER(gmem0_RUSER),
+    .m_axi_gmem0_RRESP(gmem0_RRESP),
+    .m_axi_gmem0_BVALID(gmem0_BVALID),
+    .m_axi_gmem0_BREADY(gmem0_BREADY),
+    .m_axi_gmem0_BRESP(gmem0_BRESP),
+    .m_axi_gmem0_BID(gmem0_BID),
+    .m_axi_gmem0_BUSER(gmem0_BUSER),
     .m_axi_gmem_AWVALID(gmem_AWVALID),
     .m_axi_gmem_AWREADY(gmem_AWREADY),
     .m_axi_gmem_AWADDR(gmem_AWADDR),
@@ -354,6 +448,62 @@ end
 
 
 
+
+wire    AESL_axi_master_gmem0_ready;
+wire    AESL_axi_master_gmem0_done;
+AESL_axi_master_gmem0 AESL_AXI_MASTER_gmem0(
+    .clk   (AESL_clock),
+    .reset (AESL_reset),
+    .TRAN_gmem0_AWVALID (gmem0_AWVALID),
+    .TRAN_gmem0_AWREADY (gmem0_AWREADY),
+    .TRAN_gmem0_AWADDR (gmem0_AWADDR),
+    .TRAN_gmem0_AWID (gmem0_AWID),
+    .TRAN_gmem0_AWLEN (gmem0_AWLEN),
+    .TRAN_gmem0_AWSIZE (gmem0_AWSIZE),
+    .TRAN_gmem0_AWBURST (gmem0_AWBURST),
+    .TRAN_gmem0_AWLOCK (gmem0_AWLOCK),
+    .TRAN_gmem0_AWCACHE (gmem0_AWCACHE),
+    .TRAN_gmem0_AWPROT (gmem0_AWPROT),
+    .TRAN_gmem0_AWQOS (gmem0_AWQOS),
+    .TRAN_gmem0_AWREGION (gmem0_AWREGION),
+    .TRAN_gmem0_AWUSER (gmem0_AWUSER),
+    .TRAN_gmem0_WVALID (gmem0_WVALID),
+    .TRAN_gmem0_WREADY (gmem0_WREADY),
+    .TRAN_gmem0_WDATA (gmem0_WDATA),
+    .TRAN_gmem0_WSTRB (gmem0_WSTRB),
+    .TRAN_gmem0_WLAST (gmem0_WLAST),
+    .TRAN_gmem0_WID (gmem0_WID),
+    .TRAN_gmem0_WUSER (gmem0_WUSER),
+    .TRAN_gmem0_ARVALID (gmem0_ARVALID),
+    .TRAN_gmem0_ARREADY (gmem0_ARREADY),
+    .TRAN_gmem0_ARADDR (gmem0_ARADDR),
+    .TRAN_gmem0_ARID (gmem0_ARID),
+    .TRAN_gmem0_ARLEN (gmem0_ARLEN),
+    .TRAN_gmem0_ARSIZE (gmem0_ARSIZE),
+    .TRAN_gmem0_ARBURST (gmem0_ARBURST),
+    .TRAN_gmem0_ARLOCK (gmem0_ARLOCK),
+    .TRAN_gmem0_ARCACHE (gmem0_ARCACHE),
+    .TRAN_gmem0_ARPROT (gmem0_ARPROT),
+    .TRAN_gmem0_ARQOS (gmem0_ARQOS),
+    .TRAN_gmem0_ARREGION (gmem0_ARREGION),
+    .TRAN_gmem0_ARUSER (gmem0_ARUSER),
+    .TRAN_gmem0_RVALID (gmem0_RVALID),
+    .TRAN_gmem0_RREADY (gmem0_RREADY),
+    .TRAN_gmem0_RDATA (gmem0_RDATA),
+    .TRAN_gmem0_RLAST (gmem0_RLAST),
+    .TRAN_gmem0_RID (gmem0_RID),
+    .TRAN_gmem0_RUSER (gmem0_RUSER),
+    .TRAN_gmem0_RRESP (gmem0_RRESP),
+    .TRAN_gmem0_BVALID (gmem0_BVALID),
+    .TRAN_gmem0_BREADY (gmem0_BREADY),
+    .TRAN_gmem0_BRESP (gmem0_BRESP),
+    .TRAN_gmem0_BID (gmem0_BID),
+    .TRAN_gmem0_BUSER (gmem0_BUSER),
+    .ready (AESL_axi_master_gmem0_ready),
+    .done  (AESL_axi_master_gmem0_done)
+);
+assign    AESL_axi_master_gmem0_ready    =   ready;
+assign    AESL_axi_master_gmem0_done    =   AESL_done_delay;
 wire    AESL_axi_master_gmem_ready;
 wire    AESL_axi_master_gmem_done;
 AESL_axi_master_gmem AESL_AXI_MASTER_gmem(
@@ -497,6 +647,9 @@ initial begin
 end
 
 
+reg end_gmem0;
+reg [31:0] size_gmem0;
+reg [31:0] size_gmem0_backup;
 reg end_gmem;
 reg [31:0] size_gmem;
 reg [31:0] size_gmem_backup;
@@ -654,30 +807,30 @@ task write_binary;
     end
 endtask;
 
-reg dump_tvout_finish_gmem;
+reg dump_tvout_finish_gmem0;
 
-initial begin : dump_tvout_runtime_sign_gmem
+initial begin : dump_tvout_runtime_sign_gmem0
     integer fp;
-    dump_tvout_finish_gmem = 0;
-    fp = $fopen(`AUTOTB_TVOUT_gmem_out_wrapc, "wb");
+    dump_tvout_finish_gmem0 = 0;
+    fp = $fopen(`AUTOTB_TVOUT_gmem0_out_wrapc, "wb");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_gmem_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_gmem0_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fclose(fp);
     wait (done_cnt == AUTOTB_TRANSACTION_NUM);
     repeat(5) @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_gmem_out_wrapc, "ab");
+    fp = $fopen(`AUTOTB_TVOUT_gmem0_out_wrapc, "ab");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_gmem_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_gmem0_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     write_binary(fp,64'h5a5aa5a50f0ff0f0,64);
     $fclose(fp);
     repeat(5) @ (posedge AESL_clock);
-    dump_tvout_finish_gmem = 1;
+    dump_tvout_finish_gmem0 = 1;
 end
 
 

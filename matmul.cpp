@@ -4,44 +4,61 @@
 typedef ap_uint<8> input_type;
 typedef ap_uint<32> result_type;
 
-void mult_hw(input_type* in1, input_type* in2, result_type* out_r){
-#pragma HLS INTERFACE m_axi port = in1 depth = (n * m)
-#pragma HLS INTERFACE m_axi port = in2 depth = (m * p)
-#pragma HLS INTERFACE m_axi port = out_r depth = (n * p)
+void mult_hw(input_type in1[n * m], input_type in2[m * p], result_type out_r[n * p]){
+#pragma HLS INTERFACE m_axi bundle=gmem0 port = in1 depth = (n * m)
+#pragma HLS INTERFACE m_axi bundle=gmem port = in2 depth = (m * p)
+#pragma HLS INTERFACE m_axi bundle=gmem0 port = out_r depth = (n * p)
+// we use different memory banks to maximize bandwidth
 
     input_type A[n * m];
     input_type B[m * p];
     result_type C[n * p];
 
-    // copy A
-    for(int i=0; i<n; i++){
-    	for(int j=0;j<m; j++){
-    		A[i * m + j] = in1[i * m + j];
-    	}
-    }
+// use cyclic partition for A as we want row-wise access
+#pragma HLS ARRAY_PARTITION variable = A dim = 1 cyclic factor = 16
 
-    // copy B
-    for(int i=0; i<m; i++){
-    	for(int j=0; j<p; j++){
-    		B[i * p + j] = in2[i * p + j];
-	   }
-    }
+// use block partition for B as we want column-wise access
+#pragma HLS ARRAY_PARTITION variable = B dim = 1 block factor = 16
+
+    // burst read A
+    readA:
+    	for(int itr=0, i=0, j=0; itr<n*m; itr++,j++){
+#pragma HLS LOOP_TRIPCOUNT min = n * m max = n * m
+    		if(j == m){
+    			j=0;
+    			i++;
+    		}
+    		A[i * m + j] = in1[itr];
+    	}
+
+    // burst read B
+    readB:
+		for(int i=0; i<m * p; i++){
+#pragma HLS LOOP_TRIPCOUNT min = m * p max = m * p
+//#pragma HLS UNROLL factor = 64
+			B[i] = in2[i];
+    	}
 
     // calc C
-    for(int i=0; i<n; i++){
-    	for(int j=0; j<p; j++){
-    		result_type result = 0;
-			for(int k=0; k<m; k++){
-				result += A[i * m + k] * B[k * p + j];
-			}
-			C[i * p + j] = result;
-		}
-	}
+    mult_outer:
+    	for(int i=0; i<n; i++){
+#pragma HLS LOOP_TRIPCOUNT min = n max = n
+    		mult_middle:
+    			for(int j=0; j<p; j++){
+#pragma HLS LOOP_TRIPCOUNT min = p max = p
+    				result_type result = 0;
+    				mult_inner:
+    				for(int k=0; k<m; k++){
+    					result += A[i * m + k] * B[k * p + j];
+    				}
+    				C[i * p + j] = result;
+    			}
+    	}
 
     // copy C back to host
-    for(int i=0; i<n;i++){
-    	for(int j=0; j<p; j++){
-    		out_r[i * p + j] = C[i * p + j];
+    writeC:
+    	for(int i=0; i<n*p;i++){
+#pragma HLS LOOP_TRIPCOUNT min = n * p max = n * p
+    		out_r[i] = C[i];
     	}
-    }
 }

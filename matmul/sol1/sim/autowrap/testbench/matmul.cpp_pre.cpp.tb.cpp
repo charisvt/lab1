@@ -55335,46 +55335,63 @@ inline bool operator!=(
 typedef ap_uint<8> input_type;
 typedef ap_uint<32> result_type;
 
-void mult_hw(input_type* in1, input_type* in2, result_type* out_r){
-#pragma HLS INTERFACE m_axi port = in1 depth = (n * m)
-#pragma HLS INTERFACE m_axi port = in2 depth = (m * p)
-#pragma HLS INTERFACE m_axi port = out_r depth = (n * p)
-
-    input_type A[(1 << 3) * (1 << 2)];
-    input_type B[(1 << 2) * (1 << 4)];
-    result_type C[(1 << 3) * (1 << 4)];
+void mult_hw(input_type in1[(1 << 6) * (1 << 6)], input_type in2[(1 << 6) * (1 << 6)], result_type out_r[(1 << 6) * (1 << 6)]){
+#pragma HLS INTERFACE m_axi bundle=gmem0 port = in1 depth = (n * m)
+#pragma HLS INTERFACE m_axi bundle=gmem port = in2 depth = (m * p)
+#pragma HLS INTERFACE m_axi bundle=gmem0 port = out_r depth = (n * p)
 
 
-    for(int i=0; i<(1 << 3); i++){
-     for(int j=0;j<(1 << 2); j++){
-      A[i * (1 << 2) + j] = in1[i * (1 << 2) + j];
+    input_type A[(1 << 6) * (1 << 6)];
+    input_type B[(1 << 6) * (1 << 6)];
+    result_type C[(1 << 6) * (1 << 6)];
+
+
+#pragma HLS ARRAY_PARTITION variable = A dim = 1 cyclic factor = 16
+
+
+#pragma HLS ARRAY_PARTITION variable = B dim = 1 block factor = 16
+
+
+    readA:
+     for(int itr=0, i=0, j=0; itr<(1 << 6)*(1 << 6); itr++,j++){
+#pragma HLS LOOP_TRIPCOUNT min = n * m max = n * m
+      if(j == (1 << 6)){
+       j=0;
+       i++;
+      }
+      A[i * (1 << 6) + j] = in1[itr];
      }
-    }
 
 
-    for(int i=0; i<(1 << 2); i++){
-     for(int j=0; j<(1 << 4); j++){
-      B[i * (1 << 4) + j] = in2[i * (1 << 4) + j];
-    }
-    }
+    readB:
+  for(int i=0; i<(1 << 6) * (1 << 6); i++){
+#pragma HLS LOOP_TRIPCOUNT min = m * p max = m * p
 
-
-    for(int i=0; i<(1 << 3); i++){
-     for(int j=0; j<(1 << 4); j++){
-      result_type result = 0;
-   for(int k=0; k<(1 << 2); k++){
-    result += A[i * (1 << 2) + k] * B[k * (1 << 4) + j];
-   }
-   C[i * (1 << 4) + j] = result;
-  }
- }
-
-
-    for(int i=0; i<(1 << 3);i++){
-     for(int j=0; j<(1 << 4); j++){
-      out_r[i * (1 << 4) + j] = C[i * (1 << 4) + j];
+   B[i] = in2[i];
      }
-    }
+
+
+    mult_outer:
+     for(int i=0; i<(1 << 6); i++){
+#pragma HLS LOOP_TRIPCOUNT min = n max = n
+      mult_middle:
+       for(int j=0; j<(1 << 6); j++){
+#pragma HLS LOOP_TRIPCOUNT min = p max = p
+        result_type result = 0;
+        mult_inner:
+        for(int k=0; k<(1 << 6); k++){
+         result += A[i * (1 << 6) + k] * B[k * (1 << 6) + j];
+        }
+        C[i * (1 << 6) + j] = result;
+       }
+     }
+
+
+    writeC:
+     for(int i=0; i<(1 << 6)*(1 << 6);i++){
+#pragma HLS LOOP_TRIPCOUNT min = n * p max = n * p
+      out_r[i] = C[i];
+     }
 }
 #ifndef HLS_FASTSIM
 #ifdef __cplusplus
@@ -55396,5 +55413,5 @@ apatb_mult_hw_ir(in1, in2, out_r);
 return ;
 }
 #endif
-# 47 "C:/Users/charisvt/Desktop/hls/lab1/matmul.cpp"
+# 64 "C:/Users/charisvt/Desktop/hls/lab1/matmul.cpp"
 

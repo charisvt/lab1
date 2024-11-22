@@ -12,9 +12,9 @@ module mult_hw_C_V_RAM_AUTO_1R1W (
      
     reset, clk);
 
-parameter DataWidth = 18;
-parameter AddressWidth = 7;
-parameter AddressRange = 128;
+parameter DataWidth = 22;
+parameter AddressWidth = 12;
+parameter AddressRange = 4096;
  
 input[AddressWidth-1:0] address0;
 input ce0;

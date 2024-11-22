@@ -12,8 +12,8 @@ entity mult_hw_A_V_RAM_1WNR_AUTO_1R1W is
     generic(
         MEM_TYPE        : string    := "auto"; 
         DataWidth       : integer   := 8; 
-        AddressWidth    : integer   := 5;
-        AddressRange    : integer   := 32
+        AddressWidth    : integer   := 8;
+        AddressRange    : integer   := 256
     ); 
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0); 

@@ -2,9 +2,9 @@
 #include <cstdlib>
 #include <ap_int.h>
 
-#define lm 2
-#define ln 3
-#define lp 4
+#define lm 6
+#define ln 6
+#define lp 6
 
 #define m (1 << lm)
 #define n (1 << ln)
@@ -55,21 +55,17 @@ void init_matrices(input_type A[n * m], input_type B[m * p]) {
     }
 }
 
-void init_simple(input_type A[n * m], input_type B[m * p]){
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            A[i * m + j] = static_cast<input_type>(1);  // init everything as 1
-        }
-    }
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < p; j++) {
-            B[i * p + j] = static_cast<input_type>(1);
-        }
-    }
+void print_r(result_type* Arr){
+	for(int i=0;i<n;i++){
+		for(int j=0;j<p;j++){
+			std::cout << Arr[i * p + j] << " ";
+		}
+		std::cout << "\n";
+	}
 }
 
 int main(int argc, char** argv){
-	srand(time(NULL));
+	srand(0);
 
 	input_type A[n * m], B[m * p];
 
@@ -77,15 +73,15 @@ int main(int argc, char** argv){
 	result_type hw_result[n * p];
 
 	init_matrices(A, B);
-//	init_simple(A, B);
 
 	// sw solution
 	mult_sw(A, B, sw_result);
 
-
 	// hw solution
 	mult_hw(A, B, hw_result);
 
+//	uncomment to print out A and B
+/*
 	std::cout << "--------------- ARRAY A ---------------\n";
 	for(int i=0;i<n;i++){
 		for(int j=0;j<m;j++){
@@ -101,22 +97,11 @@ int main(int argc, char** argv){
 		}
 		std::cout << "\n";
 	}
-
-	std::cout << "---------------SW_ARRAY ---------------\n";
-	for(int i=0;i<n;i++){
-		for(int j=0;j<p;j++){
-			std::cout << sw_result[i * p + j] << " ";
-		}
-		std::cout << "\n";
-	}
-
-	std::cout << "---------------HW_ARRAY ---------------\n";
-	for(int i=0;i<n;i++){
-		for(int j=0;j<p;j++){
-			std::cout << hw_result[i * p + j] << " ";
-		}
-		std::cout << "\n";
-	}
+*/
+	std::cout << "--------------- SW_RESULT ---------------\n";
+	print_r(sw_result);
+	std::cout << "--------------- HW_RESULT ---------------\n";
+	print_r(hw_result);
 
 	bool s = verify(sw_result, hw_result);
 	if(s){
@@ -125,5 +110,6 @@ int main(int argc, char** argv){
 		std::cout << "TEST FAILED\n";
 	}
 	//std::cout << "TEST " << (s? EXIT_SUCCESS: EXIT_FAILURE) << std::endl;
+
 	return 0;
 }

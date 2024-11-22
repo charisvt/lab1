@@ -1,11 +1,11 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mult_hw'" level="0">
-<item name = "Date">Wed Nov 13 12:41:21 2024
+<item name = "Date">Fri Nov 22 18:58:56 2024
 </item>
 <item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">matmul</item>
-<item name = "Solution">lab1sol1 (Vivado IP Flow Target)</item>
+<item name = "Solution">sol1 (Vivado IP Flow Target)</item>
 <item name = "Product family">virtexuplus</item>
 <item name = "Target device">xcu200-fsgd2104-2-e</item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">392, 392, 3.920 us, 3.920 us, 393, 393, no</column>
+<column name="">12324, 12324, 0.123 ms, 0.123 ms, 12325, 12325, no</column>
 </table>
 </item>
 <item name = "Detail">

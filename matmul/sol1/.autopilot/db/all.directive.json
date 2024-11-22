@@ -6,7 +6,7 @@
           "label": "",
           "functionLabel": "",
           "id": "1",
-          "sourceFile": "C:\/Users\/charisvt\/Desktop\/hls\/lab1\/matmul\/lab1sol1\/directives.tcl",
+          "sourceFile": "C:\/Users\/charisvt\/Desktop\/hls\/lab1\/matmul\/sol1\/directives.tcl",
           "sourceLine": "6",
           "pragma": {
             "name": "TOP",
@@ -21,8 +21,8 @@
           "label": "",
           "functionLabel": "",
           "id": "2",
-          "sourceFile": "C:\/Users\/charisvt\/Desktop\/hls\/lab1\/matmul\/lab1sol1\/csynth.tcl",
-          "sourceLine": "15",
+          "sourceFile": "C:\/Users\/charisvt\/Desktop\/hls\/lab1\/matmul\/sol1\/csynth.tcl",
+          "sourceLine": "16",
           "pragma": {
             "name": "TOP",
             "option": [{

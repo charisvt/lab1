@@ -6,11 +6,12 @@
         <DownStreamTool name="vivado"/>
     </downStreamTool>
     <synthesis askAgain="true"/>
-    <config/>
+    <config>
+        <config_interface m_axi_max_widen_bitwidth="512"/>
+    </config>
     <UIConfigurations>
         <UIAutosynConf boardInfo="Alveo U200 Data Center Accelerator Card (xcu200-fsgd2104-2-e) " hideTrivialOp="true" isBasedOnBoard="true" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
             <Platform>xilinx/virtexuplus/virtexuplus</Platform>
-            <Platform>xilinx/virtexuplus/virtexuplus_fpv7</Platform>
             <customLibs/>
         </UIAutosynConf>
         <UIIPPackagerConf AskAgain="true" DescriptionButton="false" LibraryButton="false" RTLLanguage="verilog" UseNetList="none" VendorButton="false" VersionButton="false" evaluateRTL="false" setup="false">
@@ -55,7 +56,7 @@
         </SimFlow>
     </Simulation>
     <name>
-        <value string="lab1sol1"/>
+        <value string="sol1"/>
     </name>
     <project>
         <value string="matmul"/>
@@ -68,7 +69,7 @@
         <library value="xilinx/virtexuplus/virtexuplus" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock default="false" name="default" period="10"/>
+        <clock name="default" default="false" period="10"/>
     </clockList>
 </solution>
 
