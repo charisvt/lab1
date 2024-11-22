@@ -15,14 +15,14 @@ C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/csynth.tcl:16:9: warning: HLS pra
 C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/directives.tcl:6:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=name=mult_hw_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLSDIRECTIVE TOP name=mult_hw
         ^
-matmul.cpp:8:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=m_axi bundle=gmem0 port = in1 depth = ((1 << 5) * (1 << 6))_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE m_axi bundle=gmem0 port = in1 depth = ((1 << 5) * (1 << 6))
+matmul.cpp:8:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=m_axi bundle=gmem0 port = in1 depth = ((1 << 6) * (1 << 6))_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi bundle=gmem0 port = in1 depth = ((1 << 6) * (1 << 6))
         ^
-matmul.cpp:9:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=m_axi bundle=gmem port = in2 depth = ((1 << 6) * (1 << 7))_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE m_axi bundle=gmem port = in2 depth = ((1 << 6) * (1 << 7))
+matmul.cpp:9:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=m_axi bundle=gmem port = in2 depth = ((1 << 6) * (1 << 6))_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi bundle=gmem port = in2 depth = ((1 << 6) * (1 << 6))
         ^
-matmul.cpp:10:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=m_axi bundle=gmem0 port = out_r depth = ((1 << 5) * (1 << 7))_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE m_axi bundle=gmem0 port = out_r depth = ((1 << 5) * (1 << 7))
+matmul.cpp:10:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=m_axi bundle=gmem0 port = out_r depth = ((1 << 6) * (1 << 6))_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi bundle=gmem0 port = out_r depth = ((1 << 6) * (1 << 6))
         ^
 matmul.cpp:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=variable = A dim = 1 cyclic factor = 16_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS ARRAY_PARTITION variable = A dim = 1 cyclic factor = 16
@@ -30,19 +30,19 @@ matmul.cpp:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ Pra
 matmul.cpp:21:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=variable = B dim = 1 block factor = 16_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS ARRAY_PARTITION variable = B dim = 1 block factor = 16
         ^
-matmul.cpp:26:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=min = (1 << 5) * (1 << 6) max = (1 << 5) * (1 << 6)_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS LOOP_TRIPCOUNT min = (1 << 5) * (1 << 6) max = (1 << 5) * (1 << 6)
+matmul.cpp:26:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=min = (1 << 6) * (1 << 6) max = (1 << 6) * (1 << 6)_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min = (1 << 6) * (1 << 6) max = (1 << 6) * (1 << 6)
         ^
-matmul.cpp:37:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=min = (1 << 6) * (1 << 7) max = (1 << 6) * (1 << 7)_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS LOOP_TRIPCOUNT min = (1 << 6) * (1 << 7) max = (1 << 6) * (1 << 7)
+matmul.cpp:37:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=min = (1 << 6) * (1 << 6) max = (1 << 6) * (1 << 6)_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min = (1 << 6) * (1 << 6) max = (1 << 6) * (1 << 6)
         ^
-matmul.cpp:45:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=min = (1 << 5) max = (1 << 5)_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS LOOP_TRIPCOUNT min = (1 << 5) max = (1 << 5)
+matmul.cpp:45:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=min = (1 << 6) max = (1 << 6)_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min = (1 << 6) max = (1 << 6)
         ^
-matmul.cpp:48:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=min = (1 << 7) max = (1 << 7)_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS LOOP_TRIPCOUNT min = (1 << 7) max = (1 << 7)
+matmul.cpp:48:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=min = (1 << 6) max = (1 << 6)_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min = (1 << 6) max = (1 << 6)
         ^
-matmul.cpp:61:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=min = (1 << 5) * (1 << 7) max = (1 << 5) * (1 << 7)_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS LOOP_TRIPCOUNT min = (1 << 5) * (1 << 7) max = (1 << 5) * (1 << 7)
+matmul.cpp:61:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_hw_XLX_SEP_ PragmaOptions=min = (1 << 6) * (1 << 6) max = (1 << 6) * (1 << 6)_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min = (1 << 6) * (1 << 6) max = (1 << 6) * (1 << 6)
         ^
 15 warnings generated.

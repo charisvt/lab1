@@ -1018,7 +1018,7 @@ void apatb_mult_hw_hw(void* __xlx_apatb_param_in1, void* __xlx_apatb_param_in2, 
 #endif
   };
   port3.param = { __xlx_apatb_param_in2 };
-  port3.depth = { 8192 };
+  port3.depth = { 4096 };
   port3.offset = {  };
   port3.hasWrite = { false };
 
@@ -1051,10 +1051,10 @@ void apatb_mult_hw_hw(void* __xlx_apatb_param_in1, void* __xlx_apatb_param_in2, 
 #endif
   };
   __xlx_offset_byte_param_in1 = 0*4;
-  __xlx_offset_byte_param_out_r = 512*4;
+  __xlx_offset_byte_param_out_r = 1024*4;
   port4.param = { __xlx_apatb_param_in1, __xlx_apatb_param_out_r };
-  port4.depth = { 512, 4096 };
-  port4.offset = { 0, 512 };
+  port4.depth = { 1024, 4096 };
+  port4.offset = { 0, 1024 };
   port4.hasWrite = { true, true };
 
   refine_signal_handler();

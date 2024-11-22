@@ -182,67 +182,67 @@ input  [1:0] m_axi_gmem_BRESP;
 input  [0:0] m_axi_gmem_BID;
 input  [0:0] m_axi_gmem_BUSER;
 input  [63:0] in2;
-output  [8:0] B_V_address0;
+output  [7:0] B_V_address0;
 output   B_V_ce0;
 output   B_V_we0;
 output  [7:0] B_V_d0;
-output  [8:0] B_V_1_address0;
+output  [7:0] B_V_1_address0;
 output   B_V_1_ce0;
 output   B_V_1_we0;
 output  [7:0] B_V_1_d0;
-output  [8:0] B_V_2_address0;
+output  [7:0] B_V_2_address0;
 output   B_V_2_ce0;
 output   B_V_2_we0;
 output  [7:0] B_V_2_d0;
-output  [8:0] B_V_3_address0;
+output  [7:0] B_V_3_address0;
 output   B_V_3_ce0;
 output   B_V_3_we0;
 output  [7:0] B_V_3_d0;
-output  [8:0] B_V_4_address0;
+output  [7:0] B_V_4_address0;
 output   B_V_4_ce0;
 output   B_V_4_we0;
 output  [7:0] B_V_4_d0;
-output  [8:0] B_V_5_address0;
+output  [7:0] B_V_5_address0;
 output   B_V_5_ce0;
 output   B_V_5_we0;
 output  [7:0] B_V_5_d0;
-output  [8:0] B_V_6_address0;
+output  [7:0] B_V_6_address0;
 output   B_V_6_ce0;
 output   B_V_6_we0;
 output  [7:0] B_V_6_d0;
-output  [8:0] B_V_7_address0;
+output  [7:0] B_V_7_address0;
 output   B_V_7_ce0;
 output   B_V_7_we0;
 output  [7:0] B_V_7_d0;
-output  [8:0] B_V_8_address0;
+output  [7:0] B_V_8_address0;
 output   B_V_8_ce0;
 output   B_V_8_we0;
 output  [7:0] B_V_8_d0;
-output  [8:0] B_V_9_address0;
+output  [7:0] B_V_9_address0;
 output   B_V_9_ce0;
 output   B_V_9_we0;
 output  [7:0] B_V_9_d0;
-output  [8:0] B_V_10_address0;
+output  [7:0] B_V_10_address0;
 output   B_V_10_ce0;
 output   B_V_10_we0;
 output  [7:0] B_V_10_d0;
-output  [8:0] B_V_11_address0;
+output  [7:0] B_V_11_address0;
 output   B_V_11_ce0;
 output   B_V_11_we0;
 output  [7:0] B_V_11_d0;
-output  [8:0] B_V_12_address0;
+output  [7:0] B_V_12_address0;
 output   B_V_12_ce0;
 output   B_V_12_we0;
 output  [7:0] B_V_12_d0;
-output  [8:0] B_V_13_address0;
+output  [7:0] B_V_13_address0;
 output   B_V_13_ce0;
 output   B_V_13_we0;
 output  [7:0] B_V_13_d0;
-output  [8:0] B_V_14_address0;
+output  [7:0] B_V_14_address0;
 output   B_V_14_ce0;
 output   B_V_14_we0;
 output  [7:0] B_V_14_d0;
-output  [8:0] B_V_15_address0;
+output  [7:0] B_V_15_address0;
 output   B_V_15_ce0;
 output   B_V_15_we0;
 output  [7:0] B_V_15_d0;
@@ -299,17 +299,17 @@ reg    ap_ready_int;
 reg    gmem_blk_n_R;
 wire    ap_block_pp0_stage0;
 reg    ap_block_pp0_stage0_11001;
-wire   [8:0] empty_fu_367_p1;
-reg   [8:0] empty_reg_421;
-reg   [8:0] empty_reg_421_pp0_iter1_reg;
+wire   [7:0] empty_fu_367_p1;
+reg   [7:0] empty_reg_421;
+reg   [7:0] empty_reg_421_pp0_iter1_reg;
 reg   [3:0] trunc_ln2_reg_426;
 reg   [3:0] trunc_ln2_reg_426_pp0_iter1_reg;
 reg   [7:0] gmem_addr_read_reg_430;
 wire   [63:0] zext_ln39_fu_386_p1;
-reg   [13:0] i_1_fu_118;
-wire   [13:0] add_ln36_fu_361_p2;
+reg   [12:0] i_1_fu_118;
+wire   [12:0] add_ln36_fu_361_p2;
 wire    ap_loop_init;
-reg   [13:0] ap_sig_allocacmp_i;
+reg   [12:0] ap_sig_allocacmp_i;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -389,7 +389,7 @@ always @ (posedge ap_clk) begin
         if (((icmp_ln36_fu_355_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
             i_1_fu_118 <= add_ln36_fu_361_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_1_fu_118 <= 14'd0;
+            i_1_fu_118 <= 13'd0;
         end
     end
 end
@@ -406,7 +406,7 @@ end
 always @ (posedge ap_clk) begin
     if (((icmp_ln36_fu_355_p2 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         empty_reg_421 <= empty_fu_367_p1;
-        trunc_ln2_reg_426 <= {{ap_sig_allocacmp_i[12:9]}};
+        trunc_ln2_reg_426 <= {{ap_sig_allocacmp_i[11:8]}};
     end
 end
 
@@ -708,7 +708,7 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_i = 14'd0;
+        ap_sig_allocacmp_i = 13'd0;
     end else begin
         ap_sig_allocacmp_i = i_1_fu_118;
     end
@@ -805,7 +805,7 @@ assign B_V_address0 = zext_ln39_fu_386_p1;
 
 assign B_V_d0 = gmem_addr_read_reg_430;
 
-assign add_ln36_fu_361_p2 = (ap_sig_allocacmp_i + 14'd1);
+assign add_ln36_fu_361_p2 = (ap_sig_allocacmp_i + 13'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -833,9 +833,9 @@ assign ap_enable_reg_pp0_iter0 = ap_start_int;
 
 assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
-assign empty_fu_367_p1 = ap_sig_allocacmp_i[8:0];
+assign empty_fu_367_p1 = ap_sig_allocacmp_i[7:0];
 
-assign icmp_ln36_fu_355_p2 = ((ap_sig_allocacmp_i == 14'd8192) ? 1'b1 : 1'b0);
+assign icmp_ln36_fu_355_p2 = ((ap_sig_allocacmp_i == 13'd4096) ? 1'b1 : 1'b0);
 
 assign m_axi_gmem_ARADDR = 64'd0;
 

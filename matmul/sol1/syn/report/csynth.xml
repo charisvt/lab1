@@ -19,22 +19,22 @@
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>16413</Best-caseLatency>
-            <Average-caseLatency>16413</Average-caseLatency>
-            <Worst-caseLatency>16413</Worst-caseLatency>
-            <Best-caseRealTimeLatency>0.164 ms</Best-caseRealTimeLatency>
-            <Average-caseRealTimeLatency>0.164 ms</Average-caseRealTimeLatency>
-            <Worst-caseRealTimeLatency>0.164 ms</Worst-caseRealTimeLatency>
-            <Interval-min>16414</Interval-min>
-            <Interval-max>16414</Interval-max>
+            <Best-caseLatency>12324</Best-caseLatency>
+            <Average-caseLatency>12324</Average-caseLatency>
+            <Worst-caseLatency>12324</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.123 ms</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.123 ms</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.123 ms</Worst-caseRealTimeLatency>
+            <Interval-min>12325</Interval-min>
+            <Interval-max>12325</Interval-max>
         </SummaryOfOverallLatency>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
-            <BRAM_18K>64</BRAM_18K>
+            <BRAM_18K>0</BRAM_18K>
             <DSP>32</DSP>
-            <FF>3500</FF>
-            <LUT>8864</LUT>
+            <FF>3626</FF>
+            <LUT>9643</LUT>
             <URAM>1</URAM>
         </Resources>
         <AvailableResources>
@@ -1385,31 +1385,31 @@
             <ModuleName>mult_hw</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_mult_hw_Pipeline_readA_fu_243</InstName>
+                    <InstName>grp_mult_hw_Pipeline_readA_fu_239</InstName>
                     <ModuleName>mult_hw_Pipeline_readA</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>243</ID>
+                    <ID>239</ID>
                     <BindInstances>add_ln25_fu_408_p2 add_ln29_fu_471_p2 add_ln31_fu_513_p2 add_ln31_1_fu_422_p2 add_ln31_2_fu_448_p2 j_2_fu_585_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_mult_hw_Pipeline_readB_fu_267</InstName>
+                    <InstName>grp_mult_hw_Pipeline_readB_fu_263</InstName>
                     <ModuleName>mult_hw_Pipeline_readB</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>267</ID>
+                    <ID>263</ID>
                     <BindInstances>add_ln36_fu_361_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_290</InstName>
+                    <InstName>grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286</InstName>
                     <ModuleName>mult_hw_Pipeline_mult_outer_mult_middle</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>290</ID>
-                    <BindInstances>add_ln44_fu_1986_p2 add_ln44_1_fu_2009_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U78 mul_8ns_8ns_16_1_1_U54 mul_8ns_8ns_16_1_1_U55 mac_muladd_8ns_8ns_16ns_17_4_1_U79 mul_8ns_8ns_16_1_1_U56 mac_muladd_8ns_8ns_16ns_17_4_1_U80 mul_8ns_8ns_16_1_1_U57 mac_muladd_8ns_8ns_16ns_17_4_1_U81 mul_8ns_8ns_16_1_1_U58 mac_muladd_8ns_8ns_16ns_17_4_1_U82 mul_8ns_8ns_16_1_1_U59 mac_muladd_8ns_8ns_16ns_17_4_1_U83 mul_8ns_8ns_16_1_1_U60 mac_muladd_8ns_8ns_16ns_17_4_1_U84 mul_8ns_8ns_16_1_1_U61 mac_muladd_8ns_8ns_16ns_17_4_1_U85 mul_8ns_8ns_16_1_1_U62 mac_muladd_8ns_8ns_16ns_17_4_1_U86 mul_8ns_8ns_16_1_1_U63 mac_muladd_8ns_8ns_16ns_17_4_1_U87 mul_8ns_8ns_16_1_1_U64 mac_muladd_8ns_8ns_16ns_17_4_1_U88 mul_8ns_8ns_16_1_1_U65 mac_muladd_8ns_8ns_16ns_17_4_1_U89 mul_8ns_8ns_16_1_1_U66 mac_muladd_8ns_8ns_16ns_17_4_1_U90 mul_8ns_8ns_16_1_1_U67 mac_muladd_8ns_8ns_16ns_17_4_1_U91 mul_8ns_8ns_16_1_1_U68 mac_muladd_8ns_8ns_16ns_17_4_1_U92 mul_8ns_8ns_16_1_1_U38 mac_muladd_8ns_8ns_16ns_17_4_1_U93 mul_8ns_8ns_16_1_1_U39 add_ln186_fu_2247_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U94 mul_8ns_8ns_16_1_1_U69 add_ln52_fu_2588_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U95 mul_8ns_8ns_16_1_1_U70 mac_muladd_8ns_8ns_16ns_17_4_1_U96 mul_8ns_8ns_16_1_1_U71 add_ln52_1_fu_2650_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U97 mul_8ns_8ns_16_1_1_U72 mac_muladd_8ns_8ns_16ns_17_4_1_U98 mul_8ns_8ns_16_1_1_U42 add_ln52_2_fu_2722_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U99 mul_8ns_8ns_16_1_1_U73 mac_muladd_8ns_8ns_16ns_17_4_1_U100 mul_8ns_8ns_16_1_1_U44 add_ln52_3_fu_2794_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U101 mul_8ns_8ns_16_1_1_U74 mac_muladd_8ns_8ns_16ns_17_4_1_U102 mul_8ns_8ns_16_1_1_U75 add_ln52_4_fu_2856_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U103 mul_8ns_8ns_16_1_1_U76 mac_muladd_8ns_8ns_16ns_17_4_1_U104 mul_8ns_8ns_16_1_1_U47 add_ln52_5_fu_2932_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U105 mul_8ns_8ns_16_1_1_U77 mac_muladd_8ns_8ns_16ns_17_4_1_U106 mul_8ns_8ns_16_1_1_U49 add_ln52_6_fu_3008_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U107 mul_8ns_8ns_16_1_1_U51 mac_muladd_8ns_8ns_16ns_17_4_1_U108 mul_8ns_8ns_16_1_1_U52 mac_muladd_8ns_8ns_16ns_17_4_1_U109 mac_muladd_8ns_8ns_16ns_17_4_1_U78 mac_muladd_8ns_8ns_16ns_17_4_1_U79 add_ln840_2_fu_3563_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U80 mac_muladd_8ns_8ns_16ns_17_4_1_U81 add_ln840_5_fu_3579_p2 add_ln840_6_fu_3589_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U82 mac_muladd_8ns_8ns_16ns_17_4_1_U83 add_ln840_9_fu_3605_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U84 mac_muladd_8ns_8ns_16ns_17_4_1_U85 add_ln840_12_fu_3621_p2 add_ln840_13_fu_3631_p2 add_ln840_14_fu_3641_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U86 mac_muladd_8ns_8ns_16ns_17_4_1_U87 add_ln840_17_fu_3657_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U88 mac_muladd_8ns_8ns_16ns_17_4_1_U89 add_ln840_20_fu_3673_p2 add_ln840_21_fu_3683_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U90 mac_muladd_8ns_8ns_16ns_17_4_1_U91 add_ln840_24_fu_3699_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U92 mac_muladd_8ns_8ns_16ns_17_4_1_U93 add_ln840_27_fu_3715_p2 add_ln840_28_fu_3725_p2 add_ln840_29_fu_3735_p2 add_ln840_30_fu_3745_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U94 mac_muladd_8ns_8ns_16ns_17_4_1_U95 add_ln840_33_fu_3761_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U96 mac_muladd_8ns_8ns_16ns_17_4_1_U97 add_ln840_36_fu_3777_p2 add_ln840_37_fu_3787_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U98 mac_muladd_8ns_8ns_16ns_17_4_1_U99 add_ln840_40_fu_3803_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U100 mac_muladd_8ns_8ns_16ns_17_4_1_U101 add_ln840_43_fu_3819_p2 add_ln840_44_fu_3829_p2 add_ln840_45_fu_3839_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U102 mac_muladd_8ns_8ns_16ns_17_4_1_U103 add_ln840_48_fu_3855_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U104 mac_muladd_8ns_8ns_16ns_17_4_1_U105 add_ln840_51_fu_3871_p2 add_ln840_52_fu_3881_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U106 mac_muladd_8ns_8ns_16ns_17_4_1_U107 add_ln840_55_fu_3897_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U108 mac_muladd_8ns_8ns_16ns_17_4_1_U109 add_ln840_58_fu_3913_p2 add_ln840_59_fu_3923_p2 add_ln840_60_fu_3933_p2 add_ln840_61_fu_3943_p2 C_V_d0 add_ln54_fu_3143_p2 add_ln47_fu_2303_p2</BindInstances>
+                    <ID>286</ID>
+                    <BindInstances>add_ln44_fu_1982_p2 add_ln44_1_fu_2005_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U78 mul_8ns_8ns_16_1_1_U56 mul_8ns_8ns_16_1_1_U57 mac_muladd_8ns_8ns_16ns_17_4_1_U79 mul_8ns_8ns_16_1_1_U58 mac_muladd_8ns_8ns_16ns_17_4_1_U80 mul_8ns_8ns_16_1_1_U59 mac_muladd_8ns_8ns_16ns_17_4_1_U81 mul_8ns_8ns_16_1_1_U60 mac_muladd_8ns_8ns_16ns_17_4_1_U82 mul_8ns_8ns_16_1_1_U61 mac_muladd_8ns_8ns_16ns_17_4_1_U83 mul_8ns_8ns_16_1_1_U62 mac_muladd_8ns_8ns_16ns_17_4_1_U84 mul_8ns_8ns_16_1_1_U63 mac_muladd_8ns_8ns_16ns_17_4_1_U85 mul_8ns_8ns_16_1_1_U64 mac_muladd_8ns_8ns_16ns_17_4_1_U86 mul_8ns_8ns_16_1_1_U65 mac_muladd_8ns_8ns_16ns_17_4_1_U87 mul_8ns_8ns_16_1_1_U66 mac_muladd_8ns_8ns_16ns_17_4_1_U88 mul_8ns_8ns_16_1_1_U67 mac_muladd_8ns_8ns_16ns_17_4_1_U89 mul_8ns_8ns_16_1_1_U68 mac_muladd_8ns_8ns_16ns_17_4_1_U90 mul_8ns_8ns_16_1_1_U69 mac_muladd_8ns_8ns_16ns_17_4_1_U91 mul_8ns_8ns_16_1_1_U70 mac_muladd_8ns_8ns_16ns_17_4_1_U92 mul_8ns_8ns_16_1_1_U38 mac_muladd_8ns_8ns_16ns_17_4_1_U93 mul_8ns_8ns_16_1_1_U39 add_ln186_fu_2243_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U94 mul_8ns_8ns_16_1_1_U71 add_ln52_fu_2592_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U95 mul_8ns_8ns_16_1_1_U72 mac_muladd_8ns_8ns_16ns_17_4_1_U96 mul_8ns_8ns_16_1_1_U73 add_ln52_1_fu_2654_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U97 mul_8ns_8ns_16_1_1_U42 mac_muladd_8ns_8ns_16ns_17_4_1_U98 mul_8ns_8ns_16_1_1_U43 add_ln52_2_fu_2736_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U99 mul_8ns_8ns_16_1_1_U45 mac_muladd_8ns_8ns_16ns_17_4_1_U100 mul_8ns_8ns_16_1_1_U46 add_ln52_3_fu_2818_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U101 mul_8ns_8ns_16_1_1_U74 mac_muladd_8ns_8ns_16ns_17_4_1_U102 mul_8ns_8ns_16_1_1_U75 add_ln52_4_fu_2880_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U103 mul_8ns_8ns_16_1_1_U76 mac_muladd_8ns_8ns_16ns_17_4_1_U104 mul_8ns_8ns_16_1_1_U49 add_ln52_5_fu_2956_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U105 mul_8ns_8ns_16_1_1_U77 mac_muladd_8ns_8ns_16ns_17_4_1_U106 mul_8ns_8ns_16_1_1_U51 add_ln52_6_fu_3032_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U107 mul_8ns_8ns_16_1_1_U53 mac_muladd_8ns_8ns_16ns_17_4_1_U108 mul_8ns_8ns_16_1_1_U54 mac_muladd_8ns_8ns_16ns_17_4_1_U109 mac_muladd_8ns_8ns_16ns_17_4_1_U78 mac_muladd_8ns_8ns_16ns_17_4_1_U79 add_ln840_2_fu_3561_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U80 mac_muladd_8ns_8ns_16ns_17_4_1_U81 add_ln840_5_fu_3577_p2 add_ln840_6_fu_3587_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U82 mac_muladd_8ns_8ns_16ns_17_4_1_U83 add_ln840_9_fu_3603_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U84 mac_muladd_8ns_8ns_16ns_17_4_1_U85 add_ln840_12_fu_3619_p2 add_ln840_13_fu_3629_p2 add_ln840_14_fu_3639_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U86 mac_muladd_8ns_8ns_16ns_17_4_1_U87 add_ln840_17_fu_3655_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U88 mac_muladd_8ns_8ns_16ns_17_4_1_U89 add_ln840_20_fu_3671_p2 add_ln840_21_fu_3681_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U90 mac_muladd_8ns_8ns_16ns_17_4_1_U91 add_ln840_24_fu_3697_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U92 mac_muladd_8ns_8ns_16ns_17_4_1_U93 add_ln840_27_fu_3713_p2 add_ln840_28_fu_3723_p2 add_ln840_29_fu_3733_p2 add_ln840_30_fu_3743_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U94 mac_muladd_8ns_8ns_16ns_17_4_1_U95 add_ln840_33_fu_3759_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U96 mac_muladd_8ns_8ns_16ns_17_4_1_U97 add_ln840_36_fu_3775_p2 add_ln840_37_fu_3785_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U98 mac_muladd_8ns_8ns_16ns_17_4_1_U99 add_ln840_40_fu_3801_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U100 mac_muladd_8ns_8ns_16ns_17_4_1_U101 add_ln840_43_fu_3817_p2 add_ln840_44_fu_3827_p2 add_ln840_45_fu_3837_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U102 mac_muladd_8ns_8ns_16ns_17_4_1_U103 add_ln840_48_fu_3853_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U104 mac_muladd_8ns_8ns_16ns_17_4_1_U105 add_ln840_51_fu_3869_p2 add_ln840_52_fu_3879_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U106 mac_muladd_8ns_8ns_16ns_17_4_1_U107 add_ln840_55_fu_3895_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U108 mac_muladd_8ns_8ns_16ns_17_4_1_U109 add_ln840_58_fu_3911_p2 add_ln840_59_fu_3921_p2 add_ln840_60_fu_3931_p2 add_ln840_61_fu_3941_p2 C_V_d0 add_ln54_fu_3167_p2 add_ln47_fu_2299_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_mult_hw_Pipeline_writeC_fu_327</InstName>
+                    <InstName>grp_mult_hw_Pipeline_writeC_fu_323</InstName>
                     <ModuleName>mult_hw_Pipeline_writeC</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>327</ID>
+                    <ID>323</ID>
                     <BindInstances>add_ln60_fu_103_p2</BindInstances>
                 </Instance>
             </InstancesList>
@@ -1429,22 +1429,22 @@
                     <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>2058</Best-caseLatency>
-                    <Average-caseLatency>2058</Average-caseLatency>
-                    <Worst-caseLatency>2058</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>20.580 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>20.580 us</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>20.580 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>2058</PipelineInitiationInterval>
+                    <Best-caseLatency>4106</Best-caseLatency>
+                    <Average-caseLatency>4106</Average-caseLatency>
+                    <Worst-caseLatency>4106</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>41.060 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>41.060 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>41.060 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>4106</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
                     <readA>
                         <Name>readA</Name>
                         <Slack>7.30</Slack>
-                        <TripCount>2048</TripCount>
-                        <Latency>2056</Latency>
-                        <AbsoluteTimeLatency>20.560 us</AbsoluteTimeLatency>
+                        <TripCount>4096</TripCount>
+                        <Latency>4104</Latency>
+                        <AbsoluteTimeLatency>41.040 us</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
                         <PipelineDepth>10</PipelineDepth>
                         <PipelineType>yes</PipelineType>
@@ -1454,10 +1454,10 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>257</FF>
+                    <FF>258</FF>
                     <AVAIL_FF>2364480</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>491</LUT>
+                    <LUT>493</LUT>
                     <AVAIL_LUT>1182240</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -1492,22 +1492,22 @@
                     <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>8195</Best-caseLatency>
-                    <Average-caseLatency>8195</Average-caseLatency>
-                    <Worst-caseLatency>8195</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>81.950 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>81.950 us</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>81.950 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>8195</PipelineInitiationInterval>
+                    <Best-caseLatency>4099</Best-caseLatency>
+                    <Average-caseLatency>4099</Average-caseLatency>
+                    <Worst-caseLatency>4099</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>40.990 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>40.990 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>40.990 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>4099</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
                     <readB>
                         <Name>readB</Name>
                         <Slack>7.30</Slack>
-                        <TripCount>8192</TripCount>
-                        <Latency>8193</Latency>
-                        <AbsoluteTimeLatency>81.930 us</AbsoluteTimeLatency>
+                        <TripCount>4096</TripCount>
+                        <Latency>4097</Latency>
+                        <AbsoluteTimeLatency>40.970 us</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
                         <PipelineDepth>3</PipelineDepth>
                         <PipelineType>yes</PipelineType>
@@ -1517,10 +1517,10 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>53</FF>
+                    <FF>50</FF>
                     <AVAIL_FF>2364480</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>82</LUT>
+                    <LUT>81</LUT>
                     <AVAIL_LUT>1182240</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -1581,7 +1581,7 @@
                     <FF>1150</FF>
                     <AVAIL_FF>2364480</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>3011</LUT>
+                    <LUT>3005</LUT>
                     <AVAIL_LUT>1182240</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -1593,145 +1593,145 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln44_fu_1986_p2" SOURCE="matmul.cpp:44" URAM="0" VARIABLE="add_ln44"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln44_1_fu_2009_p2" SOURCE="matmul.cpp:44" URAM="0" VARIABLE="add_ln44_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln44_fu_1982_p2" SOURCE="matmul.cpp:44" URAM="0" VARIABLE="add_ln44"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln44_1_fu_2005_p2" SOURCE="matmul.cpp:44" URAM="0" VARIABLE="add_ln44_1"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U78" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U54" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U55" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U56" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U57" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_2"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U79" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U56" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U58" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_4"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U80" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_5"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U57" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U59" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_6"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U81" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_7"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U58" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U60" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_8"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U82" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_9"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U59" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U61" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_10"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U83" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_11"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U60" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U62" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_12"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U84" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_13"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U61" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U63" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_14"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U85" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_15"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U62" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U64" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_16"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U86" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_17"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U63" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_18"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U65" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_18"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U87" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_19"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U64" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_20"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U66" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_20"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U88" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_21"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U65" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U67" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_22"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U89" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_23"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U66" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_24"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U68" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_24"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U90" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_25"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U67" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_26"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U69" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_26"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U91" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_27"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U68" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_28"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U70" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_28"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U92" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_29"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U38" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_30"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U93" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_31"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U39" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_32"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln186_fu_2247_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:186" URAM="0" VARIABLE="add_ln186"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln186_fu_2243_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:186" URAM="0" VARIABLE="add_ln186"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U94" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_33"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U69" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_34"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_fu_2588_p2" SOURCE="matmul.cpp:52" URAM="0" VARIABLE="add_ln52"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U71" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_34"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_fu_2592_p2" SOURCE="matmul.cpp:52" URAM="0" VARIABLE="add_ln52"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U95" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_35"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U70" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_36"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U72" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_36"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U96" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_37"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U71" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_38"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_1_fu_2650_p2" SOURCE="matmul.cpp:52" URAM="0" VARIABLE="add_ln52_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U73" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_38"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_1_fu_2654_p2" SOURCE="matmul.cpp:52" URAM="0" VARIABLE="add_ln52_1"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U97" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_39"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U72" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_40"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U42" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_40"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U98" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_41"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U42" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_42"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_2_fu_2722_p2" SOURCE="matmul.cpp:52" URAM="0" VARIABLE="add_ln52_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U43" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_42"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_2_fu_2736_p2" SOURCE="matmul.cpp:52" URAM="0" VARIABLE="add_ln52_2"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U99" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_43"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U73" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_44"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U45" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_44"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U100" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_45"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U44" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_46"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_3_fu_2794_p2" SOURCE="matmul.cpp:52" URAM="0" VARIABLE="add_ln52_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U46" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_46"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_3_fu_2818_p2" SOURCE="matmul.cpp:52" URAM="0" VARIABLE="add_ln52_3"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U101" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_47"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U74" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_48"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U102" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_49"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U75" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_50"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_4_fu_2856_p2" SOURCE="matmul.cpp:52" URAM="0" VARIABLE="add_ln52_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_4_fu_2880_p2" SOURCE="matmul.cpp:52" URAM="0" VARIABLE="add_ln52_4"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U103" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_51"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U76" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_52"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U104" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_53"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U47" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_54"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_5_fu_2932_p2" SOURCE="matmul.cpp:52" URAM="0" VARIABLE="add_ln52_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U49" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_54"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_5_fu_2956_p2" SOURCE="matmul.cpp:52" URAM="0" VARIABLE="add_ln52_5"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U105" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_55"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U77" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_56"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U106" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_57"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U49" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_58"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_6_fu_3008_p2" SOURCE="matmul.cpp:52" URAM="0" VARIABLE="add_ln52_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U51" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_58"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_6_fu_3032_p2" SOURCE="matmul.cpp:52" URAM="0" VARIABLE="add_ln52_6"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U107" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_59"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U51" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_60"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U53" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_60"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U108" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_61"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U52" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_62"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_1_1_U54" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_62"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U109" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494" URAM="0" VARIABLE="mul_ln1494_63"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U78" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U79" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_2_fu_3563_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_2_fu_3561_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_2"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U80" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_3"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U81" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_4"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_5_fu_3579_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_5"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_6_fu_3589_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_5_fu_3577_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_6_fu_3587_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_6"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U82" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_7"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U83" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_8"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_9_fu_3605_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_9_fu_3603_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_9"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U84" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_10"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U85" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_11"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_12_fu_3621_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_12"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_13_fu_3631_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_13"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_14_fu_3641_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_12_fu_3619_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_13_fu_3629_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_13"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_14_fu_3639_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_14"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U86" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_15"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U87" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_16"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_17_fu_3657_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_17"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_17_fu_3655_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_17"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U88" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_18"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U89" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_19"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_20_fu_3673_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_20"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_21_fu_3683_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_21"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_20_fu_3671_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_20"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_21_fu_3681_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_21"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U90" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_22"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U91" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_23"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_24_fu_3699_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_24"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_24_fu_3697_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_24"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U92" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_25"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U93" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_26"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_27_fu_3715_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_27"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_28_fu_3725_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_28"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_29_fu_3735_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_29"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_30_fu_3745_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_30"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_27_fu_3713_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_27"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_28_fu_3723_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_28"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_29_fu_3733_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_29"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_30_fu_3743_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_30"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U94" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_31"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U95" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_32"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_33_fu_3761_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_33"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_33_fu_3759_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_33"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U96" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_34"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U97" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_35"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_36_fu_3777_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_36"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_37_fu_3787_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_37"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_36_fu_3775_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_36"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_37_fu_3785_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_37"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U98" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_38"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U99" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_39"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_40_fu_3803_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_40"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_40_fu_3801_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_40"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U100" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_41"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U101" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_42"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_43_fu_3819_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_43"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_44_fu_3829_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_44"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_45_fu_3839_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_45"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_43_fu_3817_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_43"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_44_fu_3827_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_44"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_45_fu_3837_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_45"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U102" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_46"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U103" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_47"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_48_fu_3855_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_48"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_48_fu_3853_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_48"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U104" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_49"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U105" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_50"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_51_fu_3871_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_51"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_52_fu_3881_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_52"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_51_fu_3869_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_51"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_52_fu_3879_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_52"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U106" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_53"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U107" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_54"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_55_fu_3897_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_55"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_55_fu_3895_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_55"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U108" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_56"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U109" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_57"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_58_fu_3913_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_58"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_59_fu_3923_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_59"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_60_fu_3933_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_60"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_61_fu_3943_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_61"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_58_fu_3911_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_58"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_59_fu_3921_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_59"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_60_fu_3931_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_60"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln840_61_fu_3941_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_61"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="C_V_d0" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:840" URAM="0" VARIABLE="add_ln840_62"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln54_fu_3143_p2" SOURCE="matmul.cpp:54" URAM="0" VARIABLE="add_ln54"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_fu_2303_p2" SOURCE="matmul.cpp:47" URAM="0" VARIABLE="add_ln47"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln54_fu_3167_p2" SOURCE="matmul.cpp:54" URAM="0" VARIABLE="add_ln54"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="mult_outer_mult_middle" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_fu_2299_p2" SOURCE="matmul.cpp:47" URAM="0" VARIABLE="add_ln47"/>
             </BindNodes>
         </Module>
         <Module>
@@ -1801,28 +1801,28 @@
                     <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>16413</Best-caseLatency>
-                    <Average-caseLatency>16413</Average-caseLatency>
-                    <Worst-caseLatency>16413</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>0.164 ms</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>0.164 ms</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>0.164 ms</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>16414</PipelineInitiationInterval>
+                    <Best-caseLatency>12324</Best-caseLatency>
+                    <Average-caseLatency>12324</Average-caseLatency>
+                    <Worst-caseLatency>12324</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.123 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.123 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.123 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>12325</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <BRAM_18K>64</BRAM_18K>
+                    <BRAM_18K>0</BRAM_18K>
                     <AVAIL_BRAM>4320</AVAIL_BRAM>
-                    <UTIL_BRAM>1</UTIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
                     <DSP>32</DSP>
                     <AVAIL_DSP>6840</AVAIL_DSP>
                     <UTIL_DSP>~0</UTIL_DSP>
-                    <FF>3500</FF>
+                    <FF>3626</FF>
                     <AVAIL_FF>2364480</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>8864</LUT>
+                    <LUT>9643</LUT>
                     <AVAIL_LUT>1182240</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <URAM>1</URAM>
@@ -1847,22 +1847,22 @@
                 <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="A_V_13_U" SOURCE="matmul.cpp:13" URAM="0" VARIABLE="A_V_13"/>
                 <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="A_V_14_U" SOURCE="matmul.cpp:13" URAM="0" VARIABLE="A_V_14"/>
                 <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="A_V_15_U" SOURCE="matmul.cpp:13" URAM="0" VARIABLE="A_V_15"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_1_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_1"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_2_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_2"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_3_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_3"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_4_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_4"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_5_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_5"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_6_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_6"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_7_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_7"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_8_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_8"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_9_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_9"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_10_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_10"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_11_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_11"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_12_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_12"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_13_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_13"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_14_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_14"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_15_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_15"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_1_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_1"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_2_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_2"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_3_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_3"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_4_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_4"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_5_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_5"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_6_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_6"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_7_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_7"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_8_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_8"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_9_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_9"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_10_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_10"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_11_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_11"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_12_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_12"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_13_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_13"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_14_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_14"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="B_V_15_U" SOURCE="matmul.cpp:14" URAM="0" VARIABLE="B_V_15"/>
                 <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="C_V_U" SOURCE="matmul.cpp:15" URAM="1" VARIABLE="C_V"/>
             </BindNodes>
         </Module>
@@ -2188,7 +2188,7 @@
             <item name="Inferred Burst Summary">
                 <table>
                     <keys size="6">HW Interface, Loop, Direction, Length, Width, Location</keys>
-                    <column name="m_axi_gmem">readB, read, 8192, 8, matmul.cpp:36:3</column>
+                    <column name="m_axi_gmem">readB, read, 4096, 8, matmul.cpp:36:3</column>
                     <column name="m_axi_gmem0">writeC, write, 4096, 32, matmul.cpp:60:6</column>
                 </table>
             </item>
@@ -2203,16 +2203,16 @@
         </section>
     </ReportBurst>
     <PragmaReport>
-        <Pragma type="interface" location="matmul.cpp:8" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="m_axi bundle=gmem0 port = in1 depth = ((1 &lt;&lt; 5) * (1 &lt;&lt; 6))"/>
-        <Pragma type="interface" location="matmul.cpp:9" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="m_axi bundle=gmem port = in2 depth = ((1 &lt;&lt; 6) * (1 &lt;&lt; 7))"/>
-        <Pragma type="interface" location="matmul.cpp:10" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="m_axi bundle=gmem0 port = out_r depth = ((1 &lt;&lt; 5) * (1 &lt;&lt; 7))"/>
+        <Pragma type="interface" location="matmul.cpp:8" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="m_axi bundle=gmem0 port = in1 depth = ((1 &lt;&lt; 6) * (1 &lt;&lt; 6))"/>
+        <Pragma type="interface" location="matmul.cpp:9" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="m_axi bundle=gmem port = in2 depth = ((1 &lt;&lt; 6) * (1 &lt;&lt; 6))"/>
+        <Pragma type="interface" location="matmul.cpp:10" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="m_axi bundle=gmem0 port = out_r depth = ((1 &lt;&lt; 6) * (1 &lt;&lt; 6))"/>
         <Pragma type="array_partition" location="matmul.cpp:18" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="variable = A dim = 1 cyclic factor = 16"/>
         <Pragma type="array_partition" location="matmul.cpp:21" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="variable = B dim = 1 block factor = 16"/>
-        <Pragma type="loop_tripcount" location="matmul.cpp:26" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="min = (1 &lt;&lt; 5) * (1 &lt;&lt; 6) max = (1 &lt;&lt; 5) * (1 &lt;&lt; 6)"/>
-        <Pragma type="loop_tripcount" location="matmul.cpp:37" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="min = (1 &lt;&lt; 6) * (1 &lt;&lt; 7) max = (1 &lt;&lt; 6) * (1 &lt;&lt; 7)"/>
-        <Pragma type="loop_tripcount" location="matmul.cpp:45" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="min = (1 &lt;&lt; 5) max = (1 &lt;&lt; 5)"/>
-        <Pragma type="loop_tripcount" location="matmul.cpp:48" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="min = (1 &lt;&lt; 7) max = (1 &lt;&lt; 7)"/>
-        <Pragma type="loop_tripcount" location="matmul.cpp:61" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="min = (1 &lt;&lt; 5) * (1 &lt;&lt; 7) max = (1 &lt;&lt; 5) * (1 &lt;&lt; 7)"/>
+        <Pragma type="loop_tripcount" location="matmul.cpp:26" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="min = (1 &lt;&lt; 6) * (1 &lt;&lt; 6) max = (1 &lt;&lt; 6) * (1 &lt;&lt; 6)"/>
+        <Pragma type="loop_tripcount" location="matmul.cpp:37" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="min = (1 &lt;&lt; 6) * (1 &lt;&lt; 6) max = (1 &lt;&lt; 6) * (1 &lt;&lt; 6)"/>
+        <Pragma type="loop_tripcount" location="matmul.cpp:45" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="min = (1 &lt;&lt; 6) max = (1 &lt;&lt; 6)"/>
+        <Pragma type="loop_tripcount" location="matmul.cpp:48" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="min = (1 &lt;&lt; 6) max = (1 &lt;&lt; 6)"/>
+        <Pragma type="loop_tripcount" location="matmul.cpp:61" status="valid" parentFunction="mult_hw" variable="" isDirective="0" options="min = (1 &lt;&lt; 6) * (1 &lt;&lt; 6) max = (1 &lt;&lt; 6) * (1 &lt;&lt; 6)"/>
     </PragmaReport>
 </profile>
 

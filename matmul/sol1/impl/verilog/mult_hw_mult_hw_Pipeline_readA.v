@@ -182,67 +182,67 @@ output   m_axi_gmem0_BREADY;
 input  [1:0] m_axi_gmem0_BRESP;
 input  [0:0] m_axi_gmem0_BID;
 input  [0:0] m_axi_gmem0_BUSER;
-output  [6:0] A_V_address0;
+output  [7:0] A_V_address0;
 output   A_V_ce0;
 output   A_V_we0;
 output  [7:0] A_V_d0;
-output  [6:0] A_V_1_address0;
+output  [7:0] A_V_1_address0;
 output   A_V_1_ce0;
 output   A_V_1_we0;
 output  [7:0] A_V_1_d0;
-output  [6:0] A_V_2_address0;
+output  [7:0] A_V_2_address0;
 output   A_V_2_ce0;
 output   A_V_2_we0;
 output  [7:0] A_V_2_d0;
-output  [6:0] A_V_3_address0;
+output  [7:0] A_V_3_address0;
 output   A_V_3_ce0;
 output   A_V_3_we0;
 output  [7:0] A_V_3_d0;
-output  [6:0] A_V_4_address0;
+output  [7:0] A_V_4_address0;
 output   A_V_4_ce0;
 output   A_V_4_we0;
 output  [7:0] A_V_4_d0;
-output  [6:0] A_V_5_address0;
+output  [7:0] A_V_5_address0;
 output   A_V_5_ce0;
 output   A_V_5_we0;
 output  [7:0] A_V_5_d0;
-output  [6:0] A_V_6_address0;
+output  [7:0] A_V_6_address0;
 output   A_V_6_ce0;
 output   A_V_6_we0;
 output  [7:0] A_V_6_d0;
-output  [6:0] A_V_7_address0;
+output  [7:0] A_V_7_address0;
 output   A_V_7_ce0;
 output   A_V_7_we0;
 output  [7:0] A_V_7_d0;
-output  [6:0] A_V_8_address0;
+output  [7:0] A_V_8_address0;
 output   A_V_8_ce0;
 output   A_V_8_we0;
 output  [7:0] A_V_8_d0;
-output  [6:0] A_V_9_address0;
+output  [7:0] A_V_9_address0;
 output   A_V_9_ce0;
 output   A_V_9_we0;
 output  [7:0] A_V_9_d0;
-output  [6:0] A_V_10_address0;
+output  [7:0] A_V_10_address0;
 output   A_V_10_ce0;
 output   A_V_10_we0;
 output  [7:0] A_V_10_d0;
-output  [6:0] A_V_11_address0;
+output  [7:0] A_V_11_address0;
 output   A_V_11_ce0;
 output   A_V_11_we0;
 output  [7:0] A_V_11_d0;
-output  [6:0] A_V_12_address0;
+output  [7:0] A_V_12_address0;
 output   A_V_12_ce0;
 output   A_V_12_we0;
 output  [7:0] A_V_12_d0;
-output  [6:0] A_V_13_address0;
+output  [7:0] A_V_13_address0;
 output   A_V_13_ce0;
 output   A_V_13_we0;
 output  [7:0] A_V_13_d0;
-output  [6:0] A_V_14_address0;
+output  [7:0] A_V_14_address0;
 output   A_V_14_ce0;
 output   A_V_14_we0;
 output  [7:0] A_V_14_d0;
-output  [6:0] A_V_15_address0;
+output  [7:0] A_V_15_address0;
 output   A_V_15_ce0;
 output   A_V_15_we0;
 output  [7:0] A_V_15_d0;
@@ -336,9 +336,9 @@ wire   [31:0] j_2_fu_585_p2;
 wire    ap_loop_init;
 reg   [31:0] i_fu_144;
 wire   [31:0] i_2_fu_489_p3;
-reg   [11:0] itr_fu_148;
-wire   [11:0] add_ln25_fu_408_p2;
-reg   [11:0] ap_sig_allocacmp_itr_1;
+reg   [12:0] itr_fu_148;
+wire   [12:0] add_ln25_fu_408_p2;
+reg   [12:0] ap_sig_allocacmp_itr_1;
 wire   [3:0] trunc_ln31_1_fu_509_p1;
 wire   [7:0] trunc_ln31_3_fu_565_p1;
 wire   [63:0] itr_cast_fu_414_p1;
@@ -348,11 +348,11 @@ wire   [1:0] trunc_ln31_2_fu_418_p1;
 wire   [0:0] icmp_ln27_fu_465_p2;
 wire   [31:0] j_1_fu_477_p3;
 wire   [31:0] add_ln29_fu_471_p2;
-wire   [4:0] trunc_ln31_fu_497_p1;
-wire   [10:0] shl_ln_fu_501_p3;
-wire   [10:0] trunc_ln27_fu_485_p1;
-wire   [10:0] add_ln31_fu_513_p2;
-wire   [6:0] lshr_ln_fu_519_p4;
+wire   [5:0] trunc_ln31_fu_497_p1;
+wire   [11:0] shl_ln_fu_501_p3;
+wire   [11:0] trunc_ln27_fu_485_p1;
+wire   [11:0] add_ln31_fu_513_p2;
+wire   [7:0] lshr_ln_fu_519_p4;
 wire   [4:0] shl_ln31_1_fu_549_p3;
 wire   [31:0] zext_ln31_1_fu_556_p1;
 wire   [31:0] lshr_ln31_fu_560_p2;
@@ -529,7 +529,7 @@ always @ (posedge ap_clk) begin
         if (((ap_enable_reg_pp0_iter0 == 1'b1) & (icmp_ln25_fu_402_p2 == 1'd0))) begin
             itr_fu_148 <= add_ln25_fu_408_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            itr_fu_148 <= 12'd0;
+            itr_fu_148 <= 13'd0;
         end
     end
 end
@@ -876,7 +876,7 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
-        ap_sig_allocacmp_itr_1 = 12'd0;
+        ap_sig_allocacmp_itr_1 = 13'd0;
     end else begin
         ap_sig_allocacmp_itr_1 = itr_fu_148;
     end
@@ -989,7 +989,7 @@ assign A_V_address0 = zext_ln31_fu_529_p1;
 
 assign A_V_d0 = trunc_ln31_3_fu_565_p1;
 
-assign add_ln25_fu_408_p2 = (ap_sig_allocacmp_itr_1 + 12'd1);
+assign add_ln25_fu_408_p2 = (ap_sig_allocacmp_itr_1 + 13'd1);
 
 assign add_ln29_fu_471_p2 = (i_fu_144 + 32'd1);
 
@@ -1041,7 +1041,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign i_2_fu_489_p3 = ((icmp_ln27_fu_465_p2[0:0] == 1'b1) ? add_ln29_fu_471_p2 : i_fu_144);
 
-assign icmp_ln25_fu_402_p2 = ((ap_sig_allocacmp_itr_1 == 12'd2048) ? 1'b1 : 1'b0);
+assign icmp_ln25_fu_402_p2 = ((ap_sig_allocacmp_itr_1 == 13'd4096) ? 1'b1 : 1'b0);
 
 assign icmp_ln27_fu_465_p2 = ((j_fu_140 == 32'd64) ? 1'b1 : 1'b0);
 
@@ -1053,7 +1053,7 @@ assign j_2_fu_585_p2 = (j_1_fu_477_p3 + 32'd1);
 
 assign lshr_ln31_fu_560_p2 = gmem0_addr_read_reg_637 >> zext_ln31_1_fu_556_p1;
 
-assign lshr_ln_fu_519_p4 = {{add_ln31_fu_513_p2[10:4]}};
+assign lshr_ln_fu_519_p4 = {{add_ln31_fu_513_p2[11:4]}};
 
 assign m_axi_gmem0_ARADDR = gmem0_addr_reg_626;
 
@@ -1121,7 +1121,7 @@ assign shl_ln31_1_fu_549_p3 = {{add_ln31_2_reg_632_pp0_iter8_reg}, {3'd0}};
 
 assign shl_ln_fu_501_p3 = {{trunc_ln31_fu_497_p1}, {6'd0}};
 
-assign trunc_ln27_fu_485_p1 = j_1_fu_477_p3[10:0];
+assign trunc_ln27_fu_485_p1 = j_1_fu_477_p3[11:0];
 
 assign trunc_ln31_1_fu_509_p1 = j_1_fu_477_p3[3:0];
 
@@ -1131,7 +1131,7 @@ assign trunc_ln31_3_fu_565_p1 = lshr_ln31_fu_560_p2[7:0];
 
 assign trunc_ln31_4_fu_428_p4 = {{add_ln31_1_fu_422_p2[63:2]}};
 
-assign trunc_ln31_fu_497_p1 = i_2_fu_489_p3[4:0];
+assign trunc_ln31_fu_497_p1 = i_2_fu_489_p3[5:0];
 
 assign zext_ln31_1_fu_556_p1 = shl_ln31_1_fu_549_p3;
 

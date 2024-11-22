@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mult_hw'" level="0">
-<item name = "Date">Fri Nov 22 21:44:04 2024
+<item name = "Date">Fri Nov 22 21:50:15 2024
 </item>
 <item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">matmul</item>
@@ -24,17 +24,17 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">16413, 16413, 0.164 ms, 0.164 ms, 16414, 16414, no</column>
+<column name="">12324, 12324, 0.123 ms, 0.123 ms, 12325, 12325, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_mult_hw_Pipeline_readA_fu_243">mult_hw_Pipeline_readA, 2058, 2058, 20.580 us, 20.580 us, 2058, 2058, no</column>
-<column name="grp_mult_hw_Pipeline_readB_fu_267">mult_hw_Pipeline_readB, 8195, 8195, 81.950 us, 81.950 us, 8195, 8195, no</column>
-<column name="grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_290">mult_hw_Pipeline_mult_outer_mult_middle, 4101, 4101, 41.010 us, 41.010 us, 4101, 4101, no</column>
-<column name="grp_mult_hw_Pipeline_writeC_fu_327">mult_hw_Pipeline_writeC, 4099, 4099, 40.990 us, 40.990 us, 4099, 4099, no</column>
+<column name="grp_mult_hw_Pipeline_readA_fu_239">mult_hw_Pipeline_readA, 4106, 4106, 41.060 us, 41.060 us, 4106, 4106, no</column>
+<column name="grp_mult_hw_Pipeline_readB_fu_263">mult_hw_Pipeline_readB, 4099, 4099, 40.990 us, 40.990 us, 4099, 4099, no</column>
+<column name="grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286">mult_hw_Pipeline_mult_outer_mult_middle, 4101, 4101, 41.010 us, 41.010 us, 4101, 4101, no</column>
+<column name="grp_mult_hw_Pipeline_writeC_fu_323">mult_hw_Pipeline_writeC, 4099, 4099, 40.990 us, 40.990 us, 4099, 4099, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

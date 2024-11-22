@@ -72,7 +72,7 @@ module AESL_axi_master_gmem (
  parameter   mem_page_num            =   32'd 3;
  parameter   FIFO_DEPTH_ADDR_WIDTH   =    32'd 32;
 parameter gmem_C_DATA_BITWIDTH = 32'd 8;
-parameter gmem_mem_depth = 32'd 8192;
+parameter gmem_mem_depth = 32'd 4096;
 parameter ReadReqLatency = 32'd 1;
 parameter WriteReqLatency = 32'd 1;
 // Input and Output

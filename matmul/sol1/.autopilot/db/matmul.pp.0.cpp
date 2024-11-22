@@ -5711,7 +5711,7 @@ inline __attribute__((nodebug)) bool operator!=(
 typedef ap_uint<8> input_type;
 typedef ap_uint<32> result_type;
 
-__attribute__((sdx_kernel("mult_hw", 0))) void mult_hw(input_type in1[(1 << 5) * (1 << 6)], input_type in2[(1 << 6) * (1 << 7)], result_type out_r[(1 << 5) * (1 << 7)]){
+__attribute__((sdx_kernel("mult_hw", 0))) void mult_hw(input_type in1[(1 << 6) * (1 << 6)], input_type in2[(1 << 6) * (1 << 6)], result_type out_r[(1 << 6) * (1 << 6)]){
 #line 16 "C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=mult_hw
 # 7 "matmul.cpp"
@@ -5720,14 +5720,14 @@ __attribute__((sdx_kernel("mult_hw", 0))) void mult_hw(input_type in1[(1 << 5) *
 #pragma HLSDIRECTIVE TOP name=mult_hw
 # 7 "matmul.cpp"
 
-#pragma HLS INTERFACE m_axi bundle=gmem0 port = in1 depth = ((1 << 5) * (1 << 6))
-#pragma HLS INTERFACE m_axi bundle=gmem port = in2 depth = ((1 << 6) * (1 << 7))
-#pragma HLS INTERFACE m_axi bundle=gmem0 port = out_r depth = ((1 << 5) * (1 << 7))
+#pragma HLS INTERFACE m_axi bundle=gmem0 port = in1 depth = ((1 << 6) * (1 << 6))
+#pragma HLS INTERFACE m_axi bundle=gmem port = in2 depth = ((1 << 6) * (1 << 6))
+#pragma HLS INTERFACE m_axi bundle=gmem0 port = out_r depth = ((1 << 6) * (1 << 6))
 
 
- input_type A[(1 << 5) * (1 << 6)];
-    input_type B[(1 << 6) * (1 << 7)];
-    result_type C[(1 << 5) * (1 << 7)];
+ input_type A[(1 << 6) * (1 << 6)];
+    input_type B[(1 << 6) * (1 << 6)];
+    result_type C[(1 << 6) * (1 << 6)];
 
 
 #pragma HLS ARRAY_PARTITION variable = A dim = 1 cyclic factor = 16
@@ -5737,8 +5737,8 @@ __attribute__((sdx_kernel("mult_hw", 0))) void mult_hw(input_type in1[(1 << 5) *
 
 
  readA:
-     for(int itr=0, i=0, j=0; itr<(1 << 5)*(1 << 6); itr++,j++){
-#pragma HLS LOOP_TRIPCOUNT min = (1 << 5) * (1 << 6) max = (1 << 5) * (1 << 6)
+     for(int itr=0, i=0, j=0; itr<(1 << 6)*(1 << 6); itr++,j++){
+#pragma HLS LOOP_TRIPCOUNT min = (1 << 6) * (1 << 6) max = (1 << 6) * (1 << 6)
  if(j == (1 << 6)){
        j=0;
        i++;
@@ -5748,32 +5748,32 @@ __attribute__((sdx_kernel("mult_hw", 0))) void mult_hw(input_type in1[(1 << 5) *
 
 
     readB:
-  for(int i=0; i<(1 << 6) * (1 << 7); i++){
-#pragma HLS LOOP_TRIPCOUNT min = (1 << 6) * (1 << 7) max = (1 << 6) * (1 << 7)
+  for(int i=0; i<(1 << 6) * (1 << 6); i++){
+#pragma HLS LOOP_TRIPCOUNT min = (1 << 6) * (1 << 6) max = (1 << 6) * (1 << 6)
 
  B[i] = in2[i];
      }
 
 
     mult_outer:
-     for(int i=0; i<(1 << 5); i++){
-#pragma HLS LOOP_TRIPCOUNT min = (1 << 5) max = (1 << 5)
+     for(int i=0; i<(1 << 6); i++){
+#pragma HLS LOOP_TRIPCOUNT min = (1 << 6) max = (1 << 6)
  mult_middle:
-       for(int j=0; j<(1 << 7); j++){
-#pragma HLS LOOP_TRIPCOUNT min = (1 << 7) max = (1 << 7)
+       for(int j=0; j<(1 << 6); j++){
+#pragma HLS LOOP_TRIPCOUNT min = (1 << 6) max = (1 << 6)
  result_type result = 0;
         mult_inner:
         for(int k=0; k<(1 << 6); k++){
-         result += A[i * (1 << 6) + k] * B[k * (1 << 7) + j];
+         result += A[i * (1 << 6) + k] * B[k * (1 << 6) + j];
         }
-        C[i * (1 << 7) + j] = result;
+        C[i * (1 << 6) + j] = result;
        }
      }
 
 
     writeC:
-     for(int i=0; i<(1 << 5)*(1 << 7);i++){
-#pragma HLS LOOP_TRIPCOUNT min = (1 << 5) * (1 << 7) max = (1 << 5) * (1 << 7)
+     for(int i=0; i<(1 << 6)*(1 << 6);i++){
+#pragma HLS LOOP_TRIPCOUNT min = (1 << 6) * (1 << 6) max = (1 << 6) * (1 << 6)
  out_r[i] = C[i];
      }
 }

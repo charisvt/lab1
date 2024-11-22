@@ -55362,7 +55362,7 @@ extern void mult_hw(input_type* in1, input_type* in2, result_type* out_r);
 
 bool verify(result_type* sw_result, result_type* hw_result){
  bool match = true;
- for(int i=0;i<(1 << 5);i++){
+ for(int i=0;i<(1 << 6);i++){
   for(int j=0;j<(1 << 7);j++){
    if(sw_result[i * (1 << 7) + j] != hw_result[i * (1 << 7) + j]){
     std::cout << "Mismatch on " << "Row:" << i << " Column:" << j << " | ";
@@ -55376,7 +55376,7 @@ bool verify(result_type* sw_result, result_type* hw_result){
 }
 
 void mult_sw(input_type* A, input_type* B, result_type* C) {
-    for(int i=0; i<(1 << 5); i++){
+    for(int i=0; i<(1 << 6); i++){
      for(int j=0; j<(1 << 7); j++){
       result_type result = 0;
    for(int k=0; k<(1 << 6); k++){
@@ -55387,8 +55387,8 @@ void mult_sw(input_type* A, input_type* B, result_type* C) {
  }
 }
 
-void init_matrices(input_type A[(1 << 5) * (1 << 6)], input_type B[(1 << 6) * (1 << 7)]) {
-    for (int i = 0; i < (1 << 5); i++) {
+void init_matrices(input_type A[(1 << 6) * (1 << 6)], input_type B[(1 << 6) * (1 << 7)]) {
+    for (int i = 0; i < (1 << 6); i++) {
         for (int j = 0; j < (1 << 6); j++) {
             A[i * (1 << 6) + j] = static_cast<input_type>(rand() % 256);
         }
@@ -55401,7 +55401,7 @@ void init_matrices(input_type A[(1 << 5) * (1 << 6)], input_type B[(1 << 6) * (1
 }
 
 void print_r(result_type* Arr){
- for(int i=0;i<(1 << 5);i++){
+ for(int i=0;i<(1 << 6);i++){
   for(int j=0;j<(1 << 7);j++){
    std::cout << Arr[i * (1 << 7) + j] << " ";
   }
@@ -55415,10 +55415,10 @@ void print_r(result_type* Arr){
 int main(int argc, char** argv){
  srand(0);
 
- input_type A[(1 << 5) * (1 << 6)], B[(1 << 6) * (1 << 7)];
+ input_type A[(1 << 6) * (1 << 6)], B[(1 << 6) * (1 << 7)];
 
- result_type sw_result[(1 << 5) * (1 << 7)];
- result_type hw_result[(1 << 5) * (1 << 7)];
+ result_type sw_result[(1 << 6) * (1 << 7)];
+ result_type hw_result[(1 << 6) * (1 << 7)];
 
  init_matrices(A, B);
 

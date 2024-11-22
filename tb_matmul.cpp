@@ -3,7 +3,7 @@
 #include <ap_int.h>
 
 #define lm 6
-#define ln 5
+#define ln 6
 #define lp 7
 
 #define m (1 << lm)
