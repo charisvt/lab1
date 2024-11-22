@@ -2,8 +2,8 @@
 # xsim v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Fri Nov 22 19:05:12 2024
-# Process ID: 13396
+# Start of session at: Fri Nov 22 21:44:49 2024
+# Process ID: 8724
 # Current directory: C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/mult_hw/xsim_script.tcl}
 # Log file: C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/sim/verilog/xsim.log
@@ -14,10 +14,10 @@ source xsim.dir/mult_hw/xsim_script.tcl
 # xsim {mult_hw} -view {{mult_hw_dataflow_ana.wcfg}} -tclbatch {mult_hw.tcl} -protoinst {mult_hw.protoinst}
 INFO: [Wavedata 42-565] Reading protoinst file mult_hw.protoinst
 INFO: [Wavedata 42-564]   Found protocol instance at /apatb_mult_hw_top/AESL_inst_mult_hw//AESL_inst_mult_hw_activity
-INFO: [Wavedata 42-564]   Found protocol instance at /apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_286_activity
-INFO: [Wavedata 42-564]   Found protocol instance at /apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readA_fu_239/grp_mult_hw_Pipeline_readA_fu_239_activity
-INFO: [Wavedata 42-564]   Found protocol instance at /apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readB_fu_263/grp_mult_hw_Pipeline_readB_fu_263_activity
-INFO: [Wavedata 42-564]   Found protocol instance at /apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_writeC_fu_323/grp_mult_hw_Pipeline_writeC_fu_323_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_290/grp_mult_hw_Pipeline_mult_outer_mult_middle_fu_290_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readA_fu_243/grp_mult_hw_Pipeline_readA_fu_243_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_readB_fu_267/grp_mult_hw_Pipeline_readB_fu_267_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_mult_hw_top/AESL_inst_mult_hw/grp_mult_hw_Pipeline_writeC_fu_327/grp_mult_hw_Pipeline_writeC_fu_327_activity
 Time resolution is 1 ps
 open_wave_config mult_hw_dataflow_ana.wcfg
 source mult_hw.tcl
@@ -159,8 +159,8 @@ source mult_hw.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "158265000"
+// RTL Simulation : 1 / 1 [100.00%] @ "169895000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 158325 ns : File "C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/sim/verilog/mult_hw.autotb.v" Line 641
+$finish called at time : 169955 ns : File "C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/sim/verilog/mult_hw.autotb.v" Line 641
 ## quit
-INFO: [Common 17-206] Exiting xsim at Fri Nov 22 19:05:15 2024...
+INFO: [Common 17-206] Exiting xsim at Fri Nov 22 21:44:53 2024...

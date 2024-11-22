@@ -242,24 +242,24 @@ extern "C" void apatb_mult_hw_hw(volatile void * __xlx_apatb_param_in1, volatile
 using hls::sim::createStream;
   // Collect __xlx_in1_out_r__tmp_vec
 std::vector<Byte<4>> __xlx_in1_out_r__tmp_vec;
-for (size_t i = 0; i < 1024; ++i){
+for (size_t i = 0; i < 512; ++i){
 __xlx_in1_out_r__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_in1)[i]);
 }
-  int __xlx_size_param_in1 = 1024;
+  int __xlx_size_param_in1 = 512;
   int __xlx_offset_param_in1 = 0;
   int __xlx_offset_byte_param_in1 = 0*4;
 for (size_t i = 0; i < 4096; ++i){
 __xlx_in1_out_r__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_out_r)[i]);
 }
   int __xlx_size_param_out_r = 4096;
-  int __xlx_offset_param_out_r = 1024;
-  int __xlx_offset_byte_param_out_r = 1024*4;
+  int __xlx_offset_param_out_r = 512;
+  int __xlx_offset_byte_param_out_r = 512*4;
   // Collect __xlx_in2__tmp_vec
 std::vector<Byte<1>> __xlx_in2__tmp_vec;
-for (size_t i = 0; i < 4096; ++i){
+for (size_t i = 0; i < 8192; ++i){
 __xlx_in2__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_in2)[i]);
 }
-  int __xlx_size_param_in2 = 4096;
+  int __xlx_size_param_in2 = 8192;
   int __xlx_offset_param_in2 = 0;
   int __xlx_offset_byte_param_in2 = 0*1;
   // DUT call

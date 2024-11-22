@@ -192,7 +192,7 @@ Args:
   - String:          'Sequential '
   - Direction:       read
   - String:          ' of length '
-  - Length:          '4096'
+  - Length:          '2048'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ OldID='
   - String:          for.body.load.34
@@ -221,7 +221,7 @@ Args:
   - String:          'Sequential '
   - Direction:       read
   - String:          ' of length '
-  - Length:          '4096'
+  - Length:          '8192'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ OldID='
   - String:          for.inc31.load.22
@@ -375,7 +375,7 @@ Args:
   - String:          'Multiple burst '
   - Direction:       reads
   - String:          ' of length '
-  - Length:          '4096'
+  - Length:          '8192'
   - String:          ' and bit width '
   - Width:           '8'
   - String:          ' has been inferred.'
@@ -404,7 +404,7 @@ Args:
   - String:          'Multiple burst '
   - Direction:       reads
   - String:          ' of length '
-  - Length:          '4096'
+  - Length:          '8192'
   - String:          ' and bit width '
   - Width:           '8'
   - String:          ' in loop '''

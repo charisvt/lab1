@@ -55330,15 +55330,15 @@ inline bool operator!=(
 typedef ap_uint<8> input_type;
 typedef ap_uint<32> result_type;
 
-void mult_hw(input_type in1[(1 << 6) * (1 << 6)], input_type in2[(1 << 6) * (1 << 6)], result_type out_r[(1 << 6) * (1 << 6)]){
+void mult_hw(input_type in1[(1 << 5) * (1 << 6)], input_type in2[(1 << 6) * (1 << 7)], result_type out_r[(1 << 5) * (1 << 7)]){
 #pragma HLS INTERFACE m_axi bundle=gmem0 port = in1 depth = (n * m)
 #pragma HLS INTERFACE m_axi bundle=gmem port = in2 depth = (m * p)
 #pragma HLS INTERFACE m_axi bundle=gmem0 port = out_r depth = (n * p)
 
 
-    input_type A[(1 << 6) * (1 << 6)];
-    input_type B[(1 << 6) * (1 << 6)];
-    result_type C[(1 << 6) * (1 << 6)];
+    input_type A[(1 << 5) * (1 << 6)];
+    input_type B[(1 << 6) * (1 << 7)];
+    result_type C[(1 << 5) * (1 << 7)];
 
 
 #pragma HLS ARRAY_PARTITION variable = A dim = 1 cyclic factor = 16
@@ -55348,7 +55348,7 @@ void mult_hw(input_type in1[(1 << 6) * (1 << 6)], input_type in2[(1 << 6) * (1 <
 
 
     readA:
-     for(int itr=0, i=0, j=0; itr<(1 << 6)*(1 << 6); itr++,j++){
+     for(int itr=0, i=0, j=0; itr<(1 << 5)*(1 << 6); itr++,j++){
 #pragma HLS LOOP_TRIPCOUNT min = n * m max = n * m
       if(j == (1 << 6)){
        j=0;
@@ -55359,7 +55359,7 @@ void mult_hw(input_type in1[(1 << 6) * (1 << 6)], input_type in2[(1 << 6) * (1 <
 
 
     readB:
-  for(int i=0; i<(1 << 6) * (1 << 6); i++){
+  for(int i=0; i<(1 << 6) * (1 << 7); i++){
 #pragma HLS LOOP_TRIPCOUNT min = m * p max = m * p
 
    B[i] = in2[i];
@@ -55367,23 +55367,23 @@ void mult_hw(input_type in1[(1 << 6) * (1 << 6)], input_type in2[(1 << 6) * (1 <
 
 
     mult_outer:
-     for(int i=0; i<(1 << 6); i++){
+     for(int i=0; i<(1 << 5); i++){
 #pragma HLS LOOP_TRIPCOUNT min = n max = n
       mult_middle:
-       for(int j=0; j<(1 << 6); j++){
+       for(int j=0; j<(1 << 7); j++){
 #pragma HLS LOOP_TRIPCOUNT min = p max = p
         result_type result = 0;
         mult_inner:
         for(int k=0; k<(1 << 6); k++){
-         result += A[i * (1 << 6) + k] * B[k * (1 << 6) + j];
+         result += A[i * (1 << 6) + k] * B[k * (1 << 7) + j];
         }
-        C[i * (1 << 6) + j] = result;
+        C[i * (1 << 7) + j] = result;
        }
      }
 
 
     writeC:
-     for(int i=0; i<(1 << 6)*(1 << 6);i++){
+     for(int i=0; i<(1 << 5)*(1 << 7);i++){
 #pragma HLS LOOP_TRIPCOUNT min = n * p max = n * p
       out_r[i] = C[i];
      }

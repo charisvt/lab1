@@ -15,13 +15,13 @@
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=mult_hw" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:8:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi bundle=gmem0 port = in1 depth = ((1 &lt;&lt; 6) * (1 &lt;&lt; 6))" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi bundle=gmem0 port = in1 depth = ((1 &lt;&lt; 5) * (1 &lt;&lt; 6))" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:9:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi bundle=gmem port = in2 depth = ((1 &lt;&lt; 6) * (1 &lt;&lt; 6))" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi bundle=gmem port = in2 depth = ((1 &lt;&lt; 6) * (1 &lt;&lt; 7))" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:10:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi bundle=gmem0 port = out_r depth = ((1 &lt;&lt; 6) * (1 &lt;&lt; 6))" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi bundle=gmem0 port = out_r depth = ((1 &lt;&lt; 5) * (1 &lt;&lt; 7))" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:18:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = A dim = 1 cyclic factor = 16" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
@@ -30,19 +30,19 @@
         <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = B dim = 1 block factor = 16" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:26:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = (1 &lt;&lt; 6) * (1 &lt;&lt; 6) max = (1 &lt;&lt; 6) * (1 &lt;&lt; 6)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = (1 &lt;&lt; 5) * (1 &lt;&lt; 6) max = (1 &lt;&lt; 5) * (1 &lt;&lt; 6)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:37:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = (1 &lt;&lt; 6) * (1 &lt;&lt; 6) max = (1 &lt;&lt; 6) * (1 &lt;&lt; 6)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = (1 &lt;&lt; 6) * (1 &lt;&lt; 7) max = (1 &lt;&lt; 6) * (1 &lt;&lt; 7)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:45:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = (1 &lt;&lt; 6) max = (1 &lt;&lt; 6)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = (1 &lt;&lt; 5) max = (1 &lt;&lt; 5)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:48:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = (1 &lt;&lt; 6) max = (1 &lt;&lt; 6)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = (1 &lt;&lt; 7) max = (1 &lt;&lt; 7)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matmul.cpp:61:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = (1 &lt;&lt; 6) * (1 &lt;&lt; 6) max = (1 &lt;&lt; 6) * (1 &lt;&lt; 6)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="mult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = (1 &lt;&lt; 5) * (1 &lt;&lt; 7) max = (1 &lt;&lt; 5) * (1 &lt;&lt; 7)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67" msg_body="Inlining function 'ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)' into 'ap_int_base&lt;32, false&gt;::ap_int_base(int)'">
         <args Callee="ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)" Caller="ap_int_base&lt;32, false&gt;::ap_int_base(int)"/>
