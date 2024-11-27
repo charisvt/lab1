@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1732305016349">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1732629810786">
   <ports id="1" name="gmem0" type="PortType" coreId="1702129263" bitwidth="32" iftype="IfTypeFifo">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
   <ports id="2" name="A_V" type="PortType" coreName="RAM_1WnR" coreId="1702129263" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="3" name="A_V_1" type="PortType" coreName="RAM_1WnR" coreId="1702129263" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+  <ports id="3" name="A_V_1" type="PortType" coreName="RAM_1WnR" coreId="4205166456" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="4" name="A_V_2" type="PortType" coreName="RAM_1WnR" coreId="4294967295" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+  <ports id="4" name="A_V_2" type="PortType" coreName="RAM_1WnR" coreId="4241951632" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
   <ports id="5" name="A_V_3" type="PortType" coreName="RAM_1WnR" coreId="1702129263" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="6" name="A_V_4" type="PortType" coreName="RAM_1WnR" coreId="1702129263" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+  <ports id="6" name="A_V_4" type="PortType" coreName="RAM_1WnR" coreId="4223939696" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="7" name="A_V_5" type="PortType" coreName="RAM_1WnR" coreId="0" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+  <ports id="7" name="A_V_5" type="PortType" coreName="RAM_1WnR" coreId="1969188961" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="8" name="A_V_6" type="PortType" coreName="RAM_1WnR" coreId="0" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+  <ports id="8" name="A_V_6" type="PortType" coreName="RAM_1WnR" coreId="4294967295" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="9" name="A_V_7" type="PortType" coreName="RAM_1WnR" coreId="0" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+  <ports id="9" name="A_V_7" type="PortType" coreName="RAM_1WnR" coreId="185" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="10" name="A_V_8" type="PortType" coreName="RAM_1WnR" coreId="943482224" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+  <ports id="10" name="A_V_8" type="PortType" coreName="RAM_1WnR" coreId="778859885" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="11" name="A_V_9" type="PortType" coreName="RAM_1WnR" coreId="0" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+  <ports id="11" name="A_V_9" type="PortType" coreName="RAM_1WnR" coreId="644182892" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="12" name="A_V_10" type="PortType" coreName="RAM_1WnR" coreId="0" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+  <ports id="12" name="A_V_10" type="PortType" coreName="RAM_1WnR" coreId="2036689696" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="13" name="A_V_11" type="PortType" coreName="RAM_1WnR" coreId="1713384502" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+  <ports id="13" name="A_V_11" type="PortType" coreName="RAM_1WnR" coreId="825980012" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="14" name="A_V_12" type="PortType" coreName="RAM_1WnR" coreId="0" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+  <ports id="14" name="A_V_12" type="PortType" coreName="RAM_1WnR" coreId="997485606" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="15" name="A_V_13" type="PortType" coreName="RAM_1WnR" coreId="0" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+  <ports id="15" name="A_V_13" type="PortType" coreName="RAM_1WnR" coreId="1852795252" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="16" name="A_V_14" type="PortType" coreName="RAM_1WnR" coreId="1864393829" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+  <ports id="16" name="A_V_14" type="PortType" coreName="RAM_1WnR" coreId="171847458" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="17" name="A_V_15" type="PortType" coreName="RAM_1WnR" coreId="0" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+  <ports id="17" name="A_V_15" type="PortType" coreName="RAM_1WnR" coreId="1952917093" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
   <ports id="18" name="in1" type="PortType" coreId="0" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="19" name="trunc_ln" type="PortType" coreId="544175214" bitwidth="2">
+  <ports id="19" name="trunc_ln" type="PortType" coreId="4390912" bitwidth="2">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <edges id="146" source_obj="//@ports.18" sink_obj="//@blocks.0/@node_objs.3"/>
@@ -262,39 +262,39 @@
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="i" originalName="i" coreId="1443089568" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="i" originalName="i" coreId="75" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="itr" originalName="itr" coreId="1450139579" bitwidth="13" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="itr" originalName="itr" coreId="4223994096" bitwidth="13" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="trunc_ln_read" coreId="1490101968" bitwidth="2" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="trunc_ln_read" coreId="3978297960" bitwidth="2" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
       <dataInputObjs>trunc_ln</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="in1_read" coreId="1447192336" bitwidth="64" opcode="read" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="in1_read" coreId="4294967295" bitwidth="64" opcode="read" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
       <dataInputObjs>in1</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="itr_write_ln0" coreId="1443082928" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="itr_write_ln0" coreId="4230389600" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="6" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="i_write_ln0" coreId="1449060376" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="7" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="i_write_ln0" coreId="4294967295" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="7" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="j_write_ln0" coreId="1490101968" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="8" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="j_write_ln0" coreId="4294967295" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="8" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="br_ln0" coreId="1443095728" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="br_ln0" coreId="4294967295" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
       <controlInputObjs>for.body</controlInputObjs>
     </node_objs>
   </blocks>
@@ -331,7 +331,7 @@
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln25" lineNumber="25" fileName="matmul.cpp" fileDirectory=".." coreId="1447103280" contextFuncName="mult_hw" opcode="br" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln25" lineNumber="25" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" opcode="br" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="25" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>for.body.split</controlInputObjs>
@@ -361,7 +361,7 @@
       <controlOutputObjs>arrayidx19.case.12</controlOutputObjs>
       <controlOutputObjs>arrayidx19.case.13</controlOutputObjs>
       <controlOutputObjs>arrayidx19.case.14</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="j_load" lineNumber="27" fileName="matmul.cpp" fileDirectory=".." coreId="1511623872" contextFuncName="mult_hw" bitwidth="32" opcode="load" nodeLabel="9.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="j_load" lineNumber="27" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" bitwidth="32" opcode="load" nodeLabel="9.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="27" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -373,7 +373,7 @@
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="itr_cast" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="itr_cast_fu_414_p1" coreId="1512733760" contextFuncName="mult_hw" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="itr_cast" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="itr_cast_fu_414_p1" coreId="0" contextFuncName="mult_hw" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -400,7 +400,7 @@
         <dataOutputObjs>trunc</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="trunc_ln27" lineNumber="27" fileName="matmul.cpp" fileDirectory=".." rtlName="trunc_ln27_fu_485_p1" coreId="4294967295" contextFuncName="mult_hw" bitwidth="12" opcode="trunc" nodeLabel="9.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="trunc_ln27" lineNumber="27" fileName="matmul.cpp" fileDirectory=".." rtlName="trunc_ln27_fu_485_p1" coreId="0" contextFuncName="mult_hw" bitwidth="12" opcode="trunc" nodeLabel="9.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="27" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -413,7 +413,7 @@
         <dataOutputObjs>store</dataOutputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="trunc_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="trunc_ln31_fu_497_p1" coreId="4294967295" contextFuncName="mult_hw" bitwidth="6" opcode="trunc" nodeLabel="9.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="trunc_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="trunc_ln31_fu_497_p1" coreId="0" contextFuncName="mult_hw" bitwidth="6" opcode="trunc" nodeLabel="9.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
@@ -435,13 +435,13 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="lshr_ln" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="lshr_ln_fu_519_p4" coreId="0" contextFuncName="mult_hw" bitwidth="8" opcode="partselect" nodeLabel="9.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="lshr_ln" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="lshr_ln_fu_519_p4" coreId="4230389600" contextFuncName="mult_hw" bitwidth="8" opcode="partselect" nodeLabel="9.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="zext_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="zext_ln31_fu_529_p1" coreId="0" contextFuncName="mult_hw" bitwidth="64" opcode="zext" nodeLabel="9.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="zext_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="zext_ln31_fu_529_p1" coreId="4230389600" contextFuncName="mult_hw" bitwidth="64" opcode="zext" nodeLabel="9.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -468,21 +468,21 @@
         <dataOutputObjs>A_V</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="A_V_1_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="A_V_1_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="4230389600" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>A_V_1</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="A_V_2_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1511623872" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="A_V_2_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>A_V_2</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="A_V_3_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="A_V_3_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="4247643616" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>A_V_3</dataOutputObjs>
@@ -496,84 +496,84 @@
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="A_V_5_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="A_V_5_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>A_V_5</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="A_V_6_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1511623872" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="A_V_6_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1852795252" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>A_V_6</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="A_V_7_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="A_V_7_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="778859885" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>A_V_7</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="A_V_8_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1512734000" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="A_V_8_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1852795252" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>A_V_8</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="A_V_9_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="A_V_9_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="543516513" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>A_V_9</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="A_V_10_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1512734960" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="A_V_10_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1919252069" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>A_V_10</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="A_V_11_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1512742880" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="A_V_11_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1881154127" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>A_V_11</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="A_V_12_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="A_V_12_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1869442415" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>A_V_12</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="A_V_13_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="A_V_13_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1885415031" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>A_V_13</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="A_V_14_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="A_V_14_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="757935405" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>A_V_14</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="A_V_15_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1952917093" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="A_V_15_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1701978228" contextFuncName="mult_hw" bitwidth="8" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>A_V_15</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="trunc_ln31_2" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="trunc_ln31_2_fu_418_p1" coreId="875962470" contextFuncName="mult_hw" bitwidth="2" opcode="trunc" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="trunc_ln31_2" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="trunc_ln31_2_fu_418_p1" coreId="1749229668" contextFuncName="mult_hw" bitwidth="2" opcode="trunc" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -584,18 +584,18 @@
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="trunc_ln31_4" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="trunc_ln31_4_fu_428_p4" coreId="758329394" contextFuncName="mult_hw" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="trunc_ln31_4" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="trunc_ln31_4_fu_428_p4" coreId="544828517" contextFuncName="mult_hw" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="sext_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="sext_ln31_fu_438_p1" coreId="997484326" contextFuncName="mult_hw" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="sext_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="sext_ln31_fu_438_p1" coreId="539119430" contextFuncName="mult_hw" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="gmem0_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1852795252" contextFuncName="mult_hw" bitwidth="32" opcode="getelementptr" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="gmem0_addr" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1043276322" contextFuncName="mult_hw" bitwidth="32" opcode="getelementptr" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>gmem0</dataInputObjs>
         <dataInputObjs>sext</dataInputObjs>
@@ -618,13 +618,13 @@
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="shl_ln31_1" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="shl_ln31_1_fu_549_p3" coreId="1769104758" contextFuncName="mult_hw" bitwidth="5" opcode="bitconcatenate" nodeLabel="9.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="shl_ln31_1" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="shl_ln31_1_fu_549_p3" coreId="1601004659" contextFuncName="mult_hw" bitwidth="5" opcode="bitconcatenate" nodeLabel="9.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="zext_ln31_1" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="zext_ln31_1_fu_556_p1" coreId="808591443" contextFuncName="mult_hw" bitwidth="32" opcode="zext" nodeLabel="9.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="zext_ln31_1" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="zext_ln31_1_fu_556_p1" coreId="540424496" contextFuncName="mult_hw" bitwidth="32" opcode="zext" nodeLabel="9.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>lshr</dataOutputObjs>
@@ -635,7 +635,7 @@
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="trunc_ln31_3" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="trunc_ln31_3_fu_565_p1" coreId="1428172347" contextFuncName="mult_hw" bitwidth="8" opcode="trunc" nodeLabel="9.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="trunc_ln31_3" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." rtlName="trunc_ln31_3_fu_565_p1" coreId="1702060386" contextFuncName="mult_hw" bitwidth="8" opcode="trunc" nodeLabel="9.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>lshr</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
@@ -655,7 +655,7 @@
         <dataOutputObjs>store</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1701998624" contextFuncName="mult_hw" opcode="switch" nodeLabel="9.0" m_display="0" m_delay="0.34" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="574453865" contextFuncName="mult_hw" opcode="switch" nodeLabel="9.0" m_display="0" m_delay="0.34" m_topoIndex="58" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>trunc</dataInputObjs>
         <controlInputObjs>arrayidx19.case.15</controlInputObjs>
@@ -691,7 +691,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1819243365" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="539111470" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <controlInputObjs>arrayidx19.exit</controlInputObjs>
       </node_objs>
@@ -708,7 +708,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="842149938" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="543515506" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <controlInputObjs>arrayidx19.exit</controlInputObjs>
       </node_objs>
@@ -725,7 +725,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="741749052" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="539768892" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <controlInputObjs>arrayidx19.exit</controlInputObjs>
       </node_objs>
@@ -742,7 +742,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1763719200" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <controlInputObjs>arrayidx19.exit</controlInputObjs>
       </node_objs>
@@ -759,7 +759,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1346576442" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="536879616" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <controlInputObjs>arrayidx19.exit</controlInputObjs>
       </node_objs>
@@ -776,7 +776,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1819243365" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1914708521" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <controlInputObjs>arrayidx19.exit</controlInputObjs>
       </node_objs>
@@ -793,7 +793,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="574453865" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="151666223" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <controlInputObjs>arrayidx19.exit</controlInputObjs>
       </node_objs>
@@ -810,7 +810,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="7891302" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1768975727" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <controlInputObjs>arrayidx19.exit</controlInputObjs>
       </node_objs>
@@ -827,7 +827,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1735289209" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="660958308" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <controlInputObjs>arrayidx19.exit</controlInputObjs>
       </node_objs>
@@ -844,7 +844,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1667592992" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <controlInputObjs>arrayidx19.exit</controlInputObjs>
       </node_objs>
@@ -861,7 +861,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1007225406" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1818323316" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <controlInputObjs>arrayidx19.exit</controlInputObjs>
       </node_objs>
@@ -878,7 +878,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1868963950" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <controlInputObjs>arrayidx19.exit</controlInputObjs>
       </node_objs>
@@ -912,7 +912,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1953852527" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="6645601" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <controlInputObjs>arrayidx19.exit</controlInputObjs>
       </node_objs>
@@ -929,7 +929,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="127" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="2037653619" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="127" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1920099686" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <controlInputObjs>arrayidx19.exit</controlInputObjs>
       </node_objs>
@@ -946,7 +946,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="130" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="130" name="br_ln31" lineNumber="31" fileName="matmul.cpp" fileDirectory=".." coreId="1701211753" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="31" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <controlInputObjs>arrayidx19.exit</controlInputObjs>
       </node_objs>
@@ -994,7 +994,7 @@
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="133" name="itr_write_ln25" lineNumber="25" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="133" name="itr_write_ln25" lineNumber="25" fileName="matmul.cpp" fileDirectory=".." coreId="1599496001" contextFuncName="mult_hw" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="21" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="25" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
@@ -1004,12 +1004,12 @@
         <dataInputObjs>select</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="135" name="j_write_ln25" lineNumber="25" fileName="matmul.cpp" fileDirectory=".." coreId="1226861665" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.38" m_topoIndex="93" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="135" name="j_write_ln25" lineNumber="25" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.38" m_topoIndex="93" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="25" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="136" name="br_ln25" lineNumber="25" fileName="matmul.cpp" fileDirectory=".." coreId="570456436" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="136" name="br_ln25" lineNumber="25" fileName="matmul.cpp" fileDirectory=".." coreId="0" contextFuncName="mult_hw" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="25" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <controlInputObjs>for.body</controlInputObjs>
       </node_objs>

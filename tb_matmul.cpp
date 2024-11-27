@@ -4,7 +4,7 @@
 
 #define lm 6
 #define ln 6
-#define lp 7
+#define lp 6
 
 #define m (1 << lm)
 #define n (1 << ln)
@@ -54,6 +54,7 @@ void init_matrices(input_type A[n * m], input_type B[m * p]) {
         }
     }
 }
+
 
 void print_r(result_type* Arr){
 	for(int i=0;i<n;i++){

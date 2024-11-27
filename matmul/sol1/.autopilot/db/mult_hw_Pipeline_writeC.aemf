@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1732305018378">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1732629812583">
   <ports id="1" name="gmem0" type="PortType" coreId="1702129263" bitwidth="32" direction="DirOut" iftype="IfTypeFifo">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
   <ports id="2" name="sext_ln60" type="PortType" coreId="1380138016" bitwidth="62">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="C_V" type="PortType" coreName="RAM" coreId="1702129263" bitwidth="22" iftype="IfTypeRegister" arraysize="4096">
+  <ports id="3" name="C_V" type="PortType" coreName="RAM" coreId="0" bitwidth="22" iftype="IfTypeRegister" arraysize="4096">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
   <edges id="35" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.1"/>
@@ -40,21 +40,21 @@
   <edges id="124" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
   <blocks id="10" name="newFuncRoot" type="BlockType">
     <controlOutputObjs>for.inc78</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="i" originalName="i" coreId="652" bitwidth="13" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="i" originalName="i" coreId="0" bitwidth="13" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="sext_ln60_read" coreId="734" bitwidth="62" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="sext_ln60_read" coreId="0" bitwidth="62" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <dataInputObjs>sext_ln60</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="sext_ln60_cast" coreId="0" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="sext_ln60_cast" coreId="1173" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="i_write_ln0" coreId="790" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="i_write_ln0" coreId="0" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="4" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
@@ -65,7 +65,7 @@
   <blocks id="30" name="for.end80.exitStub" type="BlockType">
     <controlInputObjs>for.inc78</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="_ln0" coreId="852" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="_ln0" coreId="1029" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1"/>
   </blocks>
   <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="102" pipe_depth="3" RegionName="writeC">
     <basic_blocks id="18" name="for.inc78" type="BlockType">
@@ -75,7 +75,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>for.end80.exitStub</controlOutputObjs>
       <controlOutputObjs>for.inc78.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="i_1" lineNumber="60" originalName="i" fileName="matmul.cpp" fileDirectory=".." coreId="669" contextFuncName="mult_hw" bitwidth="13" opcode="load" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="i_1" lineNumber="60" originalName="i" fileName="matmul.cpp" fileDirectory=".." coreId="816" contextFuncName="mult_hw" bitwidth="13" opcode="load" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="60" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -100,7 +100,7 @@
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln60" lineNumber="60" fileName="matmul.cpp" fileDirectory=".." coreId="757" contextFuncName="mult_hw" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln60" lineNumber="60" fileName="matmul.cpp" fileDirectory=".." coreId="402" contextFuncName="mult_hw" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="60" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>for.inc78.split</controlInputObjs>
@@ -114,7 +114,7 @@
       <controlInputObjs>for.inc78</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>for.inc78</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="i_4_cast" lineNumber="60" fileName="matmul.cpp" fileDirectory=".." rtlName="i_4_cast_fu_109_p1" coreId="1517691024" contextFuncName="mult_hw" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="i_4_cast" lineNumber="60" fileName="matmul.cpp" fileDirectory=".." rtlName="i_4_cast_fu_109_p1" coreId="0" contextFuncName="mult_hw" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="60" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -142,7 +142,7 @@
         <dataInputObjs>zext</dataInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="i_write_ln60" lineNumber="60" fileName="matmul.cpp" fileDirectory=".." coreId="852" contextFuncName="mult_hw" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="i_write_ln60" lineNumber="60" fileName="matmul.cpp" fileDirectory=".." coreId="101" contextFuncName="mult_hw" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="13" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="matmul.cpp" linenumber="60" fileDirectory="C:\Users\charisvt\Desktop\hls\lab1" functionName="mult_hw"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>

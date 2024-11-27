@@ -47,11 +47,6 @@
 			<location>C:/Users/charisvt/Desktop/hls/lab1/matmul.cpp</location>
 		</link>
 		<link>
-			<name>source/matmul.h</name>
-			<type>1</type>
-			<location>C:/Users/charisvt/Desktop/hls/lab1/matmul.h</location>
-		</link>
-		<link>
 			<name>testbench/tb_matmul.cpp</name>
 			<type>1</type>
 			<location>C:/Users/charisvt/Desktop/hls/lab1/tb_matmul.cpp</location>

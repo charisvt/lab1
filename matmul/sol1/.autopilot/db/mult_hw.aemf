@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1732305019926">
-  <ports id="1" name="gmem0" type="PortType" coreId="1702129263" bitwidth="32" direction="DirInOut" iftype="IfTypeFifo">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1732629814051">
+  <ports id="1" name="gmem0" type="PortType" coreId="1380138016" bitwidth="32" direction="DirInOut" iftype="IfTypeFifo">
     <dataInputObjs>call</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>call</dataInputObjs>
@@ -8,17 +8,17 @@
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="2" name="gmem" type="PortType" coreId="1380138016" bitwidth="8" iftype="IfTypeFifo">
+  <ports id="2" name="gmem" type="PortType" coreId="1702129263" bitwidth="8" iftype="IfTypeFifo">
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="3" name="in1" type="PortType" originalName="in1.V" coreId="1702129263" bitwidth="64">
+  <ports id="3" name="in1" type="PortType" originalName="in1.V" coreId="1380138016" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <ports id="4" name="in2" type="PortType" originalName="in2.V" coreId="1380138016" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="5" name="out_r" type="PortType" originalName="out_r.V" coreId="1380138016" bitwidth="64">
+  <ports id="5" name="out_r" type="PortType" originalName="out_r.V" coreId="1702129263" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <edges id="69" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.0"/>

@@ -1,5 +1,11 @@
 #include <ap_int.h>
-#include "matmul.h"
+#define lm 4
+#define ln 4
+#define lp 4
+
+#define m (1 << lm)
+#define n (1 << ln)
+#define p (1 << lp)
 
 typedef ap_uint<8> input_type;
 typedef ap_uint<32> result_type;

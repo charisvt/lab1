@@ -2,8 +2,8 @@
 # xsim v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Fri Nov 22 21:50:58 2024
-# Process ID: 4160
+# Start of session at: Tue Nov 26 16:04:04 2024
+# Process ID: 12660
 # Current directory: C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/mult_hw/xsim_script.tcl}
 # Log file: C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/sim/verilog/xsim.log
@@ -163,4 +163,4 @@ source mult_hw.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 158325 ns : File "C:/Users/charisvt/Desktop/hls/lab1/matmul/sol1/sim/verilog/mult_hw.autotb.v" Line 641
 ## quit
-INFO: [Common 17-206] Exiting xsim at Fri Nov 22 21:51:02 2024...
+INFO: [Common 17-206] Exiting xsim at Tue Nov 26 16:04:08 2024...
